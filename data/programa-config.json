@@ -1,0 +1,145 @@
+{
+  "title": "Programa SISTEDES",
+  "subtitle": "Córdoba (SPAIN)",
+  "year": 2026,
+  "month": 6,
+  "rooms": [
+    "SALA A",
+    "SALA B",
+    "SALA C",
+    "SALA D"
+  ],
+  "tracks": [
+    {
+      "id": "ISGD",
+      "short": "ISGD",
+      "name": "Ingeniería del Software y Gobierno del Dato",
+      "room": "SALA A",
+      "className": "sprog-slot--isgd",
+      "file": "data/tracks/ISGD.json"
+    },
+    {
+      "id": "AI4SE",
+      "short": "AI4SE",
+      "name": "Artificial Intelligence for Software Engineering",
+      "room": "SALA B",
+      "className": "sprog-slot--ai4se",
+      "file": "data/tracks/AI4SE.json"
+    },
+    {
+      "id": "ICD",
+      "short": "ICD",
+      "name": "Ingeniería, Ciencia y Datos",
+      "room": "SALA C",
+      "className": "sprog-slot--icd",
+      "file": "data/tracks/ICD.json"
+    },
+    {
+      "id": "METODOS",
+      "short": "MÉTODOS",
+      "name": "Métodos",
+      "room": "SALA D",
+      "className": "sprog-slot--metodos",
+      "file": "data/tracks/METODOS.json"
+    },
+    {
+      "id": "QUANTUM",
+      "short": "QUANTUM",
+      "name": "Quantum",
+      "room": "SALA A",
+      "className": "sprog-slot--quantum",
+      "file": "data/tracks/QUANTUM.json"
+    },
+    {
+      "id": "MCPS",
+      "short": "MCPS",
+      "name": "Métodos, Calidad y Pruebas del Software",
+      "room": "SALA B",
+      "className": "sprog-slot--mcps",
+      "file": "data/tracks/MCPS.json"
+    },
+    {
+      "id": "ISDM",
+      "short": "ISDM",
+      "name": "Ingeniería del Software Dirigida por Modelos",
+      "room": "SALA A",
+      "className": "sprog-slot--isdm",
+      "file": "data/tracks/ISDM.json"
+    },
+    {
+      "id": "ASV",
+      "short": "ASV",
+      "name": "ASV",
+      "room": "SALA D",
+      "className": "sprog-slot--asv",
+      "file": "data/tracks/ASV.json"
+    }
+  ],
+  "commonEvents": [
+    {
+      "day": "Martes 16 de Junio",
+      "time": "08:15 - 09:00",
+      "label": "Registro",
+      "className": "sprog-slot--registro"
+    },
+    {
+      "day": "Martes 16 de Junio",
+      "time": "10:30 - 11:00",
+      "label": "Pausa café",
+      "className": "sprog-slot--break"
+    },
+    {
+      "day": "Martes 16 de Junio",
+      "time": "13:30 - 15:00",
+      "label": "Almuerzo",
+      "className": "sprog-slot--lunch"
+    },
+    {
+      "day": "Martes 16 de Junio",
+      "time": "16:30 - 17:00",
+      "label": "Pausa café",
+      "className": "sprog-slot--break"
+    },
+    {
+      "day": "Miércoles 17 de Junio",
+      "time": "08:30 - 09:00",
+      "label": "Registro",
+      "className": "sprog-slot--registro"
+    },
+    {
+      "day": "Miércoles 17 de Junio",
+      "time": "10:30 - 11:00",
+      "label": "Pausa café",
+      "className": "sprog-slot--break"
+    },
+    {
+      "day": "Miércoles 17 de Junio",
+      "time": "13:30 - 15:00",
+      "label": "Almuerzo",
+      "className": "sprog-slot--lunch"
+    },
+    {
+      "day": "Miércoles 17 de Junio",
+      "time": "16:30 - 17:00",
+      "label": "Pausa café",
+      "className": "sprog-slot--break"
+    },
+    {
+      "day": "Jueves 18 de Junio",
+      "time": "10:30 - 11:00",
+      "label": "Pausa café",
+      "className": "sprog-slot--break"
+    },
+    {
+      "day": "Jueves 18 de Junio",
+      "time": "13:45 - 15:30",
+      "label": "Almuerzo",
+      "className": "sprog-slot--lunch"
+    }
+  ],
+  "options": {
+    "autoBuildSummary": true,
+    "showDiagnostics": true,
+    "hideEmptyRows": false
+  }
+}

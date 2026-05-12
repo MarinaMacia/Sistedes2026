@@ -1,0 +1,124 @@
+{
+  "16 de Junio de 2026": [
+    {
+      "hora": "17:00 - 18:00",
+      "Sesión 1 - SALA D": [
+        {
+          "titulo": "Bienvenida",
+          "autores": []
+        },
+        {
+          "titulo": "Comparing Desktop, Virtual and Augmented Reality Gaming Environments for ADHD Attention Measurement",
+          "autores": [
+            "Alejandro Panagiotidis-Arrizabalaga",
+            "Miguel A. Teruel",
+            "Ana Lavalle",
+            "Juan Trujillo",
+            "Elena Navarro",
+            "Pascual González"
+          ]
+        },
+        {
+          "titulo": "Protocolo de validación empírica del proceso de modelado ML para el pronóstico de QoS",
+          "autores": [
+            "Ximena Guerron",
+            "Silvia Abrahão",
+            "Emilio Insfran",
+            "Marta Fernández-Diego"
+          ]
+        },
+        {
+          "titulo": "Software Composition Analysis and Supply Chain Security in Apache Projects: an Empirical Study",
+          "autores": [
+            "Sabato Nocera",
+            "Sira Vegas",
+            "Giuseppe Scanniello",
+            "Natalia Juristo"
+          ]
+        }
+      ]
+    }
+  ],
+  "17 de Junio de 2026": [
+    {
+      "hora": "9:00 - 10:30",
+      "Sesión 2 - SALA D": [
+        {
+          "titulo": "A Multiple Case Study on Reuse in Game Software Engineering",
+          "autores": [
+            "Jose Ignacio Trasobares",
+            "África Domingo",
+            "Rodrigo Casamayor",
+            "Daniel Blasco",
+            "Carlos Cetina"
+          ]
+        },
+        {
+          "titulo": "Impulsando el pensamiento crítico en los jefes de proyecto IT: autoevaluación de la competencia",
+          "autores": [
+            "Miguel Ballesteros",
+            "Manuel Resinas"
+          ]
+        },
+        {
+          "titulo": "Aggregating Empirical Evidence from Data Strategies Studies: A Case on Model Quantization",
+          "autores": [
+            "Santiago del Rey",
+            "Paulo Sérgio Medeiros dos Santos",
+            "Guilherme Horta Travassos",
+            "Xavier Franch",
+            "Silverio Martínez-Fernández"
+          ]
+        },
+        {
+          "titulo": "Evaluating the Impact of AI-Simulated Clients on Novice Performance in Elicitation Interviews",
+          "autores": [
+            "José Antonio Parejo",
+            "Amador Durán Toro",
+            "Pablo Fernandez"
+          ]
+        },
+        {
+          "titulo": "Uso de la IA en Revisiones Sistemáticas de la Literatura: ¿confiable o viable? Un estudio preliminar y replicable",
+          "autores": [
+            "Francisco Javier Pérez-Blanco",
+            "Juan Manuel Vara",
+            "Carlos Villarrubia",
+            "David Granada",
+            "Cristian Gómez-Macías"
+          ]
+        },
+        {
+          "titulo": "Towards a Quality of Experience Model and Evaluation Framework for Immersive Metaverse Environments: A Systematic Literature Review",
+          "autores": [
+            "Lara Ihlbrock",
+            "Silvia Abrahão",
+            "Emilio Insfran",
+            "Kai Rommel"
+          ]
+        }
+      ]
+    },
+    {
+      "hora": "15:00 - 16:30",
+      "Sesión 3 - SALA D": [
+        {
+          "titulo": "Revisiones sistemáticas aumentadas por IA: del rigor metodológico a la automatización responsable",
+          "autores": [
+            "José Raúl Romero Salguero (Universidad de Córdoba)",
+            "José Antonio de la Torre López (Universidad de Córdoba)"
+          ]
+        }
+      ]
+    },
+    {
+      "hora": "17:00 - 18:30",
+      "Tutoriales - SALA D": [
+        {
+          "titulo": "Cierre",
+          "autores": []
+        }
+      ]
+    }
+  ]
+}

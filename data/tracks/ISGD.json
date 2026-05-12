@@ -1,0 +1,205 @@
+{
+  "16 de Junio de 2026": [
+    {
+      "hora": "9:00 - 10:30",
+      "Sesión 1 - SALA A": [
+        {
+          "titulo": "Procesamiento de Eventos Complejos para Gemelos Digitales entrelazados",
+          "autores": [
+            "Manuel Cano-Crespo",
+            "Guadalupe Ortiz",
+            "Elena Navarro"
+          ]
+        },
+        {
+          "titulo": "MAS4DT: A novel proposal for developing Digital Twins following a Multi-Agent system approach",
+          "autores": [
+            "Elena Pretel",
+            "Luis Zhinin-Vera",
+            "Elena Navarro",
+            "Víctor López-Jaquero",
+            "Pascual González"
+          ]
+        },
+        {
+          "titulo": "Synchronization and consistency issues in distributed digital twins",
+          "autores": [
+            "Sergio Infante",
+            "Julia Robles",
+            "Cristian Martín",
+            "Bartolomé Rubio",
+            "Manuel Díaz"
+          ]
+        },
+        {
+          "titulo": "Ingeniería de la Capa Inteligente en Gemelos Digitales Energéticos: Integración de IA y Optimización",
+          "autores": [
+            "Rebeca Gutierrez",
+            "Maria Dolores de Acuña",
+            "Maria Jose Escalona Cuaresma"
+          ]
+        },
+        {
+          "titulo": "SCSN-DAC: Arquitectura de Simulación Ininterrumpida para Gemelos Digitales en Escenarios de Colapso",
+          "autores": [
+            "Sergio Vázquez-Pozo",
+            "Alejandro Gragera-Serradilla"
+          ]
+        }
+      ]
+    },
+    {
+      "hora": "15:00 - 16:30",
+      "Sesión 2 - SALA A": [
+        {
+          "titulo": "A model-driven approach to streamline the development of prescriptive services for digital twins",
+          "autores": [
+            "Arturo Barriga",
+            "José A. Barriga",
+            "Pablo A. Portillo",
+            "Adolfo Lozano-Tello",
+            "Pedro J. Clemente"
+          ]
+        },
+        {
+          "titulo": "IFMIF-DONES Maintenance Digital Twins Architecture using OpenTwins",
+          "autores": [
+            "Julia Robles",
+            "Pablo Salado",
+            "Cristian Martín",
+            "Manuel Díaz"
+          ]
+        },
+        {
+          "titulo": "PULSE: A Modular Framework for Predictive Energy Efficiency in Heterogeneous Data Centers",
+          "autores": [
+            "Daniel Flores-Martin",
+            "Felipe Lemus-Prieto",
+            "Juan Antonio Rico Gallego"
+          ]
+        },
+        {
+          "titulo": "IoT and Machine Learning for the Forecasting of Physiological Parameters of Crop Leaves",
+          "autores": [
+            "Arturo Barriga",
+            "Jose A. Barriga",
+            "Adolfo Lozano-Tello",
+            "María J. Moñino",
+            "Pedro J. Clemente"
+          ]
+        },
+        {
+          "titulo": "Hacia un Gemelo Digital Social para la interacción adaptativa con QTrobot en niños con Trastorno del Espectro Autista",
+          "autores": [
+            "Mónica Garrigós",
+            "Santiago Meliá",
+            "Gonzalo Lorenzo-Lledó"
+          ]
+        }
+      ]
+    },
+    {
+      "hora": "17:00 - 18:00",
+      "Sesión 3 - SALA A": [
+        {
+          "titulo": "Gemelo Digital para la Conservación del Castillo de Portezuelo",
+          "autores": [
+            "Ángel Macías",
+            "Javier Mateos-Bravo",
+            "Juan Pedro Cortés-Pérez",
+            "Sergio Laso",
+            "Javier Berrocal"
+          ]
+        },
+        {
+          "titulo": "A Tutorial on O-RAN Deployment Solutions for 5G: From Simulation to Emulated and Real Testbeds",
+          "autores": [
+            "Juan Luis Herrera",
+            "Sofia Montebugnoli",
+            "Domenico Scotece",
+            "Luca Foschini",
+            "Paolo Bellavista"
+          ]
+        },
+        {
+          "titulo": "MoON: framework para la emulación de la Computación Continua en el espacio exterior",
+          "autores": [
+            "Iván Sánchez-Cordero",
+            "Ángel Macías",
+            "Miguel A. García-Sevilla",
+            "Juan Luis Herrera",
+            "Sergio Laso",
+            "Cristina Vicente-Chicote",
+            "Juan A. Fraire",
+            "Óscar Ledesma",
+            "David Bernal",
+            "Julián Fernández",
+            "Javier Berrocal"
+          ]
+        },
+        {
+          "titulo": "A-PIGNN: Test-Time Training for Physics-Informed State Estimation in Non-Stationary Water Networks",
+          "autores": [
+            "Mohammadhossein Homaei",
+            "Óscar Mogollón Gutiérrez",
+            "Fernando Broncano",
+            "Andrés Caro",
+            "Mar Ávila"
+          ]
+        }
+      ]
+    }
+  ],
+  "17 de Junio de 2026": [
+    {
+      "hora": "9:00 - 10:30",
+      "Sesión 4 - SALA C": [
+        {
+          "titulo": "GEDICA-DAV: Arquitectura de Gemelo Digital para la Detección de Anomalías y Validación de Datos en EDAR",
+          "autores": [
+            "Javier Mateos-Bravo",
+            "Juan Pedro Cortés-Pérez",
+            "Javier Berrocal",
+            "Juan Luis Herrera"
+          ]
+        },
+        {
+          "titulo": "Digital Twins and Artificial Collective Intelligence: Synergies for the Future",
+          "autores": [
+            "Elena Pretel",
+            "Elena Navarro",
+            "Víctor Casamayor Pujol",
+            "Schahram Dustdar"
+          ]
+        },
+        {
+          "titulo": "Planificación con garantías cuantitativas en Gemelos Digitales de sCPS",
+          "autores": [
+            "Raquel Sánchez Salas",
+            "Javier Troya",
+            "Javier Cámara"
+          ]
+        },
+        {
+          "titulo": "Twins Among Shadows: Binding Human Digital Twins on Mobile",
+          "autores": [
+            "Carlos E. Cuesta",
+            "Paloma Cáceres",
+            "Elena Castro",
+            "José María Cavero",
+            "Dolores Cuadra",
+            "Almudena Sierra-Alonso",
+            "Belén Vela"
+          ]
+        },
+        {
+          "titulo": "Desarrollo de un Digital Twin para la Monitorización en Bucle Cerrado en Reproducción Asistida",
+          "autores": [
+            "Anastasiia Gorelova",
+            "Santiago Meliá"
+          ]
+        }
+      ]
+    }
+  ]
+}

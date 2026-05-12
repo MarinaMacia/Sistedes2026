@@ -1,0 +1,151 @@
+{
+  "Jueves 18 de Junio 2026": [
+    {
+      "hora": "9:00 - 10:30",
+      "Sesión 1 - SALA D": [
+        {
+          "titulo": "Análisis de Modelos de Variabilidad con Grafos de Dependencias y Conflictos Transitivos Fuertes",
+          "autores": [
+            "Ruben Heradio",
+            "Luis Cambelo",
+            "Miguel Angel Olivero",
+            "Jose Manuel Sanchez",
+            "David Fernandez-Amoros"
+          ]
+        },
+        {
+          "titulo": "SPLALM. Un entorno de factorías de Lineas de Producto Software que aplica la ISO 26580",
+          "autores": [
+            "Antón Soto Ríos",
+            "Victor Juan Lamas Sardiña",
+            "Miguel Rodríguez Luaces"
+          ]
+        },
+        {
+          "titulo": "Seamless Data Migration between Database Schemas with DAMI-Framework: An Empirical Study on Developer Experience",
+          "autores": [
+            "Delfina Ramos-Vidal",
+            "Alejandro Cortiñas",
+            "Miguel R. Luaces",
+            "Oscar Pedreira",
+            "Ángeles Saavedra Places",
+            "Wesley K. G. Assunção"
+          ]
+        },
+        {
+          "titulo": "A Tool for Variability Management in Irrigation and Agriculture",
+          "autores": [
+            "Francisco Sebastian Benitez",
+            "José Manuel Sánchez Ruiz",
+            "David Romero Organvídez",
+            "Miguel Angel Olivero",
+            "José A. Galindo",
+            "Francisco José Domínguez-Mayo",
+            "David Benavides"
+          ]
+        },
+        {
+          "titulo": "Hacia la modularización de Lineas de Producto Software: un caso de estudio industrial",
+          "autores": [
+            "Victor Juan Lamas Sardiña",
+            "Alejandro Cortiñas",
+            "Miguel Rodríguez Luaces"
+          ]
+        }
+      ]
+    },
+    {
+      "hora": "11:00 - 12:30",
+      "Reunión TASOVA - SALA D": []
+    },
+    {
+      "hora": "12:30 - 13:30",
+      "Sesión 2 - SALA D": [
+        {
+          "titulo": "Cuantificando el conocimiento factual sobre el lenguaje UVL en los Modelos de Lenguaje",
+          "autores": [
+            "José Miguel Horcas",
+            "Joaquin Ballesteros",
+            "Mónica Pinto",
+            "Lidia Fuentes"
+          ]
+        },
+        {
+          "titulo": "Software Product Families from a Phylogenetics Perspective for Video Game Content Generation",
+          "autores": [
+            "Samuel Navarro",
+            "Jorge Chueca",
+            "Daniel Blasco",
+            "Carlos Cetina",
+            "Jaime Font"
+          ]
+        },
+        {
+          "titulo": "SENSOLIVE: Variability Management and Digital Twins in Deficit Irrigation of Olive Groves",
+          "autores": [
+            "José Manuel Sánchez Ruiz",
+            "Francisco Sebastián Benítez Ruiz Díaz",
+            "Noelia López Durán",
+            "Miguel Ángel Olivero González",
+            "Francisco José Domínguez Mayo",
+            "Marta Sánchez Piñero",
+            "David Benavides Cuevas"
+          ]
+        }
+      ]
+    },
+    {
+      "hora": "15:30 - 16:30",
+      "Sesión 3 - SALA D": [
+        {
+          "titulo": "Unificación y Verificación Formal de Políticas de Seguridad en Kubernetes con Modelos de Características",
+          "autores": [
+            "Brian Alexander Flores López",
+            "José Miguel Horcas Aguilera",
+            "Lidia Fuentes Fernández"
+          ]
+        },
+        {
+          "titulo": "Pragmatic Random Sampling of Kconfig-based Systems: A Unified Approach",
+          "autores": [
+            "David Fernandez-Amoros",
+            "Ruben Heradio",
+            "Jose M. Horcas",
+            "Jose A. Galindo",
+            "David Benavides",
+            "Lidia Fuentes"
+          ]
+        },
+        {
+          "titulo": "Sustainability and performance trustworthiness of IoT monitoring software architectures in the Edge",
+          "autores": [
+            "Juan Sebastian Ochoa",
+            "Vanessa Rodríguez-Horcajo",
+            "Jennifer Pérez",
+            "Juan Garbajosa Sopeña",
+            "Norberto Cañas",
+            "Javier García-Martín",
+            "Daniel Guamán"
+          ]
+        },
+        {
+          "titulo": "UVengine: Derivación de artefactos configurables a partir de modelos de características en UVL",
+          "autores": [
+            "José Miguel Horcas",
+            "Mónica Pinto",
+            "Lidia Fuentes"
+          ]
+        },
+        {
+          "titulo": "Portfolio Evolution Analysis for SPL Scoping: Unveiling the dynamics with dedicated time series dashboards",
+          "autores": [
+            "Raul Medeiros",
+            "Oscar Diaz",
+            "Mustafa Al-Hajjaji",
+            "Michael Schulze"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2462 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Programa SISTEDES multitrack</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main id="sprog-root" class="sprog">
+    <h1 id="sprog-title" class="sprog-widget-title">Programa <span>SISTEDES</span></h1>
+
+    <div class="sprog-actions" aria-label="Acciones del programa">
+      <a class="sprog-button" href="#" data-sprog-home>Ver tabla general</a>
+      <button class="sprog-button" type="button" onclick="window.print()">Imprimir</button>
+    </div>
+
+    <div class="sprog-note">
+      Pulsa en un track de la tabla para abrir su programa detallado.
+      Si hay varios tracks en la misma celda, cada nombre es un enlace independiente.
+    </div>
+
+    <section id="sprog-app" aria-live="polite">
+      <div class="sprog-alert">Cargando programa...</div>
+    </section>
+  </main>
+
+  <script id="sprog-fallback-config" type="application/json">
+{
+  "title": "Programa SISTEDES",
+  "subtitle": "Córdoba (SPAIN)",
+  "year": 2026,
+  "month": 6,
+  "rooms": [
+    "SALA A",
+    "SALA B",
+    "SALA C",
+    "SALA D"
+  ],
+  "tracks": [
+    {
+      "id": "ISGD",
+      "short": "ISGD",
+      "name": "Ingeniería del Software y Gobierno del Dato",
+      "room": "SALA A",
+      "className": "sprog-slot--isgd",
+      "file": "data/tracks/ISGD.json"
+    },
+    {
+      "id": "AI4SE",
+      "short": "AI4SE",
+      "name": "Artificial Intelligence for Software Engineering",
+      "room": "SALA B",
+      "className": "sprog-slot--ai4se",
+      "file": "data/tracks/AI4SE.json"
+    },
+    {
+      "id": "ICD",
+      "short": "ICD",
+      "name": "Ingeniería, Ciencia y Datos",
+      "room": "SALA C",
+      "className": "sprog-slot--icd",
+      "file": "data/tracks/ICD.json"
+    },
+    {
+      "id": "METODOS",
+      "short": "MÉTODOS",
+      "name": "Métodos",
+      "room": "SALA D",
+      "className": "sprog-slot--metodos",
+      "file": "data/tracks/METODOS.json"
+    },
+    {
+      "id": "QUANTUM",
+      "short": "QUANTUM",
+      "name": "Quantum",
+      "room": "SALA A",
+      "className": "sprog-slot--quantum",
+      "file": "data/tracks/QUANTUM.json"
+    },
+    {
+      "id": "MCPS",
+      "short": "MCPS",
+      "name": "Métodos, Calidad y Pruebas del Software",
+      "room": "SALA B",
+      "className": "sprog-slot--mcps",
+      "file": "data/tracks/MCPS.json"
+    },
+    {
+      "id": "ISDM",
+      "short": "ISDM",
+      "name": "Ingeniería del Software Dirigida por Modelos",
+      "room": "SALA A",
+      "className": "sprog-slot--isdm",
+      "file": "data/tracks/ISDM.json"
+    },
+    {
+      "id": "ASV",
+      "short": "ASV",
+      "name": "ASV",
+      "room": "SALA D",
+      "className": "sprog-slot--asv",
+      "file": "data/tracks/ASV.json"
+    }
+  ],
+  "commonEvents": [
+    {
+      "day": "Martes 16 de Junio",
+      "time": "08:15 - 09:00",
+      "label": "Registro",
+      "className": "sprog-slot--registro"
+    },
+    {
+      "day": "Martes 16 de Junio",
+      "time": "10:30 - 11:00",
+      "label": "Pausa café",
+      "className": "sprog-slot--break"
+    },
+    {
+      "day": "Martes 16 de Junio",
+      "time": "13:30 - 15:00",
+      "label": "Almuerzo",
+      "className": "sprog-slot--lunch"
+    },
+    {
+      "day": "Martes 16 de Junio",
+      "time": "16:30 - 17:00",
+      "label": "Pausa café",
+      "className": "sprog-slot--break"
+    },
+    {
+      "day": "Miércoles 17 de Junio",
+      "time": "08:30 - 09:00",
+      "label": "Registro",
+      "className": "sprog-slot--registro"
+    },
+    {
+      "day": "Miércoles 17 de Junio",
+      "time": "10:30 - 11:00",
+      "label": "Pausa café",
+      "className": "sprog-slot--break"
+    },
+    {
+      "day": "Miércoles 17 de Junio",
+      "time": "13:30 - 15:00",
+      "label": "Almuerzo",
+      "className": "sprog-slot--lunch"
+    },
+    {
+      "day": "Miércoles 17 de Junio",
+      "time": "16:30 - 17:00",
+      "label": "Pausa café",
+      "className": "sprog-slot--break"
+    },
+    {
+      "day": "Jueves 18 de Junio",
+      "time": "10:30 - 11:00",
+      "label": "Pausa café",
+      "className": "sprog-slot--break"
+    },
+    {
+      "day": "Jueves 18 de Junio",
+      "time": "13:45 - 15:30",
+      "label": "Almuerzo",
+      "className": "sprog-slot--lunch"
+    }
+  ],
+  "options": {
+    "autoBuildSummary": true,
+    "showDiagnostics": true,
+    "hideEmptyRows": false
+  }
+}
+  </script>
+
+  <script id="sprog-embedded-track-data" type="application/json">
+{
+  "AI4SE": {
+    "Martes 16 de Junio": [
+      {
+        "hora": "9:00 - 10:30",
+        "Sesión 1: Mejora y Reparación Automática - SALA B": [
+          {
+            "titulo": "UMDA aplicado a la Mejora Automática del Software",
+            "autores": []
+          },
+          {
+            "titulo": "Ajuste de Modelos de Lenguaje Pequeños para la Refactorización Automática de Código",
+            "autores": []
+          },
+          {
+            "titulo": "Extendiendo un marco de remediación automática de accesibilidad basado en LLMs",
+            "autores": []
+          },
+          {
+            "titulo": "Revisión sistemática sobre la detección de mutantes equivalentes mediante aprendizaje automático",
+            "autores": []
+          },
+          {
+            "titulo": "Quality Assessment of Agentic AI Processes in Software Development Life Cycle",
+            "autores": []
+          }
+        ]
+      },
+      {
+        "hora": "15:00 - 16:30",
+        "Sesión 2: Aplicaciones en CPS, IoT y Testing - SALA B": [
+          {
+            "titulo": "Tratto: A Neuro-Symbolic Approach to Deriving Axiomatic Test Oracles",
+            "autores": []
+          },
+          {
+            "titulo": "SATORI: Static Test Oracle Generation for REST APIs",
+            "autores": []
+          },
+          {
+            "titulo": "Introducing Phylogenetics in Search-based Software Engineering",
+            "autores": []
+          },
+          {
+            "titulo": "Why Personalizing Deep Learning-Based Code Completion Tools Matters",
+            "autores": []
+          },
+          {
+            "titulo": "Un Enfoque Adaptativo para la Interpretación de Eventos de Seguridad en Sistemas Ciberfísicos",
+            "autores": []
+          },
+          {
+            "titulo": "Orquestación agentizada de inferencia contextual basada en RAG para ecosistemas digitales multidependientes",
+            "autores": []
+          }
+        ]
+      },
+      {
+        "hora": "17:00 - 18:00",
+        "Sesión 3: Infraestructura, Educación y Web - SALA B": [
+          {
+            "titulo": "Un sistema multiagente para el descubrimiento federado en la WoT",
+            "autores": []
+          },
+          {
+            "titulo": "Towards Test-Driven Synthesis of Behavioral Programs",
+            "autores": []
+          },
+          {
+            "titulo": "Hacia una web optimizada para la IA: estudio preliminar y pasos a seguir",
+            "autores": []
+          },
+          {
+            "titulo": "Learning Enabling Intelligent Assistants for Software Engineering Training",
+            "autores": []
+          }
+        ]
+      }
+    ],
+    "Miércoles 17 de Junio": [
+      {
+        "hora": "9:00 - 10:30",
+        "Sesión 4: Requisitos y Análisis de Sistemas - SALA B": [
+          {
+            "titulo": "Inteligencia Artificial Generativa para la Captura de Requisitos: Una Revisión Sistemática",
+            "autores": []
+          },
+          {
+            "titulo": "Estudio Comparativo de Modelos de Lenguaje para la Elicitación de Requisitos de Software",
+            "autores": []
+          },
+          {
+            "titulo": "Enfoque Multiobjetivo de Programación Lineal Entera para la Reducción Automática de la Complejidad Cognitiva",
+            "autores": []
+          },
+          {
+            "titulo": "Towards Understanding AI-Agent Traces in Open-Source Projects",
+            "autores": []
+          },
+          {
+            "titulo": "Hacia una evaluación de catálogos de requisitos de privacidad generados mediante IA",
+            "autores": []
+          }
+        ]
+      },
+      {
+        "hora": "15:00 - 16:30",
+        "Sesión 5: IA Agéntica y Ciclo de Vida - SALA B": [
+          {
+            "titulo": "Del Caos a Gherkin: El Papel del Vídeo en la Generación Agéntica de Especificaciones BDD",
+            "autores": []
+          },
+          {
+            "titulo": "Memento Mori: Sustainability of the Software Development Ecosystem in the Age of Agentic AI",
+            "autores": []
+          },
+          {
+            "titulo": "Más Allá del Código Funcional: Especificaciones de Calidad para Agentes basados en LLMs",
+            "autores": []
+          },
+          {
+            "titulo": "Can Explainable Artificial Intelligence Support Software Modelers in Model Comprehension?",
+            "autores": []
+          },
+          {
+            "titulo": "FlowRepair: Search-Based Automated Program Repair of CPS Controllers",
+            "autores": []
+          }
+        ]
+      }
+    ]
+  },
+  "ASV": {
+    "Jueves 18 de Junio 2026": [
+      {
+        "hora": "9:00 - 10:30",
+        "Sesión 1 - SALA D": [
+          {
+            "titulo": "Análisis de Modelos de Variabilidad con Grafos de Dependencias y Conflictos Transitivos Fuertes",
+            "autores": [
+              "Ruben Heradio",
+              "Luis Cambelo",
+              "Miguel Angel Olivero",
+              "Jose Manuel Sanchez",
+              "David Fernandez-Amoros"
+            ]
+          },
+          {
+            "titulo": "SPLALM. Un entorno de factorías de Lineas de Producto Software que aplica la ISO 26580",
+            "autores": [
+              "Antón Soto Ríos",
+              "Victor Juan Lamas Sardiña",
+              "Miguel Rodríguez Luaces"
+            ]
+          },
+          {
+            "titulo": "Seamless Data Migration between Database Schemas with DAMI-Framework: An Empirical Study on Developer Experience",
+            "autores": [
+              "Delfina Ramos-Vidal",
+              "Alejandro Cortiñas",
+              "Miguel R. Luaces",
+              "Oscar Pedreira",
+              "Ángeles Saavedra Places",
+              "Wesley K. G. Assunção"
+            ]
+          },
+          {
+            "titulo": "A Tool for Variability Management in Irrigation and Agriculture",
+            "autores": [
+              "Francisco Sebastian Benitez",
+              "José Manuel Sánchez Ruiz",
+              "David Romero Organvídez",
+              "Miguel Angel Olivero",
+              "José A. Galindo",
+              "Francisco José Domínguez-Mayo",
+              "David Benavides"
+            ]
+          },
+          {
+            "titulo": "Hacia la modularización de Lineas de Producto Software: un caso de estudio industrial",
+            "autores": [
+              "Victor Juan Lamas Sardiña",
+              "Alejandro Cortiñas",
+              "Miguel Rodríguez Luaces"
+            ]
+          }
+        ]
+      },
+      {
+        "hora": "11:00 - 12:30",
+        "Reunión TASOVA - SALA D": []
+      },
+      {
+        "hora": "12:30 - 13:30",
+        "Sesión 2 - SALA D": [
+          {
+            "titulo": "Cuantificando el conocimiento factual sobre el lenguaje UVL en los Modelos de Lenguaje",
+            "autores": [
+              "José Miguel Horcas",
+              "Joaquin Ballesteros",
+              "Mónica Pinto",
+              "Lidia Fuentes"
+            ]
+          },
+          {
+            "titulo": "Software Product Families from a Phylogenetics Perspective for Video Game Content Generation",
+            "autores": [
+              "Samuel Navarro",
+              "Jorge Chueca",
+              "Daniel Blasco",
+              "Carlos Cetina",
+              "Jaime Font"
+            ]
+          },
+          {
+            "titulo": "SENSOLIVE: Variability Management and Digital Twins in Deficit Irrigation of Olive Groves",
+            "autores": [
+              "José Manuel Sánchez Ruiz",
+              "Francisco Sebastián Benítez Ruiz Díaz",
+              "Noelia López Durán",
+              "Miguel Ángel Olivero González",
+              "Francisco José Domínguez Mayo",
+              "Marta Sánchez Piñero",
+              "David Benavides Cuevas"
+            ]
+          }
+        ]
+      },
+      {
+        "hora": "15:30 - 16:30",
+        "Sesión 3 - SALA D": [
+          {
+            "titulo": "Unificación y Verificación Formal de Políticas de Seguridad en Kubernetes con Modelos de Características",
+            "autores": [
+              "Brian Alexander Flores López",
+              "José Miguel Horcas Aguilera",
+              "Lidia Fuentes Fernández"
+            ]
+          },
+          {
+            "titulo": "Pragmatic Random Sampling of Kconfig-based Systems: A Unified Approach",
+            "autores": [
+              "David Fernandez-Amoros",
+              "Ruben Heradio",
+              "Jose M. Horcas",
+              "Jose A. Galindo",
+              "David Benavides",
+              "Lidia Fuentes"
+            ]
+          },
+          {
+            "titulo": "Sustainability and performance trustworthiness of IoT monitoring software architectures in the Edge",
+            "autores": [
+              "Juan Sebastian Ochoa",
+              "Vanessa Rodríguez-Horcajo",
+              "Jennifer Pérez",
+              "Juan Garbajosa Sopeña",
+              "Norberto Cañas",
+              "Javier García-Martín",
+              "Daniel Guamán"
+            ]
+          },
+          {
+            "titulo": "UVengine: Derivación de artefactos configurables a partir de modelos de características en UVL",
+            "autores": [
+              "José Miguel Horcas",
+              "Mónica Pinto",
+              "Lidia Fuentes"
+            ]
+          },
+          {
+            "titulo": "Portfolio Evolution Analysis for SPL Scoping: Unveiling the dynamics with dedicated time series dashboards",
+            "autores": [
+              "Raul Medeiros",
+              "Oscar Diaz",
+              "Mustafa Al-Hajjaji",
+              "Michael Schulze"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ICD": {
+    "Martes 16 de Junio": [
+      {
+        "hora": "09:00 - 10:30",
+        "Sesión 1: Inteligencia Artificial en Salud y Biometría": [
+          {
+            "titulo": "Bienvenida",
+            "autores": []
+          },
+          {
+            "titulo": "Plataforma de Inteligencia Artificial para la Detección Temprana de la Enfermedad de Alzheimer a través de la Voz (IAEAV)",
+            "autores": [
+              "Cristian Javier Vera Arenas",
+              "Javier Sanchis",
+              "Javier García-Sigüenza",
+              "Álvaro Navarro",
+              "Miguel A. Teruel",
+              "Ángel Pérez-Sempere",
+              "Juan Trujillo"
+            ]
+          },
+          {
+            "titulo": "BALIDA-AA: Diagnóstico diferencial de TDAH y TEA mediante Inteligencia Artificial y Realidad Extendida",
+            "autores": [
+              "Matías Díaz-Tornero",
+              "Ana Lavalle",
+              "Miguel A. Teruel",
+              "Nicolas Ruiz-Robledillo",
+              "Rosario Ferrer-Cascales",
+              "Juan Trujillo"
+            ]
+          },
+          {
+            "titulo": "A Decision Support System Based on Multi-head Convolutional and Recurrent Neural Networks for Assisting Physicians in Diagnosing ADHD",
+            "autores": [
+              "Javier Sanchis",
+              "Miguel A. Teruel",
+              "Juan Trujillo"
+            ]
+          },
+          {
+            "titulo": "Detección de estrés, ansiedad y depresión en voz: revisión y limitaciones",
+            "autores": [
+              "Ana I. Diaz-Perez",
+              "Maria Bermudez-Edo",
+              "María José Rodríguez-Fórtiz"
+            ]
+          },
+          {
+            "titulo": "Integration of a Large Language Model into the Electronic Health Record",
+            "autores": [
+              "Irene Sanchez-Montejo",
+              "Raquel Trillo-Lado",
+              "Raúl Lopez-Blasco"
+            ]
+          },
+          {
+            "titulo": "Metadata-Based Privacy Assessment for Mobile mHealth",
+            "autores": [
+              "Alejandro Pérez-Fuente",
+              "M. Mercedes Martínez-González",
+              "Amador Aparicio",
+              "Pablo A. Criado-Lozano"
+            ]
+          }
+        ]
+      },
+      {
+        "hora": "15:00 - 16:30",
+        "Sesión 2: Datos Espaciales, Movilidad y Territorios Inteligentes": [
+          {
+            "titulo": "Indexing and querying big spatio-textual data",
+            "autores": [
+              "Victor Suárez Garcia",
+              "Francisco Garcia-Garcia",
+              "Antonio Corral"
+            ]
+          },
+          {
+            "titulo": "Efficient indexing and querying spatial-keyword data in main memory",
+            "autores": [
+              "Raúl García-Muñoz",
+              "Antonio Corral",
+              "Francisco García-García",
+              "Michael Vassilakopoulos"
+            ]
+          },
+          {
+            "titulo": "Agregación de coberturas ráster sobre entidades vectoriales en arquitecturas federadas",
+            "autores": [
+              "Manuel A. Regueiro",
+              "David Martinez Casas",
+              "Shahed Al-Mobydeen",
+              "Andrea R. Presas",
+              "José R.R. Viqueira"
+            ]
+          },
+          {
+            "titulo": "Analysis and clustering of massive public transport data",
+            "autores": [
+              "Pablo Gutiérrez-Asorey",
+              "Manuel Oviedo-de la Fuente"
+            ]
+          },
+          {
+            "titulo": "Urban Mobility Data Analysis for Predictive Modeling: Exploiting Existing IoT Infrastructure",
+            "autores": [
+              "Samuel Monasterio",
+              "Ángel Guerrero",
+              "Pablo García Rodríguez",
+              "Mar Ávila",
+              "Aurora Cuartero",
+              "Andres Caro"
+            ]
+          },
+          {
+            "titulo": "Multivariate Data Fusion for Traffic Prediction in Smart Villages",
+            "autores": [
+              "Alberto Durán-López",
+              "Daniel Bolaños-Martinez",
+              "Maria Bermudez-Edo"
+            ]
+          },
+          {
+            "titulo": "Proyecto Gestservice: servicios inteligentes de movilidad basados en datos para empresas internacionales de alquiler de coches",
+            "autores": [
+              "Francisco Javier Alcaide",
+              "Mario Berrios",
+              "Carlos García-Martínez",
+              "Rafael Jurado",
+              "Ilias Naser",
+              "Aurora Ramírez",
+              "José Raúl Romero"
+            ]
+          }
+        ]
+      }
+    ],
+    "Miércoles 17 de Junio": [
+      {
+        "hora": "15:00 - 16:30",
+        "Sesión 3: Gobernanza, Calidad y Espacios de Datos": [
+          {
+            "titulo": "Gobernanza y \"FAIRificación\" de Datos I+D en Infraestructuras Científico-Tecnológicas Singulares",
+            "autores": [
+              "Beatriz Lorenzo González",
+              "Fernando Gualo Cejudo",
+              "Ana Mª Fermoso García"
+            ]
+          },
+          {
+            "titulo": "Evaluación operativa de la estabilidad estructural en espacios de datos federado",
+            "autores": [
+              "Carlos Mario Braga Ortuño",
+              "Manuel A. Serrano",
+              "Eduardo Fernandez-Medina"
+            ]
+          },
+          {
+            "titulo": "Bridging Islands of Data: Decentralized Trust and Interoperability Between ESAUTO-X y Catena-X",
+            "autores": [
+              "Iñaki Paz",
+              "Angel Yao",
+              "Mikel García",
+              "Carlos Díez",
+              "Joseba Alvaro"
+            ]
+          },
+          {
+            "titulo": "MEGIM-UNE. Metodología de gestión integral de metadatos alineada con UNE 0078: propuesta metodológica y ejemplo de aplicación industrial",
+            "autores": [
+              "Izaskun Cayon-Camarero",
+              "Fernando Gualo",
+              "Zunbeltz Izaola",
+              "Ismael Caballero"
+            ]
+          },
+          {
+            "titulo": "Propuesta de benchmark DQBench para la evaluación de rendimiento de IA Generativa en Calidad de Datos según UNE 0081:2023",
+            "autores": [
+              "César García Sáez",
+              "Fernando Gualo Cejudo",
+              "Ismael Caballero Muñoz-Reja"
+            ]
+          },
+          {
+            "titulo": "From Raw to Reliable Event Logs in Healthcare: Data Governance, Quality, and Standardization for Predictive Process Mining",
+            "autores": [
+              "Noelia Palomares",
+              "Reyes Grangel",
+              "María Jesús Valero-Chillerón"
+            ]
+          }
+        ]
+      },
+      {
+        "hora": "17:00 - 18:30",
+        "Sesión 4: IA Aplicada: Industria y Medio Ambiente": [
+          {
+            "titulo": "Estimación de la incertidumbre en modelos predictivos para la industria",
+            "autores": [
+              "Alejandro Budiño",
+              "David Mera",
+              "Álvaro Vázquez",
+              "Rubén Gijón"
+            ]
+          },
+          {
+            "titulo": "Using time series foundation models for few-shot remaining useful life prediction of aircraft engines",
+            "autores": [
+              "Ricardo Dintén",
+              "Marta Zorrilla"
+            ]
+          },
+          {
+            "titulo": "Implementation of long-term forecasting models in sugarcane for agricultural planning and yield goals setting",
+            "autores": [
+              "Joel Morales",
+              "David Mera",
+              "José Luis Quemé De León",
+              "José Manuel Cotos"
+            ]
+          },
+          {
+            "titulo": "Resolución del Problema Inverso en Tomografía de Impedancia Eléctrica 3D mediante Técnicas de Deep Learning y su Adaptación para Aplicaciones Forestales",
+            "autores": [
+              "Rubén Gijón Cañete",
+              "David Mera Pérez",
+              "David Luaces Cachaza",
+              "Alejandro González Santos"
+            ]
+          },
+          {
+            "titulo": "MyFlamma LiDAR Plugin for Wildfire Risk Assessment",
+            "autores": [
+              "Pablo Natera",
+              "David Caballero",
+              "Pablo Fernández-González",
+              "Fernando Broncano",
+              "Aurora Cuartero Sáez",
+              "Pablo García Rodríguez"
+            ]
+          },
+          {
+            "titulo": "Addressing significant challenges for animal detection in camera trap images: a novel deep learning-based approach",
+            "autores": [
+              "Margarita Mulero-Pázmány",
+              "Sandro Hurtado",
+              "Cristóbal Barba Gonzalez",
+              "María Luisa Antequera Gómez",
+              "Francisco Díaz Ruiz",
+              "Raimundo Real",
+              "Ismael Navas-Delgado",
+              "José Francisco Aldana Montes"
+            ]
+          },
+          {
+            "titulo": "Feasibility Study of an Electronic Nose as a Support Tool for Canine Agents",
+            "autores": [
+              "Raúl Martín-Romo",
+              "Pablo G. Rodríguez",
+              "Jesús Lozano",
+              "Alejandro Barrena",
+              "Pablo Natera",
+              "Cristina Brugera"
+            ]
+          }
+        ]
+      }
+    ],
+    "Jueves 18 de Junio": [
+      {
+        "hora": "09:00 - 10:30",
+        "Sesión 5: Procesamiento de Lenguaje Natural, LLMs y XAI": [
+          {
+            "titulo": "LLM on-device en el sector agrícola: hacia el estudio de viabilidad y retos de ingeniería",
+            "autores": [
+              "F. Javier González-Ontañón",
+              "Sergio Martin-Segura",
+              "Mario E. Suaza-Medina",
+              "Miguel Ángel Latre",
+              "F. Javier Zarazaga-Soria"
+            ]
+          },
+          {
+            "titulo": "Leveraging Large Language Models for the Automatic Implementation of Problems in Optimization Frameworks",
+            "autores": [
+              "José Francisco Aldana Martín",
+              "Juan J. Durillo",
+              "Maria Del Mar Roldan-Garcia",
+              "Antonio J. Nebro"
+            ]
+          },
+          {
+            "titulo": "Una técnica de perturbación para la explicabilidad de la IA en PLN",
+            "autores": [
+              "Álvaro Navarro",
+              "Javier García-Sigüenza",
+              "Javier Sanchis",
+              "Cristian Javier Vera-Arenas",
+              "Miguel A Teruel",
+              "Juan Trujillo"
+            ]
+          },
+          {
+            "titulo": "Learning Interpretable Sequence Classifiers through Evolved Regular Expression Patterns",
+            "autores": [
+              "Roberto Canduela",
+              "Alberto Fernández-Isabel",
+              "Javier M. Moguerza"
+            ]
+          },
+          {
+            "titulo": "SHAP-Based Explainable AI for Sustainable Resource Management in SmartPoliTech",
+            "autores": [
+              "José Pedro Martín",
+              "Pablo G. Rodríguez",
+              "Alberto López-Trigo",
+              "Mar Ávila",
+              "Pablo Natera"
+            ]
+          },
+          {
+            "titulo": "An integrated requirements framework for analytical and AI projects",
+            "autores": [
+              "Juan Trujillo",
+              "Ana Lavalle",
+              "Alejandro Reina-Reina",
+              "Jorge García-Carrasco",
+              "Alejandro Maté",
+              "Wolfgang Maaß"
+            ]
+          }
+        ]
+      },
+      {
+        "hora": "12:30 - 13:45",
+        "Sesión 6: Sistemas, Seguridad y Análisis de Datos Complejos": [
+          {
+            "titulo": "Incremental Checking of SQL Assertions in an RDBMS",
+            "autores": [
+              "Xavier Oriol",
+              "Ernest Teniente"
+            ]
+          },
+          {
+            "titulo": "A Study of FASTQ/A Compression Techniques",
+            "autores": [
+              "Rodrigo Blanco-Amoedo",
+              "Pablo Gutiérrez-Asorey",
+              "Elsa Martín-De Arribas",
+              "Yoel Z. Betancor"
+            ]
+          },
+          {
+            "titulo": "Una aproximación pangenómica para la recuperación y análisis de información musical",
+            "autores": [
+              "Cecilia Hernández",
+              "Susana Ladra",
+              "Juan R. López",
+              "Elsa Martín-De Arribas",
+              "Hilda Romero-Velo"
+            ]
+          },
+          {
+            "titulo": "Distinguishing Cyber-Attacks from Physical Faults in Water Systems Using Counterfactual Reasoning",
+            "autores": [
+              "Mohammadhossein Homaei",
+              "Inda Kreso",
+              "Ruben Molano",
+              "Belén Mª Ramírez Gabardino",
+              "Andrés Caro"
+            ]
+          },
+          {
+            "titulo": "Generación de Tráfico Sintético con GANs para Detección de Intrusiones",
+            "autores": [
+              "Óscar Mogollón-Gutiérrez",
+              "José Carlos Sancho Núñez",
+              "Mar Ávila",
+              "Alberto López Trigo",
+              "Andrés Caro"
+            ]
+          },
+          {
+            "titulo": "Refining satellite trajectories with celestial body features using neural networks",
+            "autores": [
+              "José Calderón",
+              "Daniel Ayala",
+              "Rafael Ayala",
+              "Luis Valencia-Cabrera",
+              "Inma Hernandez",
+              "David Ruiz"
+            ]
+          }
+        ]
+      },
+      {
+        "hora": "15:45 - 17:15",
+        "Sesión 7: Semántica, Grafos y Procesos de Negocio": [
+          {
+            "titulo": "¿Por qué sigue siendo difícil descubrir ontologías?",
+            "autores": [
+              "Jorge Rodriguez-Revello",
+              "Cristóbal Barba-González",
+              "Maciej Rybinski",
+              "Ismael Navas-Delgado"
+            ]
+          },
+          {
+            "titulo": "Hacia un modelo semántico FIWARE para conducción autónoma",
+            "autores": [
+              "Mario Martín-Pérez",
+              "Hugo Revuelta",
+              "Marta Zorrilla"
+            ]
+          },
+          {
+            "titulo": "Rethinking VCF Analysis: Biclique Graphs as a Bridge from Data to Knowledge",
+            "autores": [
+              "Elsa Martín-De Arribas",
+              "Pablo Gutiérrez-Asorey",
+              "Cecilia Hernández",
+              "Susana Ladra"
+            ]
+          },
+          {
+            "titulo": "Enabling the Application of Graph Neural Networks on Graphs With Unknown Connectivity",
+            "autores": [
+              "Jorge García-Carrasco",
+              "Alejandro Maté",
+              "Juan Trujillo"
+            ]
+          },
+          {
+            "titulo": "Acercando el cumplimiento normativo a la verificación de la conformidad en procesos de negocio",
+            "autores": [
+              "José Luis Cobo Ariza",
+              "Angel Jesús Varela Vaca",
+              "Diana Borrego Nuñez",
+              "María Teresa Gómez-López"
+            ]
+          },
+          {
+            "titulo": "Extracción de parámetros de simulación para procesos de negocio colaborativos",
+            "autores": [
+              "Joaquin Arregui Diaz",
+              "Belén Ramos Gutiérrez",
+              "Ángel Jesús Varela Vaca",
+              "Maria Teresa Gómez López"
+            ]
+          },
+          {
+            "titulo": "Cierre del track",
+            "autores": [],
+            "tipo": "Cierre"
+          }
+        ]
+      }
+    ]
+  },
+  "ISDM": {
+    "Jueves 2026": [
+      {
+        "hora": "09:00 - 10:30",
+        "Sesión 1: IA, ML y agentes en DSDM": [
+          {
+            "titulo": "Bienvenida",
+            "autores": []
+          },
+          {
+            "titulo": "Automation in Model-Driven Engineering: A look back, and ahead (TOSEM)",
+            "autores": [
+              "Burgueño",
+              "Di Ruscio",
+              "Sahraoui",
+              "Wimmer"
+            ]
+          },
+          {
+            "titulo": "ModelXGlue: a benchmarking framework for ML tools in MDE (SoSyM)",
+            "autores": [
+              "Hernández López",
+              "Sánchez Cuadrado",
+              "Rubei",
+              "Di Ruscio"
+            ]
+          },
+          {
+            "titulo": "RAG-Driven Agent Pipeline for SysML v2 Synthesis vs. Specialized LLMs",
+            "autores": [
+              "Olivert-Iserte",
+              "Cibrián",
+              "Álvarez-Rodríguez"
+            ]
+          },
+          {
+            "titulo": "Modeling the obsolescence of models (SoSyM)",
+            "autores": [
+              "Alfonso",
+              "Sottet",
+              "Brimont",
+              "Cabot"
+            ]
+          },
+          {
+            "titulo": "Low-code y no-code con BESSER para diseñar y desplegar aplicaciones web inteligentes",
+            "autores": [
+              "Alfonso",
+              "Sulejmani",
+              "Conrardy",
+              "Cabot"
+            ]
+          },
+          {
+            "titulo": "Margen / cierre de sesión",
+            "autores": []
+          }
+        ]
+      },
+      {
+        "hora": "15:00 - 16:30",
+        "Sesión 2: DSDM aplicado: dominios y soluciones": [
+          {
+            "titulo": "Automatizando el paso de Solidity a e³value: un puente tecnológico para facilitar la comprensión de contratos inteligentes",
+            "autores": [
+              "Gómez-Macías",
+              "Vara",
+              "Pérez-Blanco",
+              "Granada",
+              "De La Fuente"
+            ]
+          },
+          {
+            "titulo": "SimulateIoT-Services: A Simulation Framework for Assessing and Optimizing IoT Service and Resource Allocation (Elsevier IoT)",
+            "autores": [
+              "Díaz Cantero",
+              "Barriga Corchero",
+              "Pérez Toledano",
+              "Clemente"
+            ]
+          },
+          {
+            "titulo": "Desarrollo dirigido por modelos de aumentadores web para facilitar el consumo de datos abiertos medioambientales (IEEE Access)",
+            "autores": [
+              "González-Martínez",
+              "González-Mora",
+              "Garrigós",
+              "Mazón",
+              "Cecilia"
+            ]
+          },
+          {
+            "titulo": "The Software Diversity Card: A Framework for Reporting Diversity in Software Projects (IST)",
+            "autores": [
+              "Giner Miguélez",
+              "Morales",
+              "Cobos",
+              "Cánovas Izquierdo",
+              "Clarisó",
+              "Cabot"
+            ]
+          },
+          {
+            "titulo": "Towards a Model-based Framework for the Generation of Document Management Systems (DocuMenTor)",
+            "autores": [
+              "Abouelwafa",
+              "Gómez-Abajo",
+              "Arévalo Sarrate"
+            ]
+          },
+          {
+            "titulo": "Turno abierto — Hacia dónde vamos: futuro del taller, IA generativa y DSDM",
+            "autores": []
+          },
+          {
+            "titulo": "Cierre del taller",
+            "autores": []
+          }
+        ]
+      }
+    ]
+  },
+  "ISGD": {
+    "16 de Junio de 2026": [
+      {
+        "hora": "9:00 - 10:30",
+        "Sesión 1 - SALA A": [
+          {
+            "titulo": "Procesamiento de Eventos Complejos para Gemelos Digitales entrelazados",
+            "autores": [
+              "Manuel Cano-Crespo",
+              "Guadalupe Ortiz",
+              "Elena Navarro"
+            ]
+          },
+          {
+            "titulo": "MAS4DT: A novel proposal for developing Digital Twins following a Multi-Agent system approach",
+            "autores": [
+              "Elena Pretel",
+              "Luis Zhinin-Vera",
+              "Elena Navarro",
+              "Víctor López-Jaquero",
+              "Pascual González"
+            ]
+          },
+          {
+            "titulo": "Synchronization and consistency issues in distributed digital twins",
+            "autores": [
+              "Sergio Infante",
+              "Julia Robles",
+              "Cristian Martín",
+              "Bartolomé Rubio",
+              "Manuel Díaz"
+            ]
+          },
+          {
+            "titulo": "Ingeniería de la Capa Inteligente en Gemelos Digitales Energéticos: Integración de IA y Optimización",
+            "autores": [
+              "Rebeca Gutierrez",
+              "Maria Dolores de Acuña",
+              "Maria Jose Escalona Cuaresma"
+            ]
+          },
+          {
+            "titulo": "SCSN-DAC: Arquitectura de Simulación Ininterrumpida para Gemelos Digitales en Escenarios de Colapso",
+            "autores": [
+              "Sergio Vázquez-Pozo",
+              "Alejandro Gragera-Serradilla"
+            ]
+          }
+        ]
+      },
+      {
+        "hora": "15:00 - 16:30",
+        "Sesión 2 - SALA A": [
+          {
+            "titulo": "A model-driven approach to streamline the development of prescriptive services for digital twins",
+            "autores": [
+              "Arturo Barriga",
+              "José A. Barriga",
+              "Pablo A. Portillo",
+              "Adolfo Lozano-Tello",
+              "Pedro J. Clemente"
+            ]
+          },
+          {
+            "titulo": "IFMIF-DONES Maintenance Digital Twins Architecture using OpenTwins",
+            "autores": [
+              "Julia Robles",
+              "Pablo Salado",
+              "Cristian Martín",
+              "Manuel Díaz"
+            ]
+          },
+          {
+            "titulo": "PULSE: A Modular Framework for Predictive Energy Efficiency in Heterogeneous Data Centers",
+            "autores": [
+              "Daniel Flores-Martin",
+              "Felipe Lemus-Prieto",
+              "Juan Antonio Rico Gallego"
+            ]
+          },
+          {
+            "titulo": "IoT and Machine Learning for the Forecasting of Physiological Parameters of Crop Leaves",
+            "autores": [
+              "Arturo Barriga",
+              "Jose A. Barriga",
+              "Adolfo Lozano-Tello",
+              "María J. Moñino",
+              "Pedro J. Clemente"
+            ]
+          },
+          {
+            "titulo": "Hacia un Gemelo Digital Social para la interacción adaptativa con QTrobot en niños con Trastorno del Espectro Autista",
+            "autores": [
+              "Mónica Garrigós",
+              "Santiago Meliá",
+              "Gonzalo Lorenzo-Lledó"
+            ]
+          }
+        ]
+      },
+      {
+        "hora": "17:00 - 18:00",
+        "Sesión 3 - SALA A": [
+          {
+            "titulo": "Gemelo Digital para la Conservación del Castillo de Portezuelo",
+            "autores": [
+              "Ángel Macías",
+              "Javier Mateos-Bravo",
+              "Juan Pedro Cortés-Pérez",
+              "Sergio Laso",
+              "Javier Berrocal"
+            ]
+          },
+          {
+            "titulo": "A Tutorial on O-RAN Deployment Solutions for 5G: From Simulation to Emulated and Real Testbeds",
+            "autores": [
+              "Juan Luis Herrera",
+              "Sofia Montebugnoli",
+              "Domenico Scotece",
+              "Luca Foschini",
+              "Paolo Bellavista"
+            ]
+          },
+          {
+            "titulo": "MoON: framework para la emulación de la Computación Continua en el espacio exterior",
+            "autores": [
+              "Iván Sánchez-Cordero",
+              "Ángel Macías",
+              "Miguel A. García-Sevilla",
+              "Juan Luis Herrera",
+              "Sergio Laso",
+              "Cristina Vicente-Chicote",
+              "Juan A. Fraire",
+              "Óscar Ledesma",
+              "David Bernal",
+              "Julián Fernández",
+              "Javier Berrocal"
+            ]
+          },
+          {
+            "titulo": "A-PIGNN: Test-Time Training for Physics-Informed State Estimation in Non-Stationary Water Networks",
+            "autores": [
+              "Mohammadhossein Homaei",
+              "Óscar Mogollón Gutiérrez",
+              "Fernando Broncano",
+              "Andrés Caro",
+              "Mar Ávila"
+            ]
+          }
+        ]
+      }
+    ],
+    "17 de Junio de 2026": [
+      {
+        "hora": "9:00 - 10:30",
+        "Sesión 4 - SALA C": [
+          {
+            "titulo": "GEDICA-DAV: Arquitectura de Gemelo Digital para la Detección de Anomalías y Validación de Datos en EDAR",
+            "autores": [
+              "Javier Mateos-Bravo",
+              "Juan Pedro Cortés-Pérez",
+              "Javier Berrocal",
+              "Juan Luis Herrera"
+            ]
+          },
+          {
+            "titulo": "Digital Twins and Artificial Collective Intelligence: Synergies for the Future",
+            "autores": [
+              "Elena Pretel",
+              "Elena Navarro",
+              "Víctor Casamayor Pujol",
+              "Schahram Dustdar"
+            ]
+          },
+          {
+            "titulo": "Planificación con garantías cuantitativas en Gemelos Digitales de sCPS",
+            "autores": [
+              "Raquel Sánchez Salas",
+              "Javier Troya",
+              "Javier Cámara"
+            ]
+          },
+          {
+            "titulo": "Twins Among Shadows: Binding Human Digital Twins on Mobile",
+            "autores": [
+              "Carlos E. Cuesta",
+              "Paloma Cáceres",
+              "Elena Castro",
+              "José María Cavero",
+              "Dolores Cuadra",
+              "Almudena Sierra-Alonso",
+              "Belén Vela"
+            ]
+          },
+          {
+            "titulo": "Desarrollo de un Digital Twin para la Monitorización en Bucle Cerrado en Reproducción Asistida",
+            "autores": [
+              "Anastasiia Gorelova",
+              "Santiago Meliá"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "MCPS": {
+    "Jueves 18 de Junio": [
+      {
+        "hora": "9:00 - 10:25",
+        "Sesión 1: Calidad, testing y verificación de software": [
+          {
+            "titulo": "Bienvenida",
+            "autores": []
+          },
+          {
+            "titulo": "Early V&V in Knowledge-Centric Systems Engineering: Advances and Benefits in Practice",
+            "autores": [
+              "Jose Luis de la Vara",
+              "Juan Manuel Morote",
+              "Clara Ayora",
+              "Giovanni Giachetti",
+              "Luis Alonso",
+              "Roy Mendieta",
+              "David Muñoz",
+              "Ricardo Ruiz-Nolasco",
+              "Antonio González"
+            ]
+          },
+          {
+            "titulo": "State Field Coverage: A Metric for Oracle Quality",
+            "autores": [
+              "Facundo Molina",
+              "Nazareno Aguirre",
+              "Alessandra Gorla"
+            ]
+          },
+          {
+            "titulo": "Hacia una generación de pruebas más robusta: superando limitaciones de KLEE",
+            "autores": [
+              "Martín Nieto-Pinteño",
+              "Kevin Jesús Valle-Gómez",
+              "Inmaculada Medina-Bulo"
+            ]
+          },
+          {
+            "titulo": "RAG para asistir al tester en la prueba de consultas a bases de datos",
+            "autores": [
+              "Raquel Blanco",
+              "María José Suárez-Cabal",
+              "Javier Tuya",
+              "Claudio de la Riva Álvarez"
+            ]
+          },
+          {
+            "titulo": "Desafíos y limitaciones en la gestión de calidad en sistemas de aprendizaje automático en producción",
+            "autores": [
+              "Antoni Bennasar Garau",
+              "Jose David Pérez Cañellas",
+              "Antonio Crespí Tobeña",
+              "Maria Monserrat Barceló",
+              "Antoni Lluís Mesquida Calafat"
+            ]
+          },
+          {
+            "titulo": "Hacia un Marco Multidimensional para la Evaluación de la Calidad en PyMEs de Servicios: Un Caso de Estudio",
+            "autores": [
+              "Jaime Dionisio",
+              "Canela Juan",
+              "Sofía Canela",
+              "Valeria de Castro",
+              "Esperanza Marcos"
+            ]
+          }
+        ]
+      },
+      {
+        "hora": "12:30 - 13:35",
+        "Sesión 2: Ingeniería de software inteligente y evolución de sistemas": [
+          {
+            "titulo": "SofIA Demonstration: An Ecosystem of Tools for Traceable and Industry-Oriented Software Development",
+            "autores": [
+              "Julián Alberto García García",
+              "Javier Gutierrez",
+              "Sergio Firmenich",
+              "Laura García",
+              "María José Escalona Cuaresma"
+            ]
+          },
+          {
+            "titulo": "Tool Demonstration of SofIA-AI: Generating Use Cases and Classes from Interviews with LLMs",
+            "autores": [
+              "Leticia Trujillo",
+              "Iñigo Ruiz Marchueta",
+              "Paula Peña Fernández",
+              "Julián Alberto García García",
+              "María José Escalona Cuaresma"
+            ]
+          },
+          {
+            "titulo": "Una propuesta preliminar para modelar requisitos software en escenarios virtuales aplicando el paradigma MDE",
+            "autores": [
+              "Elena Enamorado-Díaz",
+              "Julián Alberto García García",
+              "Jörg Thomaschewski",
+              "M.J. Escalona"
+            ]
+          },
+          {
+            "titulo": "Prueba de mutaciones predictiva entre lenguajes de programación: preguntas de investigación",
+            "autores": [
+              "Pedro Delgado-Pérez",
+              "Sara Balderas-Díaz",
+              "Gabriel Guerrero-Contreras",
+              "Inmaculada Medina-Bulo"
+            ]
+          },
+          {
+            "titulo": "Data migration for column family database evolution",
+            "autores": [
+              "Pablo Suárez-Otero",
+              "Michael Mior",
+              "María José Suárez-Cabal",
+              "Javier Tuya"
+            ]
+          },
+          {
+            "titulo": "Towards Continuous Improvement of DevSecOps in the Energy Management Domain",
+            "autores": [
+              "Ana Lourdes Sanz Alonso",
+              "Sergio Segura Rueda"
+            ]
+          }
+        ]
+      },
+      {
+        "hora": "15:45 - 16:55",
+        "Sesión 3: Gamificación, sistemas inteligentes y seguridad": [
+          {
+            "titulo": "Towards Green Game Software Engineering: A Comparative Analysis of Energy Consumption Between the Widespread Unity and Unreal Video Game Engines",
+            "autores": [
+              "Carlos Pérez Caseiras",
+              "Javier Verón Mérida",
+              "Francisca Pérez Pérez",
+              "Mª Angeles Moraga",
+              "Coral Calero",
+              "Carlos Cetina"
+            ]
+          },
+          {
+            "titulo": "Identificación de Patrones de Interacción en Entornos Gamificados Mediante Minería de Procesos",
+            "autores": [
+              "José-Antonio Leal-Moreno",
+              "Alejandro Calderón",
+              "Esther-Lydia Silva-Ramírez",
+              "Mercedes Ruiz"
+            ]
+          },
+          {
+            "titulo": "Sistema de recomendación basado en Machine Learning para Gamificación Adaptativa",
+            "autores": [
+              "Felix Emilio Garcia Borges",
+              "Esther-Lydia Silva-Ramírez",
+              "Alejandro Calderón",
+              "Mercedes Ruiz"
+            ]
+          },
+          {
+            "titulo": "Hacia el fortalecimiento de la ciberseguridad en la cadena de suministro de software",
+            "autores": [
+              "Carlos Villarrubia",
+              "Antonio Santos-Olmo",
+              "Juan Manuel Vara",
+              "Eduardo Fernández-Medina"
+            ]
+          },
+          {
+            "titulo": "SARA: Herramienta para la Predicción de Riesgos y Recomendación de Personal en Proyectos Software Remotos",
+            "autores": [
+              "Javier Rodríguez-Castellano",
+              "Julio Suárez",
+              "Aurora Vizcaíno",
+              "Félix Óscar García"
+            ]
+          },
+          {
+            "titulo": "Cierre",
+            "autores": []
+          }
+        ]
+      }
+    ]
+  },
+  "METODOS": {
+    "16 de Junio de 2026": [
+      {
+        "hora": "17:00 - 18:00",
+        "Sesión 1 - SALA D": [
+          {
+            "titulo": "Bienvenida",
+            "autores": []
+          },
+          {
+            "titulo": "Comparing Desktop, Virtual and Augmented Reality Gaming Environments for ADHD Attention Measurement",
+            "autores": [
+              "Alejandro Panagiotidis-Arrizabalaga",
+              "Miguel A. Teruel",
+              "Ana Lavalle",
+              "Juan Trujillo",
+              "Elena Navarro",
+              "Pascual González"
+            ]
+          },
+          {
+            "titulo": "Protocolo de validación empírica del proceso de modelado ML para el pronóstico de QoS",
+            "autores": [
+              "Ximena Guerron",
+              "Silvia Abrahão",
+              "Emilio Insfran",
+              "Marta Fernández-Diego"
+            ]
+          },
+          {
+            "titulo": "Software Composition Analysis and Supply Chain Security in Apache Projects: an Empirical Study",
+            "autores": [
+              "Sabato Nocera",
+              "Sira Vegas",
+              "Giuseppe Scanniello",
+              "Natalia Juristo"
+            ]
+          }
+        ]
+      }
+    ],
+    "17 de Junio de 2026": [
+      {
+        "hora": "9:00 - 10:30",
+        "Sesión 2 - SALA D": [
+          {
+            "titulo": "A Multiple Case Study on Reuse in Game Software Engineering",
+            "autores": [
+              "Jose Ignacio Trasobares",
+              "África Domingo",
+              "Rodrigo Casamayor",
+              "Daniel Blasco",
+              "Carlos Cetina"
+            ]
+          },
+          {
+            "titulo": "Impulsando el pensamiento crítico en los jefes de proyecto IT: autoevaluación de la competencia",
+            "autores": [
+              "Miguel Ballesteros",
+              "Manuel Resinas"
+            ]
+          },
+          {
+            "titulo": "Aggregating Empirical Evidence from Data Strategies Studies: A Case on Model Quantization",
+            "autores": [
+              "Santiago del Rey",
+              "Paulo Sérgio Medeiros dos Santos",
+              "Guilherme Horta Travassos",
+              "Xavier Franch",
+              "Silverio Martínez-Fernández"
+            ]
+          },
+          {
+            "titulo": "Evaluating the Impact of AI-Simulated Clients on Novice Performance in Elicitation Interviews",
+            "autores": [
+              "José Antonio Parejo",
+              "Amador Durán Toro",
+              "Pablo Fernandez"
+            ]
+          },
+          {
+            "titulo": "Uso de la IA en Revisiones Sistemáticas de la Literatura: ¿confiable o viable? Un estudio preliminar y replicable",
+            "autores": [
+              "Francisco Javier Pérez-Blanco",
+              "Juan Manuel Vara",
+              "Carlos Villarrubia",
+              "David Granada",
+              "Cristian Gómez-Macías"
+            ]
+          },
+          {
+            "titulo": "Towards a Quality of Experience Model and Evaluation Framework for Immersive Metaverse Environments: A Systematic Literature Review",
+            "autores": [
+              "Lara Ihlbrock",
+              "Silvia Abrahão",
+              "Emilio Insfran",
+              "Kai Rommel"
+            ]
+          }
+        ]
+      },
+      {
+        "hora": "15:00 - 16:30",
+        "Sesión 3 - SALA D": [
+          {
+            "titulo": "Revisiones sistemáticas aumentadas por IA: del rigor metodológico a la automatización responsable",
+            "autores": [
+              "José Raúl Romero Salguero (Universidad de Córdoba)",
+              "José Antonio de la Torre López (Universidad de Córdoba)"
+            ]
+          }
+        ]
+      },
+      {
+        "hora": "17:00 - 18:30",
+        "Tutoriales - SALA D": [
+          {
+            "titulo": "Cierre",
+            "autores": []
+          }
+        ]
+      }
+    ]
+  },
+  "QUANTUM": {
+    "Miércoles 16 de Junio de 2026": [
+      {
+        "hora": "9:00 - 10:30",
+        "Sesión 1 - SALA A": [
+          {
+            "titulo": "Quality Requirements for Quantum Software Engineering: A Systematic Mapping Study",
+            "autores": [
+              "Nil Macià",
+              "Marc Oriol"
+            ]
+          },
+          {
+            "titulo": "Swift Quantum: Library and Application for Quantum Computing Research and Education",
+            "autores": [
+              "Carlos Rodríguez-Domínguez",
+              "Andrés Silva-Pérez",
+              "Natalia Moreno",
+              "Laiachi El Kaoutit",
+              "Antonio Lasanta",
+              "Miguel J. Hornos"
+            ]
+          },
+          {
+            "titulo": "Programando la abstracción cuántica con registros como unidad de información",
+            "autores": [
+              "David Chamizo",
+              "Juan M. Murillo"
+            ]
+          },
+          {
+            "titulo": "Pipeline para la validación de protocolos de comunicación post-cuántica basados en TF-QKD",
+            "autores": [
+              "Sergio Vázquez-Pozo",
+              "Juan Manuel Murillo"
+            ]
+          }
+        ]
+      },
+      {
+        "hora": "12:30 - 13:30",
+        "Sesión 2 - SALA A": [
+          {
+            "titulo": "A Qiskit Library for Quantum Search and Boolean Satisfiability Oracles",
+            "autores": [
+              "Diego Alonso",
+              "Matías Hernández",
+              "Pedro Sánchez",
+              "Bárbara Álvarez"
+            ]
+          },
+          {
+            "titulo": "Uso de Programación Genética Basada en Gramáticas para la construcción de oráculos cuánticos optimizados",
+            "autores": [
+              "Javier Zayas-Gallardo",
+              "Francisco Chicano",
+              "Juan Manuel Murillo"
+            ]
+          },
+          {
+            "titulo": "Planificador de consultas cuántico para SQLite basado en QUBO",
+            "autores": [
+              "Eduardo Gutiérrez",
+              "Sebastián Villarroya"
+            ]
+          }
+        ]
+      },
+      {
+        "hora": "15:00 - 16:30",
+        "Sesión 3 - SALA A": [
+          {
+            "titulo": "QCRAFT AutoScheduler: A library for maximizing qubit utilization on QPUs through quantum circuit multiprogramming (Summary)",
+            "autores": [
+              "Jaime Alvarado-Valiente",
+              "Javier Romero-Alvarez",
+              "Jorge Casco-Seco",
+              "Enrique Moguel",
+              "Jose Garcia-Alonso",
+              "Juan Manuel Murillo"
+            ]
+          },
+          {
+            "titulo": "Optimización del uso espacial de qubits en Plataformas QCaaS mediante Islas Cuánticas",
+            "autores": [
+              "Antonio Jesus Sanchez-Gil",
+              "Javier Romero-Alvarez",
+              "Jaime Alvarado-Valiente",
+              "Francisco Moreno-Velez",
+              "Enrique Moguel",
+              "Jose Garcia-Alonso",
+              "Juan M. Murillo"
+            ]
+          },
+          {
+            "titulo": "Benchmarking de Simuladores Cuánticos de Vector de Estado en HPC",
+            "autores": [
+              "Jesús Cerrudo Herrera",
+              "Ahmed Ziabat Ziabat",
+              "Pablo Polo Alcántara",
+              "Juan Antonio Rico Gallego"
+            ]
+          },
+          {
+            "titulo": "Benchmarking Quantum Simulators for Grover’s Algorithm in SCAYLE: A Comparative Study with Classical Systems",
+            "autores": [
+              "Santiago Merino Bajo",
+              "Lidia Sánchez-González",
+              "Cristina Esteban",
+              "Álvaro Fanego",
+              "Hilde Perez"
+            ]
+          },
+          {
+            "titulo": "Profundidad efectiva en algoritmos de Quantum Machine Learning: atenuación del gradiente en VQAs bajo ruido NISQ",
+            "autores": [
+              "Carlos Mario Braga Ortuño",
+              "Aurelio J. Horneros",
+              "Manuel A. Serrano",
+              "Eduardo Fernandez-Medina"
+            ]
+          }
+        ]
+      }
+    ],
+    "Jueves 17 de Junio de 2026": [
+      {
+        "hora": "9:00 - 10:30",
+        "Sesión 4 - SALA A": [
+          {
+            "titulo": "Algoritmos cuánticos variacionales modulares, componibles y reutilizables: propuesta para la estructuración de circuitos cuánticos",
+            "autores": [
+              "Sergio Astorga",
+              "Carlos Canal",
+              "Juan Manuel Murillo"
+            ]
+          },
+          {
+            "titulo": "Combinatorial Optimization with Quantum Computers",
+            "autores": [
+              "Francisco Chicano",
+              "Gabriel Luque",
+              "Zakaria Abdelmoiz Dahi",
+              "Rodrigo Gil-Merino"
+            ]
+          },
+          {
+            "titulo": "Operationalizing Quantum Optimization for Multi-Depot Logistics: A Hybrid service-oriented Approach",
+            "autores": [
+              "José Antonio Parejo",
+              "Antonio Ruiz-Cortés"
+            ]
+          },
+          {
+            "titulo": "Topologías de Inspiración Cuántica para la Detección de Anomalías en Minería de Procesos",
+            "autores": [
+              "Joaquin Oltra",
+              "Juan Manuel Murillo"
+            ]
+          },
+          {
+            "titulo": "Computación Cuántica Aplicada a la Clasificación del Peso en Corderos",
+            "autores": [
+              "Elena Ondicol",
+              "Virginia Riego Del Castillo",
+              "Lidia Sánchez-González"
+            ]
+          }
+        ]
+      },
+      {
+        "hora": "12:30 - 13:45",
+        "Sesión 5 - SALA A": [
+          {
+            "titulo": "AQUILA. Asistente para la generación inteligente de arquitecturas de software clásico-cuántico",
+            "autores": [
+              "Francisco Javier Espada",
+              "Ricardo Pérez-Castillo"
+            ]
+          },
+          {
+            "titulo": "QSauron - Entorno QSE automático para generar, desarrollar y probar circuitos cuánticos",
+            "autores": [
+              "Samuel Rodero-Ballesteros",
+              "Patricia Díez-Herguido",
+              "Yolanda Galván-Redondo",
+              "Macario Polo",
+              "Manuel A. Serrano",
+              "Ignacio García Rodríguez de Guzmán"
+            ]
+          },
+          {
+            "titulo": "HASH - Herramienta de Análisis para Sistemas Híbridos (Clásico-Cuánticos)",
+            "autores": [
+              "Álvaro Manuel Aparicio Morales",
+              "Jose Garcia-Alonso",
+              "Javier Cámara",
+              "Juan Manuel Murillo"
+            ]
+          },
+          {
+            "titulo": "Exploring design patterns in quantum software: a case study",
+            "autores": [
+              "Miriam Fernández-Osuna",
+              "Ricardo Pérez-Castillo",
+              "José Antonio Cruz-Lemus",
+              "Michal Baczyk",
+              "Mario Piattini"
+            ]
+          },
+          {
+            "titulo": "Herramienta visual para la depuración de circuitos cuánticos",
+            "autores": [
+              "Javier Romero-Alvarez",
+              "Jaime Alvarado-Valiente",
+              "Enrique Moguel",
+              "Jose Garcia-Alonso",
+              "Ignacio García-Rodríguez",
+              "Macario Polo",
+              "Manuel A. Serrano",
+              "Juan M. Murillo"
+            ]
+          }
+        ]
+      },
+      {
+        "hora": "15:00 - 16:30",
+        "Sesión 6 - SALA A": [
+          {
+            "titulo": "Orquestación consciente del tiempo de respuesta en workflows híbridos cuántico-clásicos dentro del Cloud Continuum",
+            "autores": [
+              "Adrian Navas",
+              "Enrique Moguel",
+              "Juan Luis Herrera",
+              "Javier Berrocal",
+              "Jose Garcia-Alonso",
+              "Juan Manuel Murillo"
+            ]
+          },
+          {
+            "titulo": "QuBind: A Multi-Metric Approach for Optimal Quantum Service Selection",
+            "autores": [
+              "Adrián Romero-Flores",
+              "Alfonso Marquez-Chamorro",
+              "Antonio Ruiz-Cortés"
+            ]
+          },
+          {
+            "titulo": "Validación y evaluación de calidad en una arquitectura híbrida cuántico-clásica: estudio aplicado a clasificación de señales EEG",
+            "autores": [
+              "Jesús Alejandro Montes Medina",
+              "Huizilopoztli Luna García",
+              "Jose Garcia Alonso",
+              "Jorge Alejandro Morgan Benita",
+              "Carlos Humberto Espino Salinas",
+              "Jesús Andrés Sandoval Bringas"
+            ]
+          },
+          {
+            "titulo": "Entorno para la evaluación de la analizabilidad de sistemas híbridos (clásico-cuánticos)",
+            "autores": [
+              "Ana Díaz-Muñoz",
+              "Javier Verdugo",
+              "Moisés Rodríguez",
+              "José A. Cruz-Lemus",
+              "Rafael Martínez-Gasca",
+              "Mario Piattini"
+            ]
+          },
+          {
+            "titulo": "Explorando redes neuronales recurrentes cuánticas en medicina del sueño",
+            "autores": [
+              "José Daniel Viqueira Cao",
+              "Alejandro Mayorga",
+              "Samuel Magaz",
+              "Eduardo Mosqueira",
+              "Andrés Gómez",
+              "Diego Álvarez"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+  </script>
+
+  <script>
+    const CONFIG_URL = "data/programa-config.json";
+
+    const app = document.getElementById("sprog-app");
+    const title = document.getElementById("sprog-title");
+
+    const fallbackConfig = JSON.parse(document.getElementById("sprog-fallback-config").textContent);
+    const embeddedTrackData = JSON.parse(document.getElementById("sprog-embedded-track-data").textContent);
+
+    const state = {
+      config: null,
+      tracks: [],
+      sessions: [],
+      errors: [],
+      info: []
+    };
+
+    const SPANISH_WEEKDAYS = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+    const SPANISH_MONTHS = {
+      enero: 1,
+      febrero: 2,
+      marzo: 3,
+      abril: 4,
+      mayo: 5,
+      junio: 6,
+      julio: 7,
+      agosto: 8,
+      septiembre: 9,
+      setiembre: 9,
+      octubre: 10,
+      noviembre: 11,
+      diciembre: 12
+    };
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function normalizeText(value) {
+      return String(value || "")
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+        .trim();
+    }
+
+    function compactTime(value) {
+      return normalizeText(value).replace(/\s+/g, "");
+    }
+
+    function parseTimeStart(range) {
+      const raw = String(range || "").split("-")[0].trim();
+      const match = raw.match(/(\d{1,2}):(\d{2})/);
+      if (!match) return 99999;
+      return Number(match[1]) * 60 + Number(match[2]);
+    }
+
+    function parseTimeEnd(range) {
+      const raw = String(range || "").split("-")[1]?.trim() || "";
+      const match = raw.match(/(\d{1,2}):(\d{2})/);
+      if (!match) return parseTimeStart(range);
+      return Number(match[1]) * 60 + Number(match[2]);
+    }
+
+    function normalizeTimeLabel(range) {
+      return String(range || "")
+        .replace(/\s*-\s*/g, " - ")
+        .replace(/^0(\d:)/, "$1")
+        .trim();
+    }
+
+    function sameTime(a, b) {
+      return compactTime(a) === compactTime(b);
+    }
+
+    function unique(values) {
+      return [...new Set(values.filter(Boolean))];
+    }
+
+    function canonicalDay(day) {
+      const raw = String(day || "").trim();
+      const normalized = normalizeText(raw);
+
+      const monthName = Object.keys(SPANISH_MONTHS).find(name => normalized.includes(name));
+      const month = monthName ? SPANISH_MONTHS[monthName] : (state.config?.month || 6);
+      const yearMatch = normalized.match(/\b(20\d{2})\b/);
+      const year = yearMatch ? Number(yearMatch[1]) : (state.config?.year || 2026);
+
+      const numberMatch = normalized.match(/\b(\d{1,2})\b/);
+
+      if (numberMatch) {
+        const dayNumber = Number(numberMatch[1]);
+        const date = new Date(Date.UTC(year, month - 1, dayNumber));
+        const weekday = SPANISH_WEEKDAYS[date.getUTCDay()];
+        const displayMonth = monthName
+          ? monthName.charAt(0).toUpperCase() + monthName.slice(1)
+          : "Junio";
+        return `${weekday} ${dayNumber} de ${displayMonth}`;
+      }
+
+      const weekdayToDay = {
+        lunes: 15,
+        martes: 16,
+        miercoles: 17,
+        jueves: 18,
+        viernes: 19,
+        sabado: 20,
+        domingo: 21
+      };
+
+      const weekdayKey = Object.keys(weekdayToDay).find(key => normalized.includes(key));
+      if (weekdayKey) {
+        const dayNumber = weekdayToDay[weekdayKey];
+        const date = new Date(Date.UTC(year, month - 1, dayNumber));
+        const weekday = SPANISH_WEEKDAYS[date.getUTCDay()];
+        return `${weekday} ${dayNumber} de Junio`;
+      }
+
+      return raw;
+    }
+
+    function parseDaySort(day) {
+      const normalized = normalizeText(day);
+      const numberMatch = normalized.match(/\b(\d{1,2})\b/);
+      const number = numberMatch ? Number(numberMatch[1]) : 99;
+      return number;
+    }
+
+    async function fetchJson(url) {
+      const resolvedUrl = new URL(url, window.location.href).href;
+
+      try {
+        const response = await fetch(url, { cache: "no-store" });
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status} ${response.statusText}`);
+        }
+        return { ok: true, data: await response.json(), url: resolvedUrl };
+      } catch (error) {
+        return { ok: false, data: null, url: resolvedUrl, error };
+      }
+    }
+
+    function parseSessionKey(key) {
+      const pieces = String(key).split(/\s+-\s+/);
+      const last = pieces[pieces.length - 1]?.trim() || "";
+      const hasRoom = /^(sala|aula)\b/i.test(last);
+      const room = hasRoom ? last.toUpperCase() : "";
+      const titleText = hasRoom ? pieces.slice(0, -1).join(" - ").trim() : String(key).trim();
+      const match = titleText.match(/ses[ií]ón\s*(\d+)/i);
+      const number = match ? Number(match[1]) : null;
+
+      return {
+        title: titleText,
+        room,
+        number
+      };
+    }
+
+    function getPaperAuthors(paper) {
+      if (!paper) return "";
+
+      if (Array.isArray(paper.autores)) {
+        return paper.autores
+          .map(author => {
+            if (typeof author === "string") return author;
+            if (author && typeof author === "object") return author.nombre || author.name || author.apellidos || "";
+            return "";
+          })
+          .filter(Boolean)
+          .join(", ");
+      }
+
+      if (typeof paper.autores === "string") return paper.autores.trim();
+      return "";
+    }
+
+    function flattenTrack(track, data) {
+      const sessions = [];
+      let fallbackNumber = 0;
+
+      Object.entries(data || {}).forEach(([day, entries]) => {
+        (entries || []).forEach(entry => {
+          const time = normalizeTimeLabel(entry.hora || "");
+
+          Object.entries(entry).forEach(([key, value]) => {
+            if (key === "hora") return;
+            if (!Array.isArray(value)) return;
+
+            fallbackNumber += 1;
+            const parsed = parseSessionKey(key);
+            const code = parsed.number ? `S${parsed.number}` : `S${fallbackNumber}`;
+
+            sessions.push({
+              id: `${track.id}-${code}`,
+              trackId: track.id,
+              trackShort: track.short || track.id,
+              trackName: track.name || track.id,
+              trackClass: track.className || "",
+              code,
+              day: canonicalDay(day),
+              originalDay: day,
+              time,
+              title: parsed.title,
+              room: parsed.room || track.room || "SALA PENDIENTE",
+              papers: value
+            });
+          });
+        });
+      });
+
+      return sessions;
+    }
+
+    async function init() {
+      const configResult = await fetchJson(CONFIG_URL);
+      state.config = configResult.ok ? configResult.data : fallbackConfig;
+
+      if (!configResult.ok) {
+        state.info.push(`No se pudo cargar ${configResult.url}; usando configuración embebida en index.html.`);
+      } else {
+        state.info.push(`Configuración cargada: ${configResult.url}`);
+      }
+
+      title.innerHTML = `${escapeHtml(state.config.title || "Programa")} <span>${escapeHtml(state.config.subtitle || "")}</span>`;
+
+      const tracks = [];
+      const allSessions = [];
+
+      for (const track of (state.config.tracks || [])) {
+        const result = await fetchJson(track.file);
+        let data = result.data;
+        let source = result.url;
+        let loaded = result.ok;
+
+        if (!loaded && embeddedTrackData[track.id]) {
+          data = embeddedTrackData[track.id];
+          source = "datos embebidos en index.html";
+          loaded = true;
+          state.info.push(`${track.id}: no se pudo cargar ${result.url}; usando datos embebidos.`);
+        }
+
+        if (!loaded) {
+          state.errors.push(`${track.id}: no se pudo cargar ${result.url} (${result.error?.message || "error desconocido"}).`);
+        } else {
+          state.info.push(`${track.id}: cargado desde ${source}.`);
+        }
+
+        const sessions = data ? flattenTrack(track, data) : [];
+
+        tracks.push({
+          ...track,
+          loaded: Boolean(data),
+          source,
+          sessions
+        });
+
+        allSessions.push(...sessions);
+      }
+
+      state.tracks = tracks;
+      state.sessions = allSessions;
+
+      route();
+    }
+
+    function getTrack(trackId) {
+      return state.tracks.find(track => track.id === trackId);
+    }
+
+    function getRooms() {
+      const configured = state.config.rooms || [];
+      const fromSessions = unique(state.sessions.map(session => session.room));
+      const rooms = unique([...configured, ...fromSessions]);
+
+      return rooms.sort((a, b) => {
+        const order = ["SALA A", "SALA B", "SALA C", "SALA D", "SALA E", "SALA PENDIENTE"];
+        const ai = order.indexOf(a);
+        const bi = order.indexOf(b);
+        if (ai !== -1 || bi !== -1) return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi);
+        return a.localeCompare(b, "es");
+      });
+    }
+
+    function getDays() {
+      const days = unique([
+        ...state.sessions.map(session => session.day),
+        ...(state.config.commonEvents || []).map(event => canonicalDay(event.day))
+      ]);
+
+      return days.sort((a, b) => parseDaySort(a) - parseDaySort(b));
+    }
+
+    function getRowsForDay(day) {
+      const sessionRows = state.sessions
+        .filter(session => session.day === day)
+        .map(session => ({
+          type: "session",
+          time: session.time,
+          sortStart: parseTimeStart(session.time),
+          sortEnd: parseTimeEnd(session.time)
+        }));
+
+      const commonRows = (state.config.commonEvents || [])
+        .map(event => ({ ...event, day: canonicalDay(event.day), time: normalizeTimeLabel(event.time) }))
+        .filter(event => event.day === day)
+        .map(event => ({
+          type: "span",
+          time: event.time,
+          sortStart: parseTimeStart(event.time),
+          sortEnd: parseTimeEnd(event.time),
+          label: event.label,
+          href: event.href,
+          className: event.className || "sprog-slot--general-light",
+          meta: event.meta
+        }));
+
+      const byKey = new Map();
+
+      [...sessionRows, ...commonRows].forEach(row => {
+        const key = `${row.type}|${compactTime(row.time)}|${row.label || ""}`;
+        if (!byKey.has(key)) byKey.set(key, row);
+      });
+
+      return [...byKey.values()].sort((a, b) => {
+        if (a.sortStart !== b.sortStart) return a.sortStart - b.sortStart;
+        if (a.type === b.type) return a.sortEnd - b.sortEnd;
+        return a.type === "span" ? -1 : 1;
+      });
+    }
+
+    function sessionsForCell(day, time, room) {
+      return state.sessions.filter(session =>
+        session.day === day &&
+        sameTime(session.time, time) &&
+        session.room === room
+      );
+    }
+
+    function renderTrackLinks(sessions) {
+      return `
+        <span class="sprog-cell-links">
+          ${sessions.map((session, index) => {
+            const joiner = index < sessions.length - 1 ? `<span aria-hidden="true">+</span>` : "";
+            return `<a href="#${escapeHtml(session.id)}" title="${escapeHtml(session.title)}">${escapeHtml(session.trackShort)}</a>${joiner}`;
+          }).join("")}
+        </span>
+      `;
+    }
+
+    function classForSessions(sessions) {
+      if (!sessions.length) return "sprog-slot--empty";
+      const classes = unique(sessions.map(session => session.trackClass).filter(Boolean));
+      if (classes.length === 1) return classes[0];
+      return "sprog-slot--joint";
+    }
+
+    function renderSummaryCell(day, row, room) {
+      const sessions = sessionsForCell(day, row.time, room);
+
+      if (!sessions.length) {
+        return `<td class="sprog-slot--empty"><span class="sprog-empty-mark">—</span></td>`;
+      }
+
+      const content = sessions.map(session => `
+        <div>
+          <span class="sprog-track">${renderTrackLinks([session])}</span>
+          <span class="sprog-meta">${escapeHtml(session.title)}</span>
+        </div>
+      `).join("");
+
+      return `<td class="${escapeHtml(classForSessions(sessions))}">${content}</td>`;
+    }
+
+    function renderSummary() {
+      const days = getDays();
+      const rooms = getRooms();
+
+      if (!days.length || !state.sessions.length) {
+        app.innerHTML = `
+          <div class="sprog-alert">
+            No se han cargado sesiones. Comprueba que los JSON están en <code>data/tracks/</code>
+            y que sus nombres coinciden exactamente con <code>data/programa-config.json</code>.
+          </div>
+          ${renderDiagnostics()}
+        `;
+        return;
+      }
+
+      app.innerHTML = `
+        ${days.map(day => {
+          const rows = getRowsForDay(day);
+
+          return `
+            <section class="sprog-day">
+              <h2 class="sprog-day-title">${escapeHtml(day)} <span>${escapeHtml(state.config.subtitle || "")}</span></h2>
+              <div class="sprog-table-wrap">
+                <table class="sprog-table">
+                  <thead>
+                    <tr>
+                      <th scope="col"><span class="sprog-head-main">HORA / LUGAR</span></th>
+                      ${rooms.map(room => `
+                        <th scope="col"><span class="sprog-head-main">${escapeHtml(room)}</span></th>
+                      `).join("")}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${rows.map(row => {
+                      if (row.type === "span") {
+                        const label = row.href
+                          ? `<a href="${escapeHtml(row.href)}">${escapeHtml(row.label || "")}</a>`
+                          : escapeHtml(row.label || "");
+
+                        return `
+                          <tr>
+                            <th class="sprog-time" scope="row">${escapeHtml(row.time)}</th>
+                            <td class="${escapeHtml(row.className || "sprog-slot--general-light")}" colspan="${rooms.length}">
+                              <span class="sprog-track">${label}</span>
+                              ${row.meta ? `<span class="sprog-meta">${escapeHtml(row.meta)}</span>` : ""}
+                            </td>
+                          </tr>
+                        `;
+                      }
+
+                      return `
+                        <tr>
+                          <th class="sprog-time" scope="row">${escapeHtml(row.time)}</th>
+                          ${rooms.map(room => renderSummaryCell(day, row, room)).join("")}
+                        </tr>
+                      `;
+                    }).join("")}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          `;
+        }).join("")}
+        ${renderDiagnostics()}
+      `;
+    }
+
+    function renderDiagnostics() {
+      if (!state.config?.options?.showDiagnostics) return "";
+
+      const items = [...state.errors, ...state.info];
+
+      if (!items.length) return "";
+
+      return `
+        <details class="sprog-debug">
+          <summary>Diagnóstico de carga</summary>
+          <ul>
+            ${items.map(item => `<li>${escapeHtml(item)}</li>`).join("")}
+          </ul>
+        </details>
+      `;
+    }
+
+    function renderTrackDetail(trackId, focusSessionId = null) {
+      const track = getTrack(trackId);
+
+      if (!track) {
+        renderSummary();
+        return;
+      }
+
+      if (!track.loaded || !track.sessions.length) {
+        app.innerHTML = `
+          <section class="sprog--detail">
+            <div class="sprog-detail-head">
+              <h2>${escapeHtml(track.short || track.id)}</h2>
+              <p>${escapeHtml(track.name || "")}</p>
+            </div>
+            <div class="sprog-alert">
+              No se ha cargado el JSON de este track. Ruta esperada:
+              <code>${escapeHtml(new URL(track.file || "", window.location.href).href)}</code>.
+              Comprueba mayúsculas/minúsculas y que el archivo existe en GitHub Pages.
+            </div>
+            ${renderDiagnostics()}
+          </section>
+        `;
+        return;
+      }
+
+      const sessions = [...track.sessions].sort((a, b) => {
+        const dayCompare = parseDaySort(a.day) - parseDaySort(b.day);
+        if (dayCompare !== 0) return dayCompare;
+        return parseTimeStart(a.time) - parseTimeStart(b.time);
+      });
+
+      const days = unique(sessions.map(session => session.day))
+        .sort((a, b) => parseDaySort(a) - parseDaySort(b));
+
+      app.innerHTML = `
+        <section class="sprog--detail">
+          <header class="sprog-detail-head">
+            <h2>${escapeHtml(track.short || track.id)} · ${escapeHtml(track.name || track.id)}</h2>
+            <p>${sessions.length} sesiones · fuente: <code>${escapeHtml(track.source || track.file || "")}</code></p>
+            <nav class="sprog-session-nav" aria-label="Sesiones del track">
+              ${sessions.map(session => `
+                <a href="#${escapeHtml(session.id)}">${escapeHtml(session.code)} · ${escapeHtml(session.day)} · ${escapeHtml(session.time)}</a>
+              `).join("")}
+            </nav>
+          </header>
+
+          ${days.map(day => {
+            const daySessions = sessions.filter(session => session.day === day);
+
+            return `
+              <section class="sprog-day">
+                <h3 class="sprog-day-title">${escapeHtml(day)}</h3>
+                <div class="sprog-table-wrap">
+                  <table class="sprog-table">
+                    <tbody>
+                      ${daySessions.map(session => renderSessionRow(session)).join("")}
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+            `;
+          }).join("")}
+          ${renderDiagnostics()}
+        </section>
+      `;
+
+      if (focusSessionId) {
+        requestAnimationFrame(() => {
+          const element = document.getElementById(focusSessionId);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+      }
+    }
+
+    function renderSessionRow(session) {
+      const papers = session.papers || [];
+
+      return `
+        <tr id="${escapeHtml(session.id)}">
+          <th class="sprog-time" scope="row">${escapeHtml(session.time)}</th>
+          <td class="sprog-session-detail">
+            <span class="sprog-track--large">${escapeHtml(session.code)} · ${escapeHtml(session.title)}</span>
+            <span class="sprog-meta">${escapeHtml(session.room || "")}</span>
+            ${papers.length ? `
+              <ol class="sprog-paper-list">
+                ${papers.map(paper => {
+                  const authors = getPaperAuthors(paper);
+                  return `
+                    <li>
+                      <span class="sprog-paper-title">${escapeHtml(paper.titulo || "Sin título")}</span>
+                      ${authors ? `<span class="sprog-authors">${escapeHtml(authors)}</span>` : ""}
+                    </li>
+                  `;
+                }).join("")}
+              </ol>
+            ` : `<p class="sprog-meta">Sin ponencias listadas para esta entrada.</p>`}
+          </td>
+        </tr>
+      `;
+    }
+
+    function renderGeneralDetail(hash) {
+      const label = hash.replace(/^general-/, "").replaceAll("-", " ");
+      app.innerHTML = `
+        <section class="sprog-general-detail">
+          <h2>${escapeHtml(label.charAt(0).toUpperCase() + label.slice(1))}</h2>
+          <p>Esta entrada general todavía no tiene detalle configurado.</p>
+        </section>
+      `;
+    }
+
+    function route() {
+      const hash = decodeURIComponent(window.location.hash.replace(/^#/, ""));
+
+      if (!hash) {
+        renderSummary();
+        return;
+      }
+
+      if (hash.startsWith("general-")) {
+        renderGeneralDetail(hash);
+        return;
+      }
+
+      const session = state.sessions.find(item => item.id === hash);
+      if (session) {
+        renderTrackDetail(session.trackId, session.id);
+        return;
+      }
+
+      const track = getTrack(hash);
+      if (track) {
+        renderTrackDetail(track.id);
+        return;
+      }
+
+      renderSummary();
+    }
+
+    document.querySelector("[data-sprog-home]").addEventListener("click", event => {
+      event.preventDefault();
+      history.pushState("", document.title, window.location.pathname + window.location.search);
+      renderSummary();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    window.addEventListener("hashchange", route);
+    init();
+  </script>
+</body>
+</html>

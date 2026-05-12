@@ -1,0 +1,187 @@
+{
+  "Jueves 18 de Junio": [
+    {
+      "hora": "9:00 - 10:25",
+      "Sesión 1: Calidad, testing y verificación de software": [
+        {
+          "titulo": "Bienvenida",
+          "autores": []
+        },
+        {
+          "titulo": "Early V&V in Knowledge-Centric Systems Engineering: Advances and Benefits in Practice",
+          "autores": [
+            "Jose Luis de la Vara",
+            "Juan Manuel Morote",
+            "Clara Ayora",
+            "Giovanni Giachetti",
+            "Luis Alonso",
+            "Roy Mendieta",
+            "David Muñoz",
+            "Ricardo Ruiz-Nolasco",
+            "Antonio González"
+          ]
+        },
+        {
+          "titulo": "State Field Coverage: A Metric for Oracle Quality",
+          "autores": [
+            "Facundo Molina",
+            "Nazareno Aguirre",
+            "Alessandra Gorla"
+          ]
+        },
+        {
+          "titulo": "Hacia una generación de pruebas más robusta: superando limitaciones de KLEE",
+          "autores": [
+            "Martín Nieto-Pinteño",
+            "Kevin Jesús Valle-Gómez",
+            "Inmaculada Medina-Bulo"
+          ]
+        },
+        {
+          "titulo": "RAG para asistir al tester en la prueba de consultas a bases de datos",
+          "autores": [
+            "Raquel Blanco",
+            "María José Suárez-Cabal",
+            "Javier Tuya",
+            "Claudio de la Riva Álvarez"
+          ]
+        },
+        {
+          "titulo": "Desafíos y limitaciones en la gestión de calidad en sistemas de aprendizaje automático en producción",
+          "autores": [
+            "Antoni Bennasar Garau",
+            "Jose David Pérez Cañellas",
+            "Antonio Crespí Tobeña",
+            "Maria Monserrat Barceló",
+            "Antoni Lluís Mesquida Calafat"
+          ]
+        },
+        {
+          "titulo": "Hacia un Marco Multidimensional para la Evaluación de la Calidad en PyMEs de Servicios: Un Caso de Estudio",
+          "autores": [
+            "Jaime Dionisio",
+            "Canela Juan",
+            "Sofía Canela",
+            "Valeria de Castro",
+            "Esperanza Marcos"
+          ]
+        }
+      ]
+    },
+    {
+      "hora": "12:30 - 13:35",
+      "Sesión 2: Ingeniería de software inteligente y evolución de sistemas": [
+        {
+          "titulo": "SofIA Demonstration: An Ecosystem of Tools for Traceable and Industry-Oriented Software Development",
+          "autores": [
+            "Julián Alberto García García",
+            "Javier Gutierrez",
+            "Sergio Firmenich",
+            "Laura García",
+            "María José Escalona Cuaresma"
+          ]
+        },
+        {
+          "titulo": "Tool Demonstration of SofIA-AI: Generating Use Cases and Classes from Interviews with LLMs",
+          "autores": [
+            "Leticia Trujillo",
+            "Iñigo Ruiz Marchueta",
+            "Paula Peña Fernández",
+            "Julián Alberto García García",
+            "María José Escalona Cuaresma"
+          ]
+        },
+        {
+          "titulo": "Una propuesta preliminar para modelar requisitos software en escenarios virtuales aplicando el paradigma MDE",
+          "autores": [
+            "Elena Enamorado-Díaz",
+            "Julián Alberto García García",
+            "Jörg Thomaschewski",
+            "M.J. Escalona"
+          ]
+        },
+        {
+          "titulo": "Prueba de mutaciones predictiva entre lenguajes de programación: preguntas de investigación",
+          "autores": [
+            "Pedro Delgado-Pérez",
+            "Sara Balderas-Díaz",
+            "Gabriel Guerrero-Contreras",
+            "Inmaculada Medina-Bulo"
+          ]
+        },
+        {
+          "titulo": "Data migration for column family database evolution",
+          "autores": [
+            "Pablo Suárez-Otero",
+            "Michael Mior",
+            "María José Suárez-Cabal",
+            "Javier Tuya"
+          ]
+        },
+        {
+          "titulo": "Towards Continuous Improvement of DevSecOps in the Energy Management Domain",
+          "autores": [
+            "Ana Lourdes Sanz Alonso",
+            "Sergio Segura Rueda"
+          ]
+        }
+      ]
+    },
+    {
+      "hora": "15:45 - 16:55",
+      "Sesión 3: Gamificación, sistemas inteligentes y seguridad": [
+        {
+          "titulo": "Towards Green Game Software Engineering: A Comparative Analysis of Energy Consumption Between the Widespread Unity and Unreal Video Game Engines",
+          "autores": [
+            "Carlos Pérez Caseiras",
+            "Javier Verón Mérida",
+            "Francisca Pérez Pérez",
+            "Mª Angeles Moraga",
+            "Coral Calero",
+            "Carlos Cetina"
+          ]
+        },
+        {
+          "titulo": "Identificación de Patrones de Interacción en Entornos Gamificados Mediante Minería de Procesos",
+          "autores": [
+            "José-Antonio Leal-Moreno",
+            "Alejandro Calderón",
+            "Esther-Lydia Silva-Ramírez",
+            "Mercedes Ruiz"
+          ]
+        },
+        {
+          "titulo": "Sistema de recomendación basado en Machine Learning para Gamificación Adaptativa",
+          "autores": [
+            "Felix Emilio Garcia Borges",
+            "Esther-Lydia Silva-Ramírez",
+            "Alejandro Calderón",
+            "Mercedes Ruiz"
+          ]
+        },
+        {
+          "titulo": "Hacia el fortalecimiento de la ciberseguridad en la cadena de suministro de software",
+          "autores": [
+            "Carlos Villarrubia",
+            "Antonio Santos-Olmo",
+            "Juan Manuel Vara",
+            "Eduardo Fernández-Medina"
+          ]
+        },
+        {
+          "titulo": "SARA: Herramienta para la Predicción de Riesgos y Recomendación de Personal en Proyectos Software Remotos",
+          "autores": [
+            "Javier Rodríguez-Castellano",
+            "Julio Suárez",
+            "Aurora Vizcaíno",
+            "Félix Óscar García"
+          ]
+        },
+        {
+          "titulo": "Cierre",
+          "autores": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "Jueves 2026": [
+    {
+      "hora": "09:00 - 10:30",
+      "Sesión 1: IA, ML y agentes en DSDM": [
+        {
+          "titulo": "Bienvenida",
+          "autores": []
+        },
+        {
+          "titulo": "Automation in Model-Driven Engineering: A look back, and ahead (TOSEM)",
+          "autores": [
+            "Burgueño",
+            "Di Ruscio",
+            "Sahraoui",
+            "Wimmer"
+          ]
+        },
+        {
+          "titulo": "ModelXGlue: a benchmarking framework for ML tools in MDE (SoSyM)",
+          "autores": [
+            "Hernández López",
+            "Sánchez Cuadrado",
+            "Rubei",
+            "Di Ruscio"
+          ]
+        },
+        {
+          "titulo": "RAG-Driven Agent Pipeline for SysML v2 Synthesis vs. Specialized LLMs",
+          "autores": [
+            "Olivert-Iserte",
+            "Cibrián",
+            "Álvarez-Rodríguez"
+          ]
+        },
+        {
+          "titulo": "Modeling the obsolescence of models (SoSyM)",
+          "autores": [
+            "Alfonso",
+            "Sottet",
+            "Brimont",
+            "Cabot"
+          ]
+        },
+        {
+          "titulo": "Low-code y no-code con BESSER para diseñar y desplegar aplicaciones web inteligentes",
+          "autores": [
+            "Alfonso",
+            "Sulejmani",
+            "Conrardy",
+            "Cabot"
+          ]
+        },
+        {
+          "titulo": "Margen / cierre de sesión",
+          "autores": []
+        }
+      ]
+    },
+    {
+      "hora": "15:00 - 16:30",
+      "Sesión 2: DSDM aplicado: dominios y soluciones": [
+        {
+          "titulo": "Automatizando el paso de Solidity a e³value: un puente tecnológico para facilitar la comprensión de contratos inteligentes",
+          "autores": [
+            "Gómez-Macías",
+            "Vara",
+            "Pérez-Blanco",
+            "Granada",
+            "De La Fuente"
+          ]
+        },
+        {
+          "titulo": "SimulateIoT-Services: A Simulation Framework for Assessing and Optimizing IoT Service and Resource Allocation (Elsevier IoT)",
+          "autores": [
+            "Díaz Cantero",
+            "Barriga Corchero",
+            "Pérez Toledano",
+            "Clemente"
+          ]
+        },
+        {
+          "titulo": "Desarrollo dirigido por modelos de aumentadores web para facilitar el consumo de datos abiertos medioambientales (IEEE Access)",
+          "autores": [
+            "González-Martínez",
+            "González-Mora",
+            "Garrigós",
+            "Mazón",
+            "Cecilia"
+          ]
+        },
+        {
+          "titulo": "The Software Diversity Card: A Framework for Reporting Diversity in Software Projects (IST)",
+          "autores": [
+            "Giner Miguélez",
+            "Morales",
+            "Cobos",
+            "Cánovas Izquierdo",
+            "Clarisó",
+            "Cabot"
+          ]
+        },
+        {
+          "titulo": "Towards a Model-based Framework for the Generation of Document Management Systems (DocuMenTor)",
+          "autores": [
+            "Abouelwafa",
+            "Gómez-Abajo",
+            "Arévalo Sarrate"
+          ]
+        },
+        {
+          "titulo": "Turno abierto — Hacia dónde vamos: futuro del taller, IA generativa y DSDM",
+          "autores": []
+        },
+        {
+          "titulo": "Cierre del taller",
+          "autores": []
+        }
+      ]
+    }
+  ]
+}

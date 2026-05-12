@@ -1,0 +1,680 @@
+/* =========================
+Programa SISTEDES / JCIS
+========================= */
+
+.sprog {
+width: 100%;
+max-width: none;
+margin: 0 0 2.5rem;
+font-family: inherit;
+}
+
+.sprog-day {
+width: 100%;
+max-width: none;
+}
+
+.sprog-day-title {
+margin: 0 0 1rem;
+font-size: 1.45rem;
+font-weight: 700;
+line-height: 1.25;
+}
+
+.sprog-day-title span {
+font-weight: 500;
+}
+
+.sprog-table-wrap {
+width: 100%;
+max-width: none;
+overflow-x: visible;
+}
+
+.sprog-table {
+width: 100%;
+max-width: none;
+border-collapse: collapse;
+table-layout: auto;
+}
+
+.sprog-table th,
+.sprog-table td {
+border: 1px solid #ffffff;
+padding: 0.75rem;
+vertical-align: middle;
+text-align: center;
+word-break: normal;
+overflow-wrap: normal;
+hyphens: none;
+}
+
+.sprog-table thead th {
+background-color: #4f7272;
+font-weight: 700;
+}
+
+.sprog-time {
+width: 115px;
+min-width: 115px;
+background-color: #4f7272;
+color: #4f7272;
+font-weight: 700;
+white-space: nowrap;
+}
+
+.titulo-tabla a{
+color:#ffffff;
+
+}
+
+/* =========================
+Textos internos
+========================= */
+
+.sprog-head-main,
+.sprog-head-room,
+.sprog-track,
+.sprog-meta {
+display: block;
+}
+
+.sprog-head-main {
+font-size: 1rem;
+line-height: 1.2;
+font-weight: 700;
+}
+
+.sprog-head-room {
+margin-top: 0.25rem;
+font-size: 0.78rem;
+line-height: 1.2;
+font-weight: 400;
+}
+
+.sprog-head-room a {
+color: #ffffff;
+text-decoration: underline;
+}
+
+.sprog-track {
+font-size: 0.95rem;
+line-height: 1.25;
+font-weight: 700;
+}
+
+.sprog-meta {
+margin-top: 0.3rem;
+font-size: 0.82rem;
+line-height: 1.25;
+font-weight: 500;
+}
+
+.sprog-meta a {
+color: inherit;
+text-decoration: underline;
+}
+
+/* =========================
+Colores de sesiones
+========================= */
+
+/* Columnas 1-4: JISBD */
+.sprog-slot--jisbd {
+background-color: #ccdb73;
+color: #1f2933;
+}
+
+/* Columna 5: Aula Institucional / PROLE */
+.sprog-slot--prole {
+background-color: #ffdfad;
+color: #1f2933;
+}
+
+/* Columna 6: Aula Emilio Varela */
+.sprog-slot--jcis {
+background-color: #9b8fc4;
+color: #1f2933;
+}
+
+/* Celdas vacías */
+.sprog-slot--empty {
+background-color: transparent;
+color: inherit;
+}
+
+/* Celda vacía dentro de Aula Emilio Varela */
+.sprog-slot--empty.sprog-slot--emilio {
+background-color: #9b8fc4;
+}
+
+/* =========================
+Filas transversales
+========================= */
+
+/* Registro, pausa café, almuerzo y mascletá */
+.sprog-slot--general-light,
+.sprog-slot--break,
+.sprog-slot--lunch {
+background-color: #ccf5ff;
+color: #1f2933;
+font-weight: 700;
+}
+
+.sprog-slot--general-light a,
+.sprog-slot--break a,
+.sprog-slot--lunch a,
+.sprog-slot--general-light .sprog-meta,
+.sprog-slot--break .sprog-meta,
+.sprog-slot--lunch .sprog-meta {
+color: #1f2933;
+}
+
+/* Sesiones generales */
+.sprog-slot--general {
+background-color: #009aab;
+color: #ffffff;
+font-weight: 700;
+}
+
+.sprog-slot--general a,
+.sprog-slot--general .sprog-meta {
+color: #ffffff;
+}
+
+/* Premios SISTEDES */
+.sprog-slot--awards {
+background-color: #009aab;
+color: #ffffff;
+font-weight: 700;
+}
+
+.sprog-slot--awards a,
+.sprog-slot--awards .sprog-meta {
+color: #ffffff;
+}
+
+/* =========================
+Escritorio ancho
+========================= */
+
+@media (min-width: 1200px) {
+.sprog-table th,
+.sprog-table td {
+padding: 0.85rem;
+}
+
+.sprog-head-main {
+font-size: 1.05rem;
+}
+
+.sprog-track {
+font-size: 1rem;
+}
+
+.sprog-meta {
+font-size: 0.86rem;
+}
+}
+
+/* =========================
+Móvil / tablet
+========================= */
+
+@media (max-width: 900px) {
+.sprog-table-wrap {
+overflow-x: auto;
+}
+
+.sprog-table {
+min-width: 1050px;
+}
+
+.sprog-table th,
+.sprog-table td {
+padding: 0.65rem;
+}
+}
+
+.sprog--detail {
+max-width: 980px;
+margin: 0 auto;
+}
+
+.sprog--detail .sprog-table-wrap {
+width: 100%;
+}
+
+.sprog--detail .sprog-table {
+width: 100%;
+}
+
+.sprog--detail .sprog-time {
+width: 150px;
+white-space: nowrap;
+}
+
+.sprog--detail .sprog-session-detail {
+text-align: left;
+}
+
+.sprog--detail .sprog-session-detail .sprog-track {
+display: block;
+margin-bottom: 0.25rem;
+}
+
+.sprog--detail .sprog-session-detail p.sprog-meta {
+margin: 0.85rem 0 0;
+display: block;
+}
+
+.sprog-track--large {
+font-size: 1.25rem;
+font-weight: 700;
+margin-bottom: 0.5rem;
+color:#006b7a;
+}
+
+.sprog-authors {
+font-weight: regular;
+}
+
+/* =========================
+Ajustes añadidos para widget embebible
+========================= */
+
+/* Correcciones pequeñas sobre el CSS recibido */
+.sprog-table thead th {
+color: #ffffff;
+}
+
+.sprog-time {
+color: #ffffff;
+}
+
+.sprog-slot--prole {
+background-color: #ffdfad;
+}
+
+/* Cabecera y controles del widget */
+.sprog-widget-title {
+margin: 0 0 2.5rem;
+text-align: center;
+font-size: 1.55rem;
+font-weight: 700;
+line-height: 1.25;
+color: #333333;
+}
+
+.sprog-widget-title span,
+.sprog-day-title span {
+color: #1769aa;
+font-weight: 700;
+}
+
+.sprog-actions {
+display: flex;
+flex-wrap: wrap;
+gap: 0.6rem;
+align-items: center;
+justify-content: center;
+margin: 0 0 1.25rem;
+}
+
+.sprog-button {
+border: 1px solid #4f7272;
+border-radius: 999px;
+background: #ffffff;
+color: #244747;
+cursor: pointer;
+font: inherit;
+font-weight: 700;
+padding: 0.45rem 0.8rem;
+text-decoration: none;
+}
+
+.sprog-button:hover,
+.sprog-button:focus {
+background: #eef7f7;
+text-decoration: none;
+}
+
+.sprog-note {
+margin: 0 auto 1.5rem;
+max-width: 980px;
+padding: 0.8rem 1rem;
+border-left: 5px solid #009aab;
+background: #e8fbff;
+color: #1f2933;
+font-size: 0.95rem;
+}
+
+/* Paleta aproximada de la captura */
+.sprog-slot--registro {
+background-color: #f4d6f4;
+color: #1f2933;
+font-weight: 700;
+}
+
+.sprog-slot--icd {
+background-color: #f8e2d3;
+color: #1f2933;
+}
+
+.sprog-slot--ai4se {
+background-color: #eef3a9;
+color: #1f2933;
+}
+
+.sprog-slot--mcps {
+background-color: #fff3cc;
+color: #1f2933;
+}
+
+.sprog-slot--isgd {
+background-color: #d6efcf;
+color: #1f2933;
+}
+
+.sprog-slot--metodos {
+background-color: #d9e5fb;
+color: #1f2933;
+}
+
+.sprog-slot--quantumx {
+background-color: #efd0f5;
+color: #1f2933;
+}
+
+.sprog-slot--joint {
+background:
+linear-gradient(45deg, rgba(238,243,169,1) 0 25%, rgba(255,243,204,1) 25% 50%, rgba(238,243,169,1) 50% 75%, rgba(255,243,204,1) 75% 100%);
+color: #1f2933;
+}
+
+.sprog-slot--empty {
+min-height: 2.4rem;
+}
+
+.sprog-slot--missing {
+opacity: 0.72;
+}
+
+.sprog-cell-links {
+display: inline-flex;
+gap: 0.35rem;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.sprog-cell-links a {
+color: inherit;
+text-decoration: underline;
+font-weight: 700;
+}
+
+.sprog-detail-head {
+margin: 0 0 1.25rem;
+text-align: center;
+}
+
+.sprog-detail-head h2 {
+margin: 0 0 0.4rem;
+color: #006b7a;
+font-size: 1.55rem;
+}
+
+.sprog-detail-head p {
+margin: 0;
+color: #4b5563;
+}
+
+.sprog-session-nav {
+display: flex;
+flex-wrap: wrap;
+gap: 0.45rem;
+justify-content: center;
+margin: 1rem 0 1.4rem;
+}
+
+.sprog-session-nav a {
+border: 1px solid #d8e0e0;
+border-radius: 999px;
+padding: 0.35rem 0.65rem;
+color: #006b7a;
+text-decoration: none;
+background: #ffffff;
+font-weight: 700;
+}
+
+.sprog-session-nav a:hover {
+background: #eef7f7;
+}
+
+.sprog-paper-list {
+margin: 0.75rem 0 0;
+padding-left: 1.25rem;
+}
+
+.sprog-paper-list li {
+margin: 0.55rem 0;
+}
+
+.sprog-paper-title {
+font-weight: 700;
+}
+
+.sprog-authors {
+display: block;
+margin-top: 0.15rem;
+color: #4b5563;
+font-weight: 400;
+}
+
+.sprog-alert {
+max-width: 980px;
+margin: 1rem auto;
+padding: 1rem;
+border-radius: 0.5rem;
+background: #fff7ed;
+color: #92400e;
+}
+
+.sprog-hidden {
+display: none !important;
+}
+
+/* =========================
+Ajustes GitHub Pages / multitrack dinámico
+========================= */
+
+.sprog-table thead th { color: #ffffff; }
+.sprog-time { color: #ffffff; }
+.sprog-slot--prole { background-color: #ffdfad; }
+
+.sprog-widget-title {
+  margin: 0 0 2.25rem;
+  text-align: center;
+  font-size: 1.55rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #333333;
+}
+
+.sprog-widget-title span,
+.sprog-day-title span {
+  color: #1769aa;
+  font-weight: 700;
+}
+
+.sprog-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 1.25rem;
+}
+
+.sprog-button {
+  border: 1px solid #4f7272;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #244747;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  padding: 0.45rem 0.8rem;
+  text-decoration: none;
+}
+
+.sprog-button:hover,
+.sprog-button:focus {
+  background: #eef7f7;
+  text-decoration: none;
+}
+
+.sprog-note {
+  margin: 0 auto 1.5rem;
+  max-width: 980px;
+  padding: 0.8rem 1rem;
+  border-left: 5px solid #009aab;
+  background: #e8fbff;
+  color: #1f2933;
+  font-size: 0.95rem;
+}
+
+.sprog-alert {
+  max-width: 980px;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: #fff7ed;
+  color: #92400e;
+  text-align: left;
+}
+
+.sprog-alert code { word-break: break-word; }
+
+.sprog-debug {
+  max-width: 980px;
+  margin: 1rem auto;
+  padding: 0.8rem 1rem;
+  border: 1px solid #d8e0e0;
+  border-radius: 0.5rem;
+  background: #fbfcfc;
+  color: #4b5563;
+  font-size: 0.85rem;
+}
+
+.sprog-debug summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: #244747;
+}
+
+.sprog-debug ul {
+  margin: 0.75rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.sprog-slot--registro { background-color: #f4d6f4; color: #1f2933; font-weight: 700; }
+.sprog-slot--isgd { background-color: #d6efcf; color: #1f2933; }
+.sprog-slot--ai4se { background-color: #eef3a9; color: #1f2933; }
+.sprog-slot--icd { background-color: #f8e2d3; color: #1f2933; }
+.sprog-slot--metodos { background-color: #d9e5fb; color: #1f2933; }
+.sprog-slot--quantum,
+.sprog-slot--quantumx { background-color: #efd0f5; color: #1f2933; }
+.sprog-slot--mcps { background-color: #fff3cc; color: #1f2933; }
+.sprog-slot--isdm { background-color: #d8f3dc; color: #1f2933; }
+.sprog-slot--asv { background-color: #f7d6e0; color: #1f2933; }
+
+.sprog-slot--joint {
+  background: linear-gradient(45deg, rgba(238,243,169,1) 0 25%, rgba(255,243,204,1) 25% 50%, rgba(238,243,169,1) 50% 75%, rgba(255,243,204,1) 75% 100%);
+  color: #1f2933;
+}
+
+.sprog-cell-links {
+  display: inline-flex;
+  gap: 0.35rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sprog-cell-links a {
+  color: inherit;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.sprog-slot--missing { opacity: 0.72; }
+.sprog-empty-mark { color: transparent; }
+
+.sprog-detail-head {
+  margin: 0 0 1.25rem;
+  text-align: center;
+}
+
+.sprog-detail-head h2 {
+  margin: 0 0 0.4rem;
+  color: #006b7a;
+  font-size: 1.55rem;
+}
+
+.sprog-detail-head p {
+  margin: 0;
+  color: #4b5563;
+}
+
+.sprog-session-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: center;
+  margin: 1rem 0 1.4rem;
+}
+
+.sprog-session-nav a {
+  border: 1px solid #d8e0e0;
+  border-radius: 999px;
+  padding: 0.35rem 0.65rem;
+  color: #006b7a;
+  text-decoration: none;
+  background: #ffffff;
+  font-weight: 700;
+}
+
+.sprog-session-nav a:hover { background: #eef7f7; }
+
+.sprog-paper-list {
+  margin: 0.75rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.sprog-paper-list li { margin: 0.55rem 0; }
+.sprog-paper-title { font-weight: 700; }
+
+.sprog-authors {
+  display: block;
+  margin-top: 0.15rem;
+  color: #4b5563;
+  font-weight: 400;
+}
+
+.sprog-general-detail {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.sprog-general-detail h2 {
+  color: #006b7a;
+  margin-top: 0;
+}
+
+.sprog-hidden { display: none !important; }
+
+@media (max-width: 900px) {
+  .sprog-table { min-width: 980px; }
+}
