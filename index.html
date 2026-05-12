@@ -6,44 +6,46 @@
   <title>Programa SISTEDES multitrack</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <main id="sprog-root" class="sprog">
     <h1 id="sprog-title" class="sprog-widget-title">Programa <span>SISTEDES</span></h1>
-
     <div class="sprog-actions" aria-label="Acciones del programa">
       <a class="sprog-button" href="#" data-sprog-home>Ver tabla general</a>
       <button class="sprog-button" type="button" onclick="window.print()">Imprimir</button>
     </div>
-
-    <div class="sprog-note">
-      Pulsa en un track de la tabla para abrir su programa detallado.
-      Si hay varios tracks en la misma celda, cada nombre es un enlace independiente.
-    </div>
-
-    <section id="sprog-app" aria-live="polite">
-      <div class="sprog-alert">Cargando programa...</div>
-    </section>
+    <div class="sprog-note">Pulsa en un track de la tabla para abrir su programa detallado.</div>
+    <section id="sprog-app" aria-live="polite"><div class="sprog-alert">Cargando programa...</div></section>
   </main>
 
-  <script id="sprog-fallback-config" type="application/json">
-{
+  <script id="sprog-fallback-config" type="application/json">{
   "title": "Programa SISTEDES",
-  "subtitle": "Córdoba (SPAIN)",
+  "subtitle": "Alicante",
   "year": 2026,
   "month": 6,
   "rooms": [
-    "SALA A",
-    "SALA B",
-    "SALA C",
-    "SALA D"
+    "Aula 1.2",
+    "Aula 1.1",
+    "Aula Rafael Altamira",
+    "Aula 2.2",
+    "Aula Institucional / PROLE"
   ],
+  "roomAliases": {
+    "SALA A": "Aula 1.2",
+    "SALA B": "Aula 1.1",
+    "SALA C": "Aula Rafael Altamira",
+    "SALA D": "Aula 2.2",
+    "SALA E": "Aula Institucional / PROLE",
+    "AULA 1.2": "Aula 1.2",
+    "AULA 1.1": "Aula 1.1",
+    "AULA RAFAEL ALTAMIRA": "Aula Rafael Altamira",
+    "AULA 2.2": "Aula 2.2"
+  },
   "tracks": [
     {
       "id": "ISGD",
       "short": "ISGD",
       "name": "Ingeniería del Software y Gobierno del Dato",
-      "room": "SALA A",
+      "room": "Aula 1.2",
       "className": "sprog-slot--isgd",
       "file": "data/tracks/ISGD.json"
     },
@@ -51,7 +53,7 @@
       "id": "AI4SE",
       "short": "AI4SE",
       "name": "Artificial Intelligence for Software Engineering",
-      "room": "SALA B",
+      "room": "Aula 1.1",
       "className": "sprog-slot--ai4se",
       "file": "data/tracks/AI4SE.json"
     },
@@ -59,123 +61,688 @@
       "id": "ICD",
       "short": "ICD",
       "name": "Ingeniería, Ciencia y Datos",
-      "room": "SALA C",
+      "room": "Aula Rafael Altamira",
       "className": "sprog-slot--icd",
       "file": "data/tracks/ICD.json"
+    },
+    {
+      "id": "ISDM",
+      "short": "ISDM",
+      "name": "Ingeniería del Software Dirigida por Modelos",
+      "room": "Aula 2.2",
+      "className": "sprog-slot--isdm",
+      "file": "data/tracks/ISDM.json"
     },
     {
       "id": "METODOS",
       "short": "MÉTODOS",
       "name": "Métodos",
-      "room": "SALA D",
+      "room": "Aula 2.2",
       "className": "sprog-slot--metodos",
       "file": "data/tracks/METODOS.json"
     },
     {
       "id": "QUANTUM",
-      "short": "QUANTUM",
-      "name": "Quantum",
-      "room": "SALA A",
-      "className": "sprog-slot--quantum",
+      "short": "QuantumX",
+      "name": "QuantumX",
+      "room": "Aula 1.2",
+      "className": "sprog-slot--quantumx",
       "file": "data/tracks/QUANTUM.json"
     },
     {
       "id": "MCPS",
       "short": "MCPS",
       "name": "Métodos, Calidad y Pruebas del Software",
-      "room": "SALA B",
+      "room": "Aula 1.1",
       "className": "sprog-slot--mcps",
       "file": "data/tracks/MCPS.json"
-    },
-    {
-      "id": "ISDM",
-      "short": "ISDM",
-      "name": "Ingeniería del Software Dirigida por Modelos",
-      "room": "SALA A",
-      "className": "sprog-slot--isdm",
-      "file": "data/tracks/ISDM.json"
     },
     {
       "id": "ASV",
       "short": "ASV",
       "name": "ASV",
-      "room": "SALA D",
+      "room": "Aula 2.2",
       "className": "sprog-slot--asv",
       "file": "data/tracks/ASV.json"
     }
   ],
-  "commonEvents": [
+  "days": [
     {
       "day": "Martes 16 de Junio",
-      "time": "08:15 - 09:00",
-      "label": "Registro",
-      "className": "sprog-slot--registro"
-    },
-    {
-      "day": "Martes 16 de Junio",
-      "time": "10:30 - 11:00",
-      "label": "Pausa café",
-      "className": "sprog-slot--break"
-    },
-    {
-      "day": "Martes 16 de Junio",
-      "time": "13:30 - 15:00",
-      "label": "Almuerzo",
-      "className": "sprog-slot--lunch"
-    },
-    {
-      "day": "Martes 16 de Junio",
-      "time": "16:30 - 17:00",
-      "label": "Pausa café",
-      "className": "sprog-slot--break"
+      "location": "Alicante",
+      "rooms": [
+        "Aula 1.2",
+        "Aula 1.1",
+        "Aula Rafael Altamira",
+        "Aula 2.2",
+        "Aula Institucional / PROLE"
+      ],
+      "rows": [
+        {
+          "time": "08:15-09:00",
+          "type": "span",
+          "label": "Registro",
+          "className": "sprog-slot--registro",
+          "links": [
+            {
+              "label": "Vestíbulo sede",
+              "url": "#"
+            }
+          ]
+        },
+        {
+          "time": "09:00-10:30",
+          "cells": [
+            {
+              "room": "Aula 1.2",
+              "tracks": [
+                "ISGD"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 1.1",
+              "tracks": [
+                "AI4SE"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Rafael Altamira",
+              "tracks": [
+                "ICD"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 2.2",
+              "tracks": [
+                "ISDM"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Institucional / PROLE",
+              "group": "JISBD",
+              "label": "PROLE",
+              "className": "sprog-slot--prole"
+            }
+          ]
+        },
+        {
+          "time": "10:30-11:00",
+          "type": "span",
+          "label": "Pausa café",
+          "className": "sprog-slot--break",
+          "links": [
+            {
+              "label": "Aula Miguel Hernández",
+              "url": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101PB008"
+            }
+          ]
+        },
+        {
+          "time": "11:00-13:30",
+          "type": "span",
+          "label": "Inauguración + Keynote JCIS",
+          "className": "sprog-slot--general",
+          "links": [
+            {
+              "label": "Aula de Cultura · Fundación Mediterráneo",
+              "url": "https://fundacionmediterraneo.es/centros/centro-cultural-de-alicante/"
+            }
+          ]
+        },
+        {
+          "time": "13:30-15:00",
+          "type": "span",
+          "label": "Almuerzo",
+          "className": "sprog-slot--lunch",
+          "links": [
+            {
+              "label": "Aula Miguel Hernández",
+              "url": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101PB008"
+            },
+            {
+              "label": "Restaurante Poniente",
+              "url": "https://ponienterestaurante.es/"
+            }
+          ]
+        },
+        {
+          "time": "15:00-16:30",
+          "cells": [
+            {
+              "room": "Aula 1.2",
+              "tracks": [
+                "ISGD"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 1.1",
+              "tracks": [
+                "AI4SE"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Rafael Altamira",
+              "tracks": [
+                "ICD"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 2.2",
+              "tracks": [
+                "ISDM"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Institucional / PROLE",
+              "group": "JISBD",
+              "label": "PROLE",
+              "className": "sprog-slot--prole"
+            }
+          ]
+        },
+        {
+          "time": "16:30-17:00",
+          "type": "span",
+          "label": "Pausa café",
+          "className": "sprog-slot--break",
+          "links": [
+            {
+              "label": "Aula Miguel Hernández",
+              "url": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101PB008"
+            }
+          ]
+        },
+        {
+          "time": "17:00-18:00",
+          "cells": [
+            {
+              "room": "Aula 1.2",
+              "tracks": [
+                "ISGD"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 1.1",
+              "tracks": [
+                "AI4SE"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Rafael Altamira",
+              "tracks": [
+                "ICD"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 2.2",
+              "tracks": [
+                "METODOS"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Institucional / PROLE",
+              "group": "JISBD",
+              "label": "PROLE",
+              "className": "sprog-slot--prole"
+            }
+          ]
+        }
+      ]
     },
     {
       "day": "Miércoles 17 de Junio",
-      "time": "08:30 - 09:00",
-      "label": "Registro",
-      "className": "sprog-slot--registro"
-    },
-    {
-      "day": "Miércoles 17 de Junio",
-      "time": "10:30 - 11:00",
-      "label": "Pausa café",
-      "className": "sprog-slot--break"
-    },
-    {
-      "day": "Miércoles 17 de Junio",
-      "time": "13:30 - 15:00",
-      "label": "Almuerzo",
-      "className": "sprog-slot--lunch"
-    },
-    {
-      "day": "Miércoles 17 de Junio",
-      "time": "16:30 - 17:00",
-      "label": "Pausa café",
-      "className": "sprog-slot--break"
+      "location": "Alicante",
+      "rooms": [
+        "Aula 1.2",
+        "Aula 1.1",
+        "Aula Rafael Altamira",
+        "Aula 2.2",
+        "Aula Institucional / PROLE"
+      ],
+      "rows": [
+        {
+          "time": "08:30-09:00",
+          "type": "span",
+          "label": "Registro",
+          "className": "sprog-slot--registro",
+          "links": [
+            {
+              "label": "Vestíbulo sede",
+              "url": "#"
+            }
+          ]
+        },
+        {
+          "time": "09:00-10:30",
+          "cells": [
+            {
+              "room": "Aula 1.2",
+              "tracks": [
+                "QUANTUM"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 1.1",
+              "tracks": [
+                "AI4SE"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Rafael Altamira",
+              "tracks": [
+                "ISGD"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 2.2",
+              "tracks": [
+                "METODOS"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Institucional / PROLE",
+              "group": "JISBD",
+              "label": "Transformación Digital",
+              "className": "sprog-slot--prole"
+            }
+          ]
+        },
+        {
+          "time": "10:30-11:00",
+          "type": "span",
+          "label": "Pausa café",
+          "className": "sprog-slot--break",
+          "links": [
+            {
+              "label": "Aula Miguel Hernández",
+              "url": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101PB008"
+            }
+          ]
+        },
+        {
+          "time": "11:00-12:30",
+          "type": "span",
+          "label": "Keynote JISBD",
+          "className": "sprog-slot--general",
+          "links": [
+            {
+              "label": "Aula de Cultura · Fundación Mediterráneo",
+              "url": "https://fundacionmediterraneo.es/centros/centro-cultural-de-alicante/"
+            }
+          ]
+        },
+        {
+          "time": "12:30-13:30",
+          "type": "span",
+          "label": "SISTEDES e Innovación Docente en la Enseñanza del Desarrollo del Software en la Era de la IA Generativa",
+          "className": "sprog-slot--general",
+          "links": [
+            {
+              "label": "Aula de Cultura · Fundación Mediterráneo",
+              "url": "https://fundacionmediterraneo.es/centros/centro-cultural-de-alicante/"
+            }
+          ]
+        },
+        {
+          "time": "13:30-15:00",
+          "type": "span",
+          "label": "Almuerzo",
+          "className": "sprog-slot--lunch",
+          "links": [
+            {
+              "label": "Aula Miguel Hernández",
+              "url": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101PB008"
+            },
+            {
+              "label": "Restaurante Poniente",
+              "url": "https://ponienterestaurante.es/"
+            }
+          ]
+        },
+        {
+          "time": "15:00-16:30",
+          "cells": [
+            {
+              "room": "Aula 1.2",
+              "tracks": [
+                "QUANTUM"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 1.1",
+              "tracks": [
+                "AI4SE"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Rafael Altamira",
+              "tracks": [
+                "ISGD"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 2.2",
+              "tracks": [
+                "METODOS"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Institucional / PROLE",
+              "group": "JISBD",
+              "label": "PROLE",
+              "className": "sprog-slot--prole"
+            }
+          ]
+        },
+        {
+          "time": "16:30-17:00",
+          "type": "span",
+          "label": "Pausa café + pósteres",
+          "className": "sprog-slot--break",
+          "links": [
+            {
+              "label": "Aula Miguel Hernández",
+              "url": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101PB008"
+            }
+          ]
+        },
+        {
+          "time": "17:00-18:30",
+          "cells": [
+            {
+              "room": "Aula 1.2",
+              "tracks": [
+                "QUANTUM"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 1.1",
+              "tracks": [
+                "AI4SE"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Rafael Altamira",
+              "tracks": [
+                "ICD"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 2.2",
+              "tracks": [
+                "METODOS"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Institucional / PROLE",
+              "group": "JISBD",
+              "label": "PROLE",
+              "className": "sprog-slot--prole"
+            }
+          ]
+        }
+      ]
     },
     {
       "day": "Jueves 18 de Junio",
-      "time": "10:30 - 11:00",
-      "label": "Pausa café",
-      "className": "sprog-slot--break"
-    },
-    {
-      "day": "Jueves 18 de Junio",
-      "time": "13:45 - 15:30",
-      "label": "Almuerzo",
-      "className": "sprog-slot--lunch"
+      "location": "Alicante",
+      "rooms": [
+        "Aula 1.2",
+        "Aula 1.1",
+        "Aula Rafael Altamira",
+        "Aula 2.2",
+        "Aula Institucional / PROLE"
+      ],
+      "rows": [
+        {
+          "time": "08:30-09:00",
+          "type": "span",
+          "label": "Registro",
+          "className": "sprog-slot--registro",
+          "links": [
+            {
+              "label": "Vestíbulo sede",
+              "url": "#"
+            }
+          ]
+        },
+        {
+          "time": "09:00-10:30",
+          "cells": [
+            {
+              "room": "Aula 1.2",
+              "tracks": [
+                "QUANTUM"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 1.1",
+              "tracks": [
+                "MCPS"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Rafael Altamira",
+              "tracks": [
+                "ICD"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 2.2",
+              "tracks": [
+                "ASV"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Institucional / PROLE",
+              "group": "JISBD",
+              "label": "PROLE",
+              "className": "sprog-slot--prole"
+            }
+          ]
+        },
+        {
+          "time": "10:30-11:00",
+          "type": "span",
+          "label": "Pausa café",
+          "className": "sprog-slot--break",
+          "links": [
+            {
+              "label": "Aula Miguel Hernández",
+              "url": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101PB008"
+            }
+          ]
+        },
+        {
+          "time": "11:00-12:30",
+          "type": "span",
+          "label": "Keynote PROLE",
+          "className": "sprog-slot--general",
+          "links": [
+            {
+              "label": "Aula de Cultura · Fundación Mediterráneo",
+              "url": "https://fundacionmediterraneo.es/centros/centro-cultural-de-alicante/"
+            }
+          ]
+        },
+        {
+          "time": "12:30-13:45",
+          "cells": [
+            {
+              "room": "Aula 1.2",
+              "tracks": [
+                "QUANTUM"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 1.1",
+              "tracks": [
+                "MCPS"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Rafael Altamira",
+              "tracks": [
+                "ICD"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 2.2",
+              "tracks": [
+                "ASV"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Institucional / PROLE",
+              "group": "JISBD",
+              "label": "PROLE",
+              "className": "sprog-slot--prole"
+            }
+          ]
+        },
+        {
+          "time": "13:45-14:30",
+          "type": "span",
+          "label": "Mascletá",
+          "className": "sprog-slot--lunch",
+          "links": [
+            {
+              "label": "Plaza de los Luceros",
+              "url": "https://www.google.com/maps/place/Pl.+de+los+Luceros,+Alicante/@38.3459999,-0.4936593,909m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd62364d9e03e7d3:0xa9fcf805713a17de!8m2!3d38.3459957!4d-0.4910844!16s%2Fg%2F120qdcnc?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D"
+            }
+          ]
+        },
+        {
+          "time": "14:30-15:45",
+          "type": "span",
+          "label": "Almuerzo",
+          "className": "sprog-slot--lunch",
+          "links": [
+            {
+              "label": "Aula Miguel Hernández",
+              "url": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101PB008"
+            },
+            {
+              "label": "Restaurante Poniente",
+              "url": "https://ponienterestaurante.es/"
+            }
+          ]
+        },
+        {
+          "time": "15:45-17:15",
+          "cells": [
+            {
+              "room": "Aula 1.2",
+              "tracks": [
+                "QUANTUM"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 1.1",
+              "tracks": [
+                "MCPS"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Rafael Altamira",
+              "tracks": [
+                "ICD"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 2.2",
+              "tracks": [
+                "ASV"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Institucional / PROLE",
+              "group": "JISBD",
+              "label": "PROLE",
+              "className": "sprog-slot--prole"
+            }
+          ]
+        },
+        {
+          "time": "17:15-17:45",
+          "type": "span",
+          "label": "Pausa café",
+          "className": "sprog-slot--break",
+          "links": [
+            {
+              "label": "Aula Miguel Hernández",
+              "url": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101PB008"
+            }
+          ]
+        },
+        {
+          "time": "17:45-18:00",
+          "type": "span",
+          "label": "Premios SISTEDES",
+          "className": "sprog-slot--awards",
+          "links": [
+            {
+              "label": "Aula de Cultura · Fundación Mediterráneo",
+              "url": "https://fundacionmediterraneo.es/centros/centro-cultural-de-alicante/"
+            }
+          ]
+        },
+        {
+          "time": "18:00-19:15",
+          "type": "span",
+          "label": "Asamblea SISTEDES + Clausura",
+          "className": "sprog-slot--general",
+          "links": [
+            {
+              "label": "Aula de Cultura · Fundación Mediterráneo",
+              "url": "https://fundacionmediterraneo.es/centros/centro-cultural-de-alicante/"
+            }
+          ]
+        }
+      ]
     }
   ],
   "options": {
-    "autoBuildSummary": true,
-    "showDiagnostics": true,
-    "hideEmptyRows": false
+    "showDiagnostics": false
   }
-}
-  </script>
-
-  <script id="sprog-embedded-track-data" type="application/json">
-{
+}</script>
+  <script id="sprog-embedded-track-data" type="application/json">{
   "AI4SE": {
     "Martes 16 de Junio": [
       {
@@ -1558,7 +2125,7 @@
     ]
   },
   "QUANTUM": {
-    "Miércoles 16 de Junio de 2026": [
+    "Martes 16 de Junio de 2026": [
       {
         "hora": "9:00 - 10:30",
         "Sesión 1 - SALA A": [
@@ -1682,7 +2249,7 @@
         ]
       }
     ],
-    "Jueves 17 de Junio de 2026": [
+    "Miércoles 17 de Junio de 2026": [
       {
         "hora": "9:00 - 10:30",
         "Sesión 4 - SALA A": [
@@ -1841,124 +2408,55 @@
       }
     ]
   }
-}
-  </script>
+}</script>
 
   <script>
     const CONFIG_URL = "data/programa-config.json";
-
     const app = document.getElementById("sprog-app");
     const title = document.getElementById("sprog-title");
-
     const fallbackConfig = JSON.parse(document.getElementById("sprog-fallback-config").textContent);
     const embeddedTrackData = JSON.parse(document.getElementById("sprog-embedded-track-data").textContent);
-
-    const state = {
-      config: null,
-      tracks: [],
-      sessions: [],
-      errors: [],
-      info: []
-    };
+    const state = { config: null, tracks: [], sessions: [] };
 
     const SPANISH_WEEKDAYS = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
-    const SPANISH_MONTHS = {
-      enero: 1,
-      febrero: 2,
-      marzo: 3,
-      abril: 4,
-      mayo: 5,
-      junio: 6,
-      julio: 7,
-      agosto: 8,
-      septiembre: 9,
-      setiembre: 9,
-      octubre: 10,
-      noviembre: 11,
-      diciembre: 12
-    };
+    const SPANISH_MONTHS = { enero:1, febrero:2, marzo:3, abril:4, mayo:5, junio:6, julio:7, agosto:8, septiembre:9, setiembre:9, octubre:10, noviembre:11, diciembre:12 };
 
     function escapeHtml(value) {
       return String(value ?? "")
-        .replaceAll("&", "&amp;")
-        .replaceAll("<", "&lt;")
-        .replaceAll(">", "&gt;")
-        .replaceAll('"', "&quot;")
-        .replaceAll("'", "&#039;");
+        .replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;").replaceAll("'", "&#039;");
     }
 
     function normalizeText(value) {
-      return String(value || "")
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .toLowerCase()
-        .trim();
+      return String(value || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
     }
 
-    function compactTime(value) {
-      return normalizeText(value).replace(/\s+/g, "");
-    }
-
-    function parseTimeStart(range) {
-      const raw = String(range || "").split("-")[0].trim();
-      const match = raw.match(/(\d{1,2}):(\d{2})/);
-      if (!match) return 99999;
-      return Number(match[1]) * 60 + Number(match[2]);
-    }
-
-    function parseTimeEnd(range) {
-      const raw = String(range || "").split("-")[1]?.trim() || "";
-      const match = raw.match(/(\d{1,2}):(\d{2})/);
-      if (!match) return parseTimeStart(range);
-      return Number(match[1]) * 60 + Number(match[2]);
-    }
-
-    function normalizeTimeLabel(range) {
-      return String(range || "")
-        .replace(/\s*-\s*/g, " - ")
-        .replace(/^0(\d:)/, "$1")
-        .trim();
-    }
-
-    function sameTime(a, b) {
-      return compactTime(a) === compactTime(b);
-    }
-
-    function unique(values) {
-      return [...new Set(values.filter(Boolean))];
-    }
+    function compactTime(value) { return normalizeText(value).replace(/\s+/g, ""); }
+    function normalizeTimeLabel(range) { return String(range || "").replace(/\s*-\s*/g, "-").trim(); }
+    function displayTime(range) { return normalizeTimeLabel(range).replace(/-/g, "-"); }
+    function timeStart(range) { const m = String(range || "").split("-")[0].trim().match(/(\d{1,2}):(\d{2})/); return m ? Number(m[1])*60 + Number(m[2]) : 99999; }
+    function sameTime(a, b) { return compactTime(a) === compactTime(b); }
+    function sameStart(a, b) { return timeStart(a) === timeStart(b); }
+    function unique(values) { return [...new Set(values.filter(Boolean))]; }
 
     function canonicalDay(day) {
       const raw = String(day || "").trim();
       const normalized = normalizeText(raw);
-
       const monthName = Object.keys(SPANISH_MONTHS).find(name => normalized.includes(name));
       const month = monthName ? SPANISH_MONTHS[monthName] : (state.config?.month || 6);
       const yearMatch = normalized.match(/\b(20\d{2})\b/);
       const year = yearMatch ? Number(yearMatch[1]) : (state.config?.year || 2026);
-
       const numberMatch = normalized.match(/\b(\d{1,2})\b/);
 
       if (numberMatch) {
         const dayNumber = Number(numberMatch[1]);
         const date = new Date(Date.UTC(year, month - 1, dayNumber));
         const weekday = SPANISH_WEEKDAYS[date.getUTCDay()];
-        const displayMonth = monthName
-          ? monthName.charAt(0).toUpperCase() + monthName.slice(1)
-          : "Junio";
+        const displayMonth = monthName ? monthName.charAt(0).toUpperCase() + monthName.slice(1) : "Junio";
         return `${weekday} ${dayNumber} de ${displayMonth}`;
       }
 
-      const weekdayToDay = {
-        lunes: 15,
-        martes: 16,
-        miercoles: 17,
-        jueves: 18,
-        viernes: 19,
-        sabado: 20,
-        domingo: 21
-      };
-
+      const weekdayToDay = { lunes:15, martes:16, miercoles:17, jueves:18, viernes:19, sabado:20, domingo:21 };
       const weekdayKey = Object.keys(weekdayToDay).find(key => normalized.includes(key));
       if (weekdayKey) {
         const dayNumber = weekdayToDay[weekdayKey];
@@ -1970,57 +2468,47 @@
       return raw;
     }
 
-    function parseDaySort(day) {
-      const normalized = normalizeText(day);
-      const numberMatch = normalized.match(/\b(\d{1,2})\b/);
-      const number = numberMatch ? Number(numberMatch[1]) : 99;
-      return number;
-    }
+    function parseDaySort(day) { const m = normalizeText(day).match(/\b(\d{1,2})\b/); return m ? Number(m[1]) : 99; }
 
     async function fetchJson(url) {
-      const resolvedUrl = new URL(url, window.location.href).href;
-
       try {
         const response = await fetch(url, { cache: "no-store" });
-        if (!response.ok) {
-          throw new Error(`HTTP ${response.status} ${response.statusText}`);
-        }
-        return { ok: true, data: await response.json(), url: resolvedUrl };
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return await response.json();
       } catch (error) {
-        return { ok: false, data: null, url: resolvedUrl, error };
+        return null;
       }
+    }
+
+    function aliasRoom(room) {
+      const raw = String(room || "").trim();
+      const aliases = state.config?.roomAliases || {};
+      const direct = aliases[raw];
+      if (direct) return direct;
+      const normalized = normalizeText(raw).toUpperCase();
+      return aliases[normalized] || raw;
     }
 
     function parseSessionKey(key) {
       const pieces = String(key).split(/\s+-\s+/);
       const last = pieces[pieces.length - 1]?.trim() || "";
       const hasRoom = /^(sala|aula)\b/i.test(last);
-      const room = hasRoom ? last.toUpperCase() : "";
+      const room = hasRoom ? aliasRoom(last.toUpperCase()) : "";
       const titleText = hasRoom ? pieces.slice(0, -1).join(" - ").trim() : String(key).trim();
       const match = titleText.match(/ses[ií]ón\s*(\d+)/i);
       const number = match ? Number(match[1]) : null;
-
-      return {
-        title: titleText,
-        room,
-        number
-      };
+      return { title: titleText, room, number };
     }
 
     function getPaperAuthors(paper) {
       if (!paper) return "";
-
       if (Array.isArray(paper.autores)) {
-        return paper.autores
-          .map(author => {
-            if (typeof author === "string") return author;
-            if (author && typeof author === "object") return author.nombre || author.name || author.apellidos || "";
-            return "";
-          })
-          .filter(Boolean)
-          .join(", ");
+        return paper.autores.map(author => {
+          if (typeof author === "string") return author;
+          if (author && typeof author === "object") return author.nombre || author.name || author.apellidos || "";
+          return "";
+        }).filter(Boolean).join(", ");
       }
-
       if (typeof paper.autores === "string") return paper.autores.trim();
       return "";
     }
@@ -2028,19 +2516,14 @@
     function flattenTrack(track, data) {
       const sessions = [];
       let fallbackNumber = 0;
-
       Object.entries(data || {}).forEach(([day, entries]) => {
         (entries || []).forEach(entry => {
           const time = normalizeTimeLabel(entry.hora || "");
-
           Object.entries(entry).forEach(([key, value]) => {
-            if (key === "hora") return;
-            if (!Array.isArray(value)) return;
-
+            if (key === "hora" || !Array.isArray(value)) return;
             fallbackNumber += 1;
             const parsed = parseSessionKey(key);
             const code = parsed.number ? `S${parsed.number}` : `S${fallbackNumber}`;
-
             sessions.push({
               id: `${track.id}-${code}`,
               trackId: track.id,
@@ -2052,410 +2535,191 @@
               originalDay: day,
               time,
               title: parsed.title,
-              room: parsed.room || track.room || "SALA PENDIENTE",
+              room: parsed.room || aliasRoom(track.room) || "Sala pendiente",
               papers: value
             });
           });
         });
       });
-
       return sessions;
     }
 
     async function init() {
-      const configResult = await fetchJson(CONFIG_URL);
-      state.config = configResult.ok ? configResult.data : fallbackConfig;
-
-      if (!configResult.ok) {
-        state.info.push(`No se pudo cargar ${configResult.url}; usando configuración embebida en index.html.`);
-      } else {
-        state.info.push(`Configuración cargada: ${configResult.url}`);
-      }
-
+      const loadedConfig = await fetchJson(CONFIG_URL);
+      state.config = loadedConfig || fallbackConfig;
       title.innerHTML = `${escapeHtml(state.config.title || "Programa")} <span>${escapeHtml(state.config.subtitle || "")}</span>`;
 
       const tracks = [];
       const allSessions = [];
-
       for (const track of (state.config.tracks || [])) {
-        const result = await fetchJson(track.file);
-        let data = result.data;
-        let source = result.url;
-        let loaded = result.ok;
-
-        if (!loaded && embeddedTrackData[track.id]) {
-          data = embeddedTrackData[track.id];
-          source = "datos embebidos en index.html";
-          loaded = true;
-          state.info.push(`${track.id}: no se pudo cargar ${result.url}; usando datos embebidos.`);
-        }
-
-        if (!loaded) {
-          state.errors.push(`${track.id}: no se pudo cargar ${result.url} (${result.error?.message || "error desconocido"}).`);
-        } else {
-          state.info.push(`${track.id}: cargado desde ${source}.`);
-        }
-
+        let data = await fetchJson(track.file);
+        if (!data && embeddedTrackData[track.id]) data = embeddedTrackData[track.id];
         const sessions = data ? flattenTrack(track, data) : [];
-
-        tracks.push({
-          ...track,
-          loaded: Boolean(data),
-          source,
-          sessions
-        });
-
+        tracks.push({ ...track, loaded: Boolean(data), sessions });
         allSessions.push(...sessions);
       }
-
       state.tracks = tracks;
       state.sessions = allSessions;
-
       route();
     }
 
-    function getTrack(trackId) {
-      return state.tracks.find(track => track.id === trackId);
+    function getTrack(trackId) { return state.tracks.find(track => track.id === trackId); }
+
+    function findSession(trackId, day, time) {
+      const cday = canonicalDay(day);
+      return state.sessions.find(s => s.trackId === trackId && s.day === cday && sameTime(s.time, time))
+        || state.sessions.find(s => s.trackId === trackId && s.day === cday && sameStart(s.time, time))
+        || state.sessions.find(s => s.trackId === trackId && sameTime(s.time, time))
+        || state.sessions.find(s => s.trackId === trackId && sameStart(s.time, time));
     }
 
-    function getRooms() {
-      const configured = state.config.rooms || [];
-      const fromSessions = unique(state.sessions.map(session => session.room));
-      const rooms = unique([...configured, ...fromSessions]);
-
-      return rooms.sort((a, b) => {
-        const order = ["SALA A", "SALA B", "SALA C", "SALA D", "SALA E", "SALA PENDIENTE"];
-        const ai = order.indexOf(a);
-        const bi = order.indexOf(b);
-        if (ai !== -1 || bi !== -1) return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi);
-        return a.localeCompare(b, "es");
-      });
+    function renderLinks(links) {
+      if (!Array.isArray(links) || !links.length) return "";
+      return `<span class="sprog-meta">${links.map(link => `<a href="${escapeHtml(link.url || '#')}" target="_blank" rel="noopener">${escapeHtml(link.label || link.url || '')}</a>`).join(" · ")}</span>`;
     }
 
-    function getDays() {
-      const days = unique([
-        ...state.sessions.map(session => session.day),
-        ...(state.config.commonEvents || []).map(event => canonicalDay(event.day))
-      ]);
+    function renderCell(cell, day, time) {
+      if (!cell) return `<td class="sprog-slot--empty"></td>`;
+      const tracks = cell.tracks || [];
+      const cls = cell.className || (tracks[0] ? (getTrack(tracks[0])?.className || "sprog-slot--jisbd") : "sprog-slot--empty");
 
-      return days.sort((a, b) => parseDaySort(a) - parseDaySort(b));
-    }
-
-    function getRowsForDay(day) {
-      const sessionRows = state.sessions
-        .filter(session => session.day === day)
-        .map(session => ({
-          type: "session",
-          time: session.time,
-          sortStart: parseTimeStart(session.time),
-          sortEnd: parseTimeEnd(session.time)
-        }));
-
-      const commonRows = (state.config.commonEvents || [])
-        .map(event => ({ ...event, day: canonicalDay(event.day), time: normalizeTimeLabel(event.time) }))
-        .filter(event => event.day === day)
-        .map(event => ({
-          type: "span",
-          time: event.time,
-          sortStart: parseTimeStart(event.time),
-          sortEnd: parseTimeEnd(event.time),
-          label: event.label,
-          href: event.href,
-          className: event.className || "sprog-slot--general-light",
-          meta: event.meta
-        }));
-
-      const byKey = new Map();
-
-      [...sessionRows, ...commonRows].forEach(row => {
-        const key = `${row.type}|${compactTime(row.time)}|${row.label || ""}`;
-        if (!byKey.has(key)) byKey.set(key, row);
-      });
-
-      return [...byKey.values()].sort((a, b) => {
-        if (a.sortStart !== b.sortStart) return a.sortStart - b.sortStart;
-        if (a.type === b.type) return a.sortEnd - b.sortEnd;
-        return a.type === "span" ? -1 : 1;
-      });
-    }
-
-    function sessionsForCell(day, time, room) {
-      return state.sessions.filter(session =>
-        session.day === day &&
-        sameTime(session.time, time) &&
-        session.room === room
-      );
-    }
-
-    function renderTrackLinks(sessions) {
-      return `
-        <span class="sprog-cell-links">
-          ${sessions.map((session, index) => {
-            const joiner = index < sessions.length - 1 ? `<span aria-hidden="true">+</span>` : "";
-            return `<a href="#${escapeHtml(session.id)}" title="${escapeHtml(session.title)}">${escapeHtml(session.trackShort)}</a>${joiner}`;
-          }).join("")}
-        </span>
-      `;
-    }
-
-    function classForSessions(sessions) {
-      if (!sessions.length) return "sprog-slot--empty";
-      const classes = unique(sessions.map(session => session.trackClass).filter(Boolean));
-      if (classes.length === 1) return classes[0];
-      return "sprog-slot--joint";
-    }
-
-    function renderSummaryCell(day, row, room) {
-      const sessions = sessionsForCell(day, row.time, room);
-
-      if (!sessions.length) {
-        return `<td class="sprog-slot--empty"><span class="sprog-empty-mark">—</span></td>`;
+      if (tracks.length) {
+        const links = tracks.map((trackId, index) => {
+          const track = getTrack(trackId);
+          const session = findSession(trackId, day, time);
+          const href = session ? `#${session.id}` : `#${trackId}`;
+          const joiner = index < tracks.length - 1 ? `<span aria-hidden="true">+</span>` : "";
+          return `<a href="${escapeHtml(href)}" title="${escapeHtml(track?.name || trackId)}">${escapeHtml(track?.short || trackId)}</a>${joiner}`;
+        }).join("");
+        return `<td class="${escapeHtml(cls)}"><span class="sprog-cell-group">${escapeHtml(cell.group || '')}</span><span class="sprog-cell-links">${links}</span></td>`;
       }
 
-      const content = sessions.map(session => `
-        <div>
-          <span class="sprog-track">${renderTrackLinks([session])}</span>
-          <span class="sprog-meta">${escapeHtml(session.title)}</span>
-        </div>
-      `).join("");
+      if (cell.label) {
+        return `<td class="${escapeHtml(cls)}"><span class="sprog-cell-group">${escapeHtml(cell.group || cell.label || '')}</span>${renderLinks(cell.links)}</td>`;
+      }
 
-      return `<td class="${escapeHtml(classForSessions(sessions))}">${content}</td>`;
+      return `<td class="${escapeHtml(cls)}"></td>`;
+    }
+
+    function renderSpanRow(row, roomCount) {
+      return `
+        <tr class="sprog-general-row">
+          <th class="sprog-time" scope="row">${escapeHtml(displayTime(row.time || ''))}</th>
+          <td class="${escapeHtml(row.className || 'sprog-slot--general-light')}" colspan="${roomCount}">
+            <span class="sprog-track">${escapeHtml(row.label || '')}</span>
+            ${renderLinks(row.links)}
+          </td>
+        </tr>`;
     }
 
     function renderSummary() {
-      const days = getDays();
-      const rooms = getRooms();
-
-      if (!days.length || !state.sessions.length) {
-        app.innerHTML = `
-          <div class="sprog-alert">
-            No se han cargado sesiones. Comprueba que los JSON están en <code>data/tracks/</code>
-            y que sus nombres coinciden exactamente con <code>data/programa-config.json</code>.
-          </div>
-          ${renderDiagnostics()}
-        `;
-        return;
-      }
-
-      app.innerHTML = `
-        ${days.map(day => {
-          const rows = getRowsForDay(day);
-
-          return `
-            <section class="sprog-day">
-              <h2 class="sprog-day-title">${escapeHtml(day)} <span>${escapeHtml(state.config.subtitle || "")}</span></h2>
-              <div class="sprog-table-wrap">
-                <table class="sprog-table">
-                  <thead>
-                    <tr>
-                      <th scope="col"><span class="sprog-head-main">HORA / LUGAR</span></th>
-                      ${rooms.map(room => `
-                        <th scope="col"><span class="sprog-head-main">${escapeHtml(room)}</span></th>
-                      `).join("")}
-                    </tr>
-                  </thead>
-                  <tbody>
-                    ${rows.map(row => {
-                      if (row.type === "span") {
-                        const label = row.href
-                          ? `<a href="${escapeHtml(row.href)}">${escapeHtml(row.label || "")}</a>`
-                          : escapeHtml(row.label || "");
-
-                        return `
-                          <tr>
-                            <th class="sprog-time" scope="row">${escapeHtml(row.time)}</th>
-                            <td class="${escapeHtml(row.className || "sprog-slot--general-light")}" colspan="${rooms.length}">
-                              <span class="sprog-track">${label}</span>
-                              ${row.meta ? `<span class="sprog-meta">${escapeHtml(row.meta)}</span>` : ""}
-                            </td>
-                          </tr>
-                        `;
-                      }
-
-                      return `
-                        <tr>
-                          <th class="sprog-time" scope="row">${escapeHtml(row.time)}</th>
-                          ${rooms.map(room => renderSummaryCell(day, row, room)).join("")}
-                        </tr>
-                      `;
-                    }).join("")}
-                  </tbody>
-                </table>
-              </div>
-            </section>
-          `;
-        }).join("")}
-        ${renderDiagnostics()}
-      `;
+      const days = state.config.days || [];
+      app.innerHTML = days.map(dayCfg => {
+        const rooms = dayCfg.rooms || state.config.rooms || [];
+        const rows = dayCfg.rows || [];
+        return `
+          <section class="sprog-day">
+            <h2 class="sprog-day-title">${escapeHtml(canonicalDay(dayCfg.day))} <span>· ${escapeHtml(dayCfg.location || state.config.subtitle || '')}</span></h2>
+            <div class="sprog-table-wrap">
+              <table class="sprog-table">
+                <thead><tr><th scope="col"><span class="sprog-head-main">Hora / Lugar</span></th>${rooms.map(room => `<th scope="col"><span class="sprog-head-main"><a href="#">${escapeHtml(room)}</a></span></th>`).join('')}</tr></thead>
+                <tbody>
+                  ${rows.map(row => {
+                    if (row.type === 'span') return renderSpanRow(row, rooms.length);
+                    const cellsByRoom = new Map((row.cells || []).map(cell => [cell.room, cell]));
+                    return `<tr><th class="sprog-time" scope="row">${escapeHtml(displayTime(row.time || ''))}</th>${rooms.map(room => renderCell(cellsByRoom.get(room), dayCfg.day, row.time)).join('')}</tr>`;
+                  }).join('')}
+                </tbody>
+              </table>
+            </div>
+          </section>`;
+      }).join('');
     }
 
-    function renderDiagnostics() {
-      if (!state.config?.options?.showDiagnostics) return "";
-
-      const items = [...state.errors, ...state.info];
-
-      if (!items.length) return "";
-
-      return `
-        <details class="sprog-debug">
-          <summary>Diagnóstico de carga</summary>
-          <ul>
-            ${items.map(item => `<li>${escapeHtml(item)}</li>`).join("")}
-          </ul>
-        </details>
-      `;
+    function commonRowsForDay(day) {
+      const dayCfg = (state.config.days || []).find(d => canonicalDay(d.day) === day);
+      return (dayCfg?.rows || [])
+        .filter(row => row.type === 'span')
+        .map(row => ({ type: 'common', time: normalizeTimeLabel(row.time), label: row.label, className: row.className, links: row.links }));
     }
 
     function renderTrackDetail(trackId, focusSessionId = null) {
       const track = getTrack(trackId);
-
-      if (!track) {
-        renderSummary();
-        return;
-      }
-
+      if (!track) return renderSummary();
       if (!track.loaded || !track.sessions.length) {
-        app.innerHTML = `
-          <section class="sprog--detail">
-            <div class="sprog-detail-head">
-              <h2>${escapeHtml(track.short || track.id)}</h2>
-              <p>${escapeHtml(track.name || "")}</p>
-            </div>
-            <div class="sprog-alert">
-              No se ha cargado el JSON de este track. Ruta esperada:
-              <code>${escapeHtml(new URL(track.file || "", window.location.href).href)}</code>.
-              Comprueba mayúsculas/minúsculas y que el archivo existe en GitHub Pages.
-            </div>
-            ${renderDiagnostics()}
-          </section>
-        `;
+        app.innerHTML = `<section class="sprog--detail"><div class="sprog-detail-head"><h2>${escapeHtml(track.short || track.id)}</h2><p>No se ha cargado el programa de este track.</p></div></section>`;
         return;
       }
 
-      const sessions = [...track.sessions].sort((a, b) => {
-        const dayCompare = parseDaySort(a.day) - parseDaySort(b.day);
-        if (dayCompare !== 0) return dayCompare;
-        return parseTimeStart(a.time) - parseTimeStart(b.time);
-      });
-
-      const days = unique(sessions.map(session => session.day))
-        .sort((a, b) => parseDaySort(a) - parseDaySort(b));
+      const sessions = [...track.sessions].sort((a,b) => parseDaySort(a.day)-parseDaySort(b.day) || timeStart(a.time)-timeStart(b.time));
+      const days = unique([ ...sessions.map(s => s.day), ...(state.config.days || []).map(d => canonicalDay(d.day)) ]).sort((a,b)=>parseDaySort(a)-parseDaySort(b));
 
       app.innerHTML = `
         <section class="sprog--detail">
           <header class="sprog-detail-head">
             <h2>${escapeHtml(track.short || track.id)} · ${escapeHtml(track.name || track.id)}</h2>
-            <p>${sessions.length} sesiones · fuente: <code>${escapeHtml(track.source || track.file || "")}</code></p>
+            <p>Programa detallado del track</p>
             <nav class="sprog-session-nav" aria-label="Sesiones del track">
-              ${sessions.map(session => `
-                <a href="#${escapeHtml(session.id)}">${escapeHtml(session.code)} · ${escapeHtml(session.day)} · ${escapeHtml(session.time)}</a>
-              `).join("")}
+              ${sessions.map(session => `<a href="#${escapeHtml(session.id)}">${escapeHtml(session.day)} · ${escapeHtml(displayTime(session.time))}</a>`).join('')}
             </nav>
           </header>
+          ${days.map(day => renderDetailDay(track, day)).join('')}
+        </section>`;
 
-          ${days.map(day => {
-            const daySessions = sessions.filter(session => session.day === day);
+      if (focusSessionId) requestAnimationFrame(() => document.getElementById(focusSessionId)?.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+    }
 
-            return `
-              <section class="sprog-day">
-                <h3 class="sprog-day-title">${escapeHtml(day)}</h3>
-                <div class="sprog-table-wrap">
-                  <table class="sprog-table">
-                    <tbody>
-                      ${daySessions.map(session => renderSessionRow(session)).join("")}
-                    </tbody>
-                  </table>
-                </div>
-              </section>
-            `;
-          }).join("")}
-          ${renderDiagnostics()}
-        </section>
-      `;
+    function renderDetailDay(track, day) {
+      const sessionRows = track.sessions.filter(s => s.day === day).map(s => ({ type:'session', time:s.time, session:s }));
+      const commonRows = commonRowsForDay(day);
+      const rows = [...sessionRows, ...commonRows].sort((a,b) => timeStart(a.time)-timeStart(b.time) || (a.type === 'common' ? -1 : 1));
+      if (!rows.length) return '';
+      return `
+        <section class="sprog-day">
+          <h3 class="sprog-day-title">${escapeHtml(day)}</h3>
+          <div class="sprog-table-wrap">
+            <table class="sprog-table"><tbody>${rows.map(row => row.type === 'common' ? renderDetailCommonRow(row) : renderSessionRow(row.session)).join('')}</tbody></table>
+          </div>
+        </section>`;
+    }
 
-      if (focusSessionId) {
-        requestAnimationFrame(() => {
-          const element = document.getElementById(focusSessionId);
-          if (element) {
-            element.scrollIntoView({ behavior: "smooth", block: "start" });
-          }
-        });
-      }
+    function renderDetailCommonRow(row) {
+      return `<tr class="sprog-general-row"><th class="sprog-time" scope="row">${escapeHtml(displayTime(row.time))}</th><td class="sprog-session-detail ${escapeHtml(row.className || 'sprog-slot--general-light')}"><span class="sprog-track--large">${escapeHtml(row.label || '')}</span>${renderLinks(row.links)}</td></tr>`;
     }
 
     function renderSessionRow(session) {
       const papers = session.papers || [];
-
       return `
         <tr id="${escapeHtml(session.id)}">
-          <th class="sprog-time" scope="row">${escapeHtml(session.time)}</th>
+          <th class="sprog-time" scope="row">${escapeHtml(displayTime(session.time))}</th>
           <td class="sprog-session-detail">
-            <span class="sprog-track--large">${escapeHtml(session.code)} · ${escapeHtml(session.title)}</span>
-            <span class="sprog-meta">${escapeHtml(session.room || "")}</span>
-            ${papers.length ? `
-              <ol class="sprog-paper-list">
-                ${papers.map(paper => {
-                  const authors = getPaperAuthors(paper);
-                  return `
-                    <li>
-                      <span class="sprog-paper-title">${escapeHtml(paper.titulo || "Sin título")}</span>
-                      ${authors ? `<span class="sprog-authors">${escapeHtml(authors)}</span>` : ""}
-                    </li>
-                  `;
-                }).join("")}
-              </ol>
-            ` : `<p class="sprog-meta">Sin ponencias listadas para esta entrada.</p>`}
+            <span class="sprog-track--large">${escapeHtml(session.title)}</span>
+            <span class="sprog-meta">${escapeHtml(session.room || '')}</span>
+            ${papers.length ? `<div class="sprog-paper-list">${papers.map(paper => {
+              const authors = getPaperAuthors(paper);
+              return `<div class="sprog-paper-item"><span class="sprog-paper-title">${escapeHtml(paper.titulo || 'Sin título')}</span>${authors ? `<span class="sprog-authors">${escapeHtml(authors)}</span>` : ''}</div>`;
+            }).join('')}</div>` : ''}
           </td>
-        </tr>
-      `;
-    }
-
-    function renderGeneralDetail(hash) {
-      const label = hash.replace(/^general-/, "").replaceAll("-", " ");
-      app.innerHTML = `
-        <section class="sprog-general-detail">
-          <h2>${escapeHtml(label.charAt(0).toUpperCase() + label.slice(1))}</h2>
-          <p>Esta entrada general todavía no tiene detalle configurado.</p>
-        </section>
-      `;
+        </tr>`;
     }
 
     function route() {
-      const hash = decodeURIComponent(window.location.hash.replace(/^#/, ""));
-
-      if (!hash) {
-        renderSummary();
-        return;
-      }
-
-      if (hash.startsWith("general-")) {
-        renderGeneralDetail(hash);
-        return;
-      }
-
-      const session = state.sessions.find(item => item.id === hash);
-      if (session) {
-        renderTrackDetail(session.trackId, session.id);
-        return;
-      }
-
+      const hash = decodeURIComponent(window.location.hash.replace(/^#/, ''));
+      if (!hash) return renderSummary();
+      const session = state.sessions.find(s => s.id === hash);
+      if (session) return renderTrackDetail(session.trackId, session.id);
       const track = getTrack(hash);
-      if (track) {
-        renderTrackDetail(track.id);
-        return;
-      }
-
+      if (track) return renderTrackDetail(track.id);
       renderSummary();
     }
 
-    document.querySelector("[data-sprog-home]").addEventListener("click", event => {
+    document.querySelector('[data-sprog-home]')?.addEventListener('click', event => {
       event.preventDefault();
-      history.pushState("", document.title, window.location.pathname + window.location.search);
+      history.pushState('', document.title, window.location.pathname + window.location.search);
       renderSummary();
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-
-    window.addEventListener("hashchange", route);
+    window.addEventListener('hashchange', route);
     init();
   </script>
 </body>

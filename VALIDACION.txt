@@ -1,26 +1,12 @@
-Validación del paquete
-======================
+Validación del paquete v2
+Archivos JSON incluidos:
+- AI4SE.json: OK (2 días)
+- ASV.json: OK (1 días)
+- ICD.json: OK (3 días)
+- ISDM.json: OK (1 días)
+- ISGD.json: OK (2 días)
+- MCPS.json: OK (1 días)
+- METODOS.json: OK (2 días)
+- QUANTUM.json: OK (2 días)
 
-JSON encontrados:
-- AI4SE.json: válido, 2 día(s), 5 sesión(es)
-- ASV.json: válido, 1 día(s), 4 sesión(es)
-- ICD.json: válido, 3 día(s), 7 sesión(es)
-- ISDM.json: válido, 1 día(s), 2 sesión(es)
-- ISGD.json: válido, 2 día(s), 4 sesión(es)
-- MCPS.json: válido, 1 día(s), 3 sesión(es)
-- METODOS.json: válido, 2 día(s), 4 sesión(es)
-- QUANTUM.json: válido, 2 día(s), 6 sesión(es)
-
-Tracks configurados:
-- ISGD: data/tracks/ISGD.json -> OK
-- AI4SE: data/tracks/AI4SE.json -> OK
-- ICD: data/tracks/ICD.json -> OK
-- METODOS: data/tracks/METODOS.json -> OK
-- QUANTUM: data/tracks/QUANTUM.json -> OK
-- MCPS: data/tracks/MCPS.json -> OK
-- ISDM: data/tracks/ISDM.json -> OK
-- ASV: data/tracks/ASV.json -> OK
-
-Nota sobre salas por defecto:
-- Los JSON que no incluyen sala en el título usan la sala definida en data/programa-config.json.
-- Ajusta el campo room de cada track si necesitas moverlo de columna.
+Cambios aplicados: QUANTUM corregido; diagnósticos ocultos; detalles sin listas numeradas; eventos generales actualizados.

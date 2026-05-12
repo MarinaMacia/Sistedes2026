@@ -1,82 +1,63 @@
-# Programa SISTEDES multitrack - listo para GitHub Pages
+# Programa SISTEDES para GitHub Pages
 
-Este paquete está preparado para subirlo a GitHub Pages como sitio estático.
+Paquete actualizado para publicar el programa multitrack en GitHub Pages y embeberlo en WordPress.
+
+## Cambios incluidos
+
+- Corrección de QUANTUM: la primera jornada pasa a **Martes 16 de Junio de 2026**.
+- En ASV/TASOVA y cualquier entrada sin ponencias ya no aparece el texto "Sin ponencias listadas para esta entrada".
+- Las pausas café incluyen el enlace a Aula Miguel Hernández: https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101PB008
+- Se han eliminado las listas numeradas de ponencias.
+- Se ha eliminado el prefijo visual `S1`, `S2`, etc. delante de cada sesión.
+- Se ha añadido más separación visual entre días.
+- Se ha eliminado el bloque de diagnóstico de carga.
+- Se han añadido las franjas generales solicitadas con sus enlaces.
+- El programa usa `Alicante` como ubicación.
 
 ## Qué subir
 
-Sube al repositorio el CONTENIDO de esta carpeta, no el ZIP:
-
-- `index.html`
-- `style.css`
-- `.nojekyll`
-- `data/programa-config.json`
-- `data/tracks/*.json`
-
-La estructura final del repositorio debe quedar así:
+Sube el contenido de esta carpeta a la raíz de un repositorio de GitHub Pages:
 
 ```text
-/
-├── index.html
-├── style.css
-├── .nojekyll
-└── data/
-    ├── programa-config.json
-    └── tracks/
-        ├── AI4SE.json
-        ├── ASV.json
-        ├── ICD.json
-        ├── ISDM.json
-        ├── ISGD.json
-        ├── MCPS.json
-        ├── METODOS.json
-        └── QUANTUM.json
+index.html
+style.css
+.nojekyll
+README_GITHUB_PAGES.md
+data/programa-config.json
+data/tracks/*.json
 ```
+
+No subas el ZIP como único archivo: hay que descomprimirlo y subir su contenido.
 
 ## Activar GitHub Pages
 
-1. Crea un repositorio en GitHub, por ejemplo `programa-sistedes`.
-2. Sube los archivos anteriores al repositorio, en la raíz.
-3. Ve a `Settings → Pages`.
-4. En `Build and deployment`, selecciona `Deploy from a branch`.
-5. Elige:
-   - Branch: `main`
-   - Folder: `/root`
+1. Entra en el repositorio.
+2. Ve a Settings > Pages.
+3. En Build and deployment, elige Deploy from a branch.
+4. Branch: main.
+5. Folder: /root.
 6. Guarda.
 
-La URL será similar a:
+La URL quedará parecida a:
 
 ```text
-https://TU-USUARIO.github.io/programa-sistedes/
+https://TU-USUARIO.github.io/NOMBRE-REPO/
+```
+
+## Embeber en WordPress
+
+```html
+<iframe src="https://TU-USUARIO.github.io/NOMBRE-REPO/" style="width:100%;height:950px;border:0;" loading="lazy"></iframe>
 ```
 
 ## Comprobación rápida
 
-Antes de embeberlo, abre directamente:
+Abre estas URLs:
 
 ```text
-https://TU-USUARIO.github.io/programa-sistedes/data/programa-config.json
-https://TU-USUARIO.github.io/programa-sistedes/data/tracks/ICD.json
+https://TU-USUARIO.github.io/NOMBRE-REPO/
+https://TU-USUARIO.github.io/NOMBRE-REPO/data/programa-config.json
+https://TU-USUARIO.github.io/NOMBRE-REPO/data/tracks/QUANTUM.json
 ```
 
-Si se ve el JSON en el navegador, el widget lo podrá cargar.
-
-## WordPress
-
-Pega en un bloque HTML:
-
-```html
-<iframe src="https://TU-USUARIO.github.io/programa-sistedes/"
-        style="width:100%;height:950px;border:0;"
-        loading="lazy"></iframe>
-```
-
-## Ajustes incluidos
-
-- Se ha añadido `.nojekyll`.
-- Se han eliminado archivos de macOS del paquete.
-- Se ha corregido la ruta `QuantumX.json` → `QUANTUM.json`.
-- Se han incluido todos los tracks del ZIP: `AI4SE`, `ASV`, `ICD`, `ISDM`, `ISGD`, `MCPS`, `METODOS`, `QUANTUM`.
-- La tabla principal se genera dinámicamente desde los JSON, con filas transversales configuradas en `data/programa-config.json`.
-- Si un JSON no carga, el diagnóstico muestra la URL exacta que ha fallado.
-- `index.html` contiene datos embebidos como respaldo para pruebas locales, pero en GitHub Pages cargará los JSON externos.
-- Se normalizan fechas mezcladas como `16 de Junio de 2026`, `Martes 16 de Junio` o `Jueves 2026` para construir una tabla principal coherente.
+Si las tres cargan, WordPress debería poder embeber el programa.

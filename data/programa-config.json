@@ -1,20 +1,32 @@
 {
   "title": "Programa SISTEDES",
-  "subtitle": "Córdoba (SPAIN)",
+  "subtitle": "Alicante",
   "year": 2026,
   "month": 6,
   "rooms": [
-    "SALA A",
-    "SALA B",
-    "SALA C",
-    "SALA D"
+    "Aula 1.2",
+    "Aula 1.1",
+    "Aula Rafael Altamira",
+    "Aula 2.2",
+    "Aula Institucional / PROLE"
   ],
+  "roomAliases": {
+    "SALA A": "Aula 1.2",
+    "SALA B": "Aula 1.1",
+    "SALA C": "Aula Rafael Altamira",
+    "SALA D": "Aula 2.2",
+    "SALA E": "Aula Institucional / PROLE",
+    "AULA 1.2": "Aula 1.2",
+    "AULA 1.1": "Aula 1.1",
+    "AULA RAFAEL ALTAMIRA": "Aula Rafael Altamira",
+    "AULA 2.2": "Aula 2.2"
+  },
   "tracks": [
     {
       "id": "ISGD",
       "short": "ISGD",
       "name": "Ingeniería del Software y Gobierno del Dato",
-      "room": "SALA A",
+      "room": "Aula 1.2",
       "className": "sprog-slot--isgd",
       "file": "data/tracks/ISGD.json"
     },
@@ -22,7 +34,7 @@
       "id": "AI4SE",
       "short": "AI4SE",
       "name": "Artificial Intelligence for Software Engineering",
-      "room": "SALA B",
+      "room": "Aula 1.1",
       "className": "sprog-slot--ai4se",
       "file": "data/tracks/AI4SE.json"
     },
@@ -30,116 +42,684 @@
       "id": "ICD",
       "short": "ICD",
       "name": "Ingeniería, Ciencia y Datos",
-      "room": "SALA C",
+      "room": "Aula Rafael Altamira",
       "className": "sprog-slot--icd",
       "file": "data/tracks/ICD.json"
+    },
+    {
+      "id": "ISDM",
+      "short": "ISDM",
+      "name": "Ingeniería del Software Dirigida por Modelos",
+      "room": "Aula 2.2",
+      "className": "sprog-slot--isdm",
+      "file": "data/tracks/ISDM.json"
     },
     {
       "id": "METODOS",
       "short": "MÉTODOS",
       "name": "Métodos",
-      "room": "SALA D",
+      "room": "Aula 2.2",
       "className": "sprog-slot--metodos",
       "file": "data/tracks/METODOS.json"
     },
     {
       "id": "QUANTUM",
-      "short": "QUANTUM",
-      "name": "Quantum",
-      "room": "SALA A",
-      "className": "sprog-slot--quantum",
+      "short": "QuantumX",
+      "name": "QuantumX",
+      "room": "Aula 1.2",
+      "className": "sprog-slot--quantumx",
       "file": "data/tracks/QUANTUM.json"
     },
     {
       "id": "MCPS",
       "short": "MCPS",
       "name": "Métodos, Calidad y Pruebas del Software",
-      "room": "SALA B",
+      "room": "Aula 1.1",
       "className": "sprog-slot--mcps",
       "file": "data/tracks/MCPS.json"
-    },
-    {
-      "id": "ISDM",
-      "short": "ISDM",
-      "name": "Ingeniería del Software Dirigida por Modelos",
-      "room": "SALA A",
-      "className": "sprog-slot--isdm",
-      "file": "data/tracks/ISDM.json"
     },
     {
       "id": "ASV",
       "short": "ASV",
       "name": "ASV",
-      "room": "SALA D",
+      "room": "Aula 2.2",
       "className": "sprog-slot--asv",
       "file": "data/tracks/ASV.json"
     }
   ],
-  "commonEvents": [
+  "days": [
     {
       "day": "Martes 16 de Junio",
-      "time": "08:15 - 09:00",
-      "label": "Registro",
-      "className": "sprog-slot--registro"
-    },
-    {
-      "day": "Martes 16 de Junio",
-      "time": "10:30 - 11:00",
-      "label": "Pausa café",
-      "className": "sprog-slot--break"
-    },
-    {
-      "day": "Martes 16 de Junio",
-      "time": "13:30 - 15:00",
-      "label": "Almuerzo",
-      "className": "sprog-slot--lunch"
-    },
-    {
-      "day": "Martes 16 de Junio",
-      "time": "16:30 - 17:00",
-      "label": "Pausa café",
-      "className": "sprog-slot--break"
+      "location": "Alicante",
+      "rooms": [
+        "Aula 1.2",
+        "Aula 1.1",
+        "Aula Rafael Altamira",
+        "Aula 2.2",
+        "Aula Institucional / PROLE"
+      ],
+      "rows": [
+        {
+          "time": "08:15-09:00",
+          "type": "span",
+          "label": "Registro",
+          "className": "sprog-slot--registro",
+          "links": [
+            {
+              "label": "Vestíbulo sede",
+              "url": "#"
+            }
+          ]
+        },
+        {
+          "time": "09:00-10:30",
+          "cells": [
+            {
+              "room": "Aula 1.2",
+              "tracks": [
+                "ISGD"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 1.1",
+              "tracks": [
+                "AI4SE"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Rafael Altamira",
+              "tracks": [
+                "ICD"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 2.2",
+              "tracks": [
+                "ISDM"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Institucional / PROLE",
+              "group": "JISBD",
+              "label": "PROLE",
+              "className": "sprog-slot--prole"
+            }
+          ]
+        },
+        {
+          "time": "10:30-11:00",
+          "type": "span",
+          "label": "Pausa café",
+          "className": "sprog-slot--break",
+          "links": [
+            {
+              "label": "Aula Miguel Hernández",
+              "url": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101PB008"
+            }
+          ]
+        },
+        {
+          "time": "11:00-13:30",
+          "type": "span",
+          "label": "Inauguración + Keynote JCIS",
+          "className": "sprog-slot--general",
+          "links": [
+            {
+              "label": "Aula de Cultura · Fundación Mediterráneo",
+              "url": "https://fundacionmediterraneo.es/centros/centro-cultural-de-alicante/"
+            }
+          ]
+        },
+        {
+          "time": "13:30-15:00",
+          "type": "span",
+          "label": "Almuerzo",
+          "className": "sprog-slot--lunch",
+          "links": [
+            {
+              "label": "Aula Miguel Hernández",
+              "url": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101PB008"
+            },
+            {
+              "label": "Restaurante Poniente",
+              "url": "https://ponienterestaurante.es/"
+            }
+          ]
+        },
+        {
+          "time": "15:00-16:30",
+          "cells": [
+            {
+              "room": "Aula 1.2",
+              "tracks": [
+                "ISGD"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 1.1",
+              "tracks": [
+                "AI4SE"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Rafael Altamira",
+              "tracks": [
+                "ICD"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 2.2",
+              "tracks": [
+                "ISDM"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Institucional / PROLE",
+              "group": "JISBD",
+              "label": "PROLE",
+              "className": "sprog-slot--prole"
+            }
+          ]
+        },
+        {
+          "time": "16:30-17:00",
+          "type": "span",
+          "label": "Pausa café",
+          "className": "sprog-slot--break",
+          "links": [
+            {
+              "label": "Aula Miguel Hernández",
+              "url": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101PB008"
+            }
+          ]
+        },
+        {
+          "time": "17:00-18:00",
+          "cells": [
+            {
+              "room": "Aula 1.2",
+              "tracks": [
+                "ISGD"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 1.1",
+              "tracks": [
+                "AI4SE"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Rafael Altamira",
+              "tracks": [
+                "ICD"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 2.2",
+              "tracks": [
+                "METODOS"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Institucional / PROLE",
+              "group": "JISBD",
+              "label": "PROLE",
+              "className": "sprog-slot--prole"
+            }
+          ]
+        }
+      ]
     },
     {
       "day": "Miércoles 17 de Junio",
-      "time": "08:30 - 09:00",
-      "label": "Registro",
-      "className": "sprog-slot--registro"
-    },
-    {
-      "day": "Miércoles 17 de Junio",
-      "time": "10:30 - 11:00",
-      "label": "Pausa café",
-      "className": "sprog-slot--break"
-    },
-    {
-      "day": "Miércoles 17 de Junio",
-      "time": "13:30 - 15:00",
-      "label": "Almuerzo",
-      "className": "sprog-slot--lunch"
-    },
-    {
-      "day": "Miércoles 17 de Junio",
-      "time": "16:30 - 17:00",
-      "label": "Pausa café",
-      "className": "sprog-slot--break"
+      "location": "Alicante",
+      "rooms": [
+        "Aula 1.2",
+        "Aula 1.1",
+        "Aula Rafael Altamira",
+        "Aula 2.2",
+        "Aula Institucional / PROLE"
+      ],
+      "rows": [
+        {
+          "time": "08:30-09:00",
+          "type": "span",
+          "label": "Registro",
+          "className": "sprog-slot--registro",
+          "links": [
+            {
+              "label": "Vestíbulo sede",
+              "url": "#"
+            }
+          ]
+        },
+        {
+          "time": "09:00-10:30",
+          "cells": [
+            {
+              "room": "Aula 1.2",
+              "tracks": [
+                "QUANTUM"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 1.1",
+              "tracks": [
+                "AI4SE"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Rafael Altamira",
+              "tracks": [
+                "ISGD"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 2.2",
+              "tracks": [
+                "METODOS"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Institucional / PROLE",
+              "group": "JISBD",
+              "label": "Transformación Digital",
+              "className": "sprog-slot--prole"
+            }
+          ]
+        },
+        {
+          "time": "10:30-11:00",
+          "type": "span",
+          "label": "Pausa café",
+          "className": "sprog-slot--break",
+          "links": [
+            {
+              "label": "Aula Miguel Hernández",
+              "url": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101PB008"
+            }
+          ]
+        },
+        {
+          "time": "11:00-12:30",
+          "type": "span",
+          "label": "Keynote JISBD",
+          "className": "sprog-slot--general",
+          "links": [
+            {
+              "label": "Aula de Cultura · Fundación Mediterráneo",
+              "url": "https://fundacionmediterraneo.es/centros/centro-cultural-de-alicante/"
+            }
+          ]
+        },
+        {
+          "time": "12:30-13:30",
+          "type": "span",
+          "label": "SISTEDES e Innovación Docente en la Enseñanza del Desarrollo del Software en la Era de la IA Generativa",
+          "className": "sprog-slot--general",
+          "links": [
+            {
+              "label": "Aula de Cultura · Fundación Mediterráneo",
+              "url": "https://fundacionmediterraneo.es/centros/centro-cultural-de-alicante/"
+            }
+          ]
+        },
+        {
+          "time": "13:30-15:00",
+          "type": "span",
+          "label": "Almuerzo",
+          "className": "sprog-slot--lunch",
+          "links": [
+            {
+              "label": "Aula Miguel Hernández",
+              "url": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101PB008"
+            },
+            {
+              "label": "Restaurante Poniente",
+              "url": "https://ponienterestaurante.es/"
+            }
+          ]
+        },
+        {
+          "time": "15:00-16:30",
+          "cells": [
+            {
+              "room": "Aula 1.2",
+              "tracks": [
+                "QUANTUM"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 1.1",
+              "tracks": [
+                "AI4SE"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Rafael Altamira",
+              "tracks": [
+                "ISGD"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 2.2",
+              "tracks": [
+                "METODOS"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Institucional / PROLE",
+              "group": "JISBD",
+              "label": "PROLE",
+              "className": "sprog-slot--prole"
+            }
+          ]
+        },
+        {
+          "time": "16:30-17:00",
+          "type": "span",
+          "label": "Pausa café + pósteres",
+          "className": "sprog-slot--break",
+          "links": [
+            {
+              "label": "Aula Miguel Hernández",
+              "url": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101PB008"
+            }
+          ]
+        },
+        {
+          "time": "17:00-18:30",
+          "cells": [
+            {
+              "room": "Aula 1.2",
+              "tracks": [
+                "QUANTUM"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 1.1",
+              "tracks": [
+                "AI4SE"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Rafael Altamira",
+              "tracks": [
+                "ICD"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 2.2",
+              "tracks": [
+                "METODOS"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Institucional / PROLE",
+              "group": "JISBD",
+              "label": "PROLE",
+              "className": "sprog-slot--prole"
+            }
+          ]
+        }
+      ]
     },
     {
       "day": "Jueves 18 de Junio",
-      "time": "10:30 - 11:00",
-      "label": "Pausa café",
-      "className": "sprog-slot--break"
-    },
-    {
-      "day": "Jueves 18 de Junio",
-      "time": "13:45 - 15:30",
-      "label": "Almuerzo",
-      "className": "sprog-slot--lunch"
+      "location": "Alicante",
+      "rooms": [
+        "Aula 1.2",
+        "Aula 1.1",
+        "Aula Rafael Altamira",
+        "Aula 2.2",
+        "Aula Institucional / PROLE"
+      ],
+      "rows": [
+        {
+          "time": "08:30-09:00",
+          "type": "span",
+          "label": "Registro",
+          "className": "sprog-slot--registro",
+          "links": [
+            {
+              "label": "Vestíbulo sede",
+              "url": "#"
+            }
+          ]
+        },
+        {
+          "time": "09:00-10:30",
+          "cells": [
+            {
+              "room": "Aula 1.2",
+              "tracks": [
+                "QUANTUM"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 1.1",
+              "tracks": [
+                "MCPS"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Rafael Altamira",
+              "tracks": [
+                "ICD"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 2.2",
+              "tracks": [
+                "ASV"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Institucional / PROLE",
+              "group": "JISBD",
+              "label": "PROLE",
+              "className": "sprog-slot--prole"
+            }
+          ]
+        },
+        {
+          "time": "10:30-11:00",
+          "type": "span",
+          "label": "Pausa café",
+          "className": "sprog-slot--break",
+          "links": [
+            {
+              "label": "Aula Miguel Hernández",
+              "url": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101PB008"
+            }
+          ]
+        },
+        {
+          "time": "11:00-12:30",
+          "type": "span",
+          "label": "Keynote PROLE",
+          "className": "sprog-slot--general",
+          "links": [
+            {
+              "label": "Aula de Cultura · Fundación Mediterráneo",
+              "url": "https://fundacionmediterraneo.es/centros/centro-cultural-de-alicante/"
+            }
+          ]
+        },
+        {
+          "time": "12:30-13:45",
+          "cells": [
+            {
+              "room": "Aula 1.2",
+              "tracks": [
+                "QUANTUM"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 1.1",
+              "tracks": [
+                "MCPS"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Rafael Altamira",
+              "tracks": [
+                "ICD"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 2.2",
+              "tracks": [
+                "ASV"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Institucional / PROLE",
+              "group": "JISBD",
+              "label": "PROLE",
+              "className": "sprog-slot--prole"
+            }
+          ]
+        },
+        {
+          "time": "13:45-14:30",
+          "type": "span",
+          "label": "Mascletá",
+          "className": "sprog-slot--lunch",
+          "links": [
+            {
+              "label": "Plaza de los Luceros",
+              "url": "https://www.google.com/maps/place/Pl.+de+los+Luceros,+Alicante/@38.3459999,-0.4936593,909m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd62364d9e03e7d3:0xa9fcf805713a17de!8m2!3d38.3459957!4d-0.4910844!16s%2Fg%2F120qdcnc?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D"
+            }
+          ]
+        },
+        {
+          "time": "14:30-15:45",
+          "type": "span",
+          "label": "Almuerzo",
+          "className": "sprog-slot--lunch",
+          "links": [
+            {
+              "label": "Aula Miguel Hernández",
+              "url": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101PB008"
+            },
+            {
+              "label": "Restaurante Poniente",
+              "url": "https://ponienterestaurante.es/"
+            }
+          ]
+        },
+        {
+          "time": "15:45-17:15",
+          "cells": [
+            {
+              "room": "Aula 1.2",
+              "tracks": [
+                "QUANTUM"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 1.1",
+              "tracks": [
+                "MCPS"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Rafael Altamira",
+              "tracks": [
+                "ICD"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula 2.2",
+              "tracks": [
+                "ASV"
+              ],
+              "group": "JISBD"
+            },
+            {
+              "room": "Aula Institucional / PROLE",
+              "group": "JISBD",
+              "label": "PROLE",
+              "className": "sprog-slot--prole"
+            }
+          ]
+        },
+        {
+          "time": "17:15-17:45",
+          "type": "span",
+          "label": "Pausa café",
+          "className": "sprog-slot--break",
+          "links": [
+            {
+              "label": "Aula Miguel Hernández",
+              "url": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101PB008"
+            }
+          ]
+        },
+        {
+          "time": "17:45-18:00",
+          "type": "span",
+          "label": "Premios SISTEDES",
+          "className": "sprog-slot--awards",
+          "links": [
+            {
+              "label": "Aula de Cultura · Fundación Mediterráneo",
+              "url": "https://fundacionmediterraneo.es/centros/centro-cultural-de-alicante/"
+            }
+          ]
+        },
+        {
+          "time": "18:00-19:15",
+          "type": "span",
+          "label": "Asamblea SISTEDES + Clausura",
+          "className": "sprog-slot--general",
+          "links": [
+            {
+              "label": "Aula de Cultura · Fundación Mediterráneo",
+              "url": "https://fundacionmediterraneo.es/centros/centro-cultural-de-alicante/"
+            }
+          ]
+        }
+      ]
     }
   ],
   "options": {
-    "autoBuildSummary": true,
-    "showDiagnostics": true,
-    "hideEmptyRows": false
+    "showDiagnostics": false
   }
 }
