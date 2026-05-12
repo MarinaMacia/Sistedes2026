@@ -7,15 +7,19 @@
     "Aula 1.2",
     "Aula 1.1",
     "Aula Rafael Altamira",
-    "Aula 2.2",
-    "Aula Institucional / PROLE"
+    "Aula 2.2"
   ],
+  "roomLinks": {
+    "Aula 1.2": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101P2007",
+    "Aula 1.1": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101P1003",
+    "Aula Rafael Altamira": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101PB005",
+    "Aula 2.2": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101P2001"
+  },
   "roomAliases": {
     "SALA A": "Aula 1.2",
     "SALA B": "Aula 1.1",
     "SALA C": "Aula Rafael Altamira",
     "SALA D": "Aula 2.2",
-    "SALA E": "Aula Institucional / PROLE",
     "AULA 1.2": "Aula 1.2",
     "AULA 1.1": "Aula 1.1",
     "AULA RAFAEL ALTAMIRA": "Aula Rafael Altamira",
@@ -95,58 +99,37 @@
         "Aula 1.2",
         "Aula 1.1",
         "Aula Rafael Altamira",
-        "Aula 2.2",
-        "Aula Institucional / PROLE"
+        "Aula 2.2"
       ],
       "rows": [
         {
           "time": "08:15-09:00",
           "type": "span",
-          "label": "Registro",
-          "className": "sprog-slot--registro",
-          "links": [
-            {
-              "label": "Vestíbulo sede",
-              "url": "#"
-            }
-          ]
+          "label": "Registro · Vestíbulo sede",
+          "className": "sprog-slot--registro"
         },
         {
           "time": "09:00-10:30",
           "cells": [
             {
               "room": "Aula 1.2",
-              "tracks": [
-                "ISGD"
-              ],
+              "tracks": ["ISGD"],
               "group": "JISBD"
             },
             {
               "room": "Aula 1.1",
-              "tracks": [
-                "AI4SE"
-              ],
+              "tracks": ["AI4SE"],
               "group": "JISBD"
             },
             {
               "room": "Aula Rafael Altamira",
-              "tracks": [
-                "ICD"
-              ],
+              "tracks": ["ICD"],
               "group": "JISBD"
             },
             {
               "room": "Aula 2.2",
-              "tracks": [
-                "ISDM"
-              ],
+              "tracks": ["ISDM"],
               "group": "JISBD"
-            },
-            {
-              "room": "Aula Institucional / PROLE",
-              "group": "JISBD",
-              "label": "PROLE",
-              "className": "sprog-slot--prole"
             }
           ]
         },
@@ -195,37 +178,23 @@
           "cells": [
             {
               "room": "Aula 1.2",
-              "tracks": [
-                "ISGD"
-              ],
+              "tracks": ["ISGD"],
               "group": "JISBD"
             },
             {
               "room": "Aula 1.1",
-              "tracks": [
-                "AI4SE"
-              ],
+              "tracks": ["AI4SE"],
               "group": "JISBD"
             },
             {
               "room": "Aula Rafael Altamira",
-              "tracks": [
-                "ICD"
-              ],
+              "tracks": ["ICD"],
               "group": "JISBD"
             },
             {
               "room": "Aula 2.2",
-              "tracks": [
-                "ISDM"
-              ],
+              "tracks": ["ISDM"],
               "group": "JISBD"
-            },
-            {
-              "room": "Aula Institucional / PROLE",
-              "group": "JISBD",
-              "label": "PROLE",
-              "className": "sprog-slot--prole"
             }
           ]
         },
@@ -246,37 +215,23 @@
           "cells": [
             {
               "room": "Aula 1.2",
-              "tracks": [
-                "ISGD"
-              ],
+              "tracks": ["ISGD"],
               "group": "JISBD"
             },
             {
               "room": "Aula 1.1",
-              "tracks": [
-                "AI4SE"
-              ],
+              "tracks": ["AI4SE"],
               "group": "JISBD"
             },
             {
               "room": "Aula Rafael Altamira",
-              "tracks": [
-                "ICD"
-              ],
+              "tracks": ["ICD"],
               "group": "JISBD"
             },
             {
               "room": "Aula 2.2",
-              "tracks": [
-                "METODOS"
-              ],
+              "tracks": ["METODOS"],
               "group": "JISBD"
-            },
-            {
-              "room": "Aula Institucional / PROLE",
-              "group": "JISBD",
-              "label": "PROLE",
-              "className": "sprog-slot--prole"
             }
           ]
         }
@@ -289,58 +244,37 @@
         "Aula 1.2",
         "Aula 1.1",
         "Aula Rafael Altamira",
-        "Aula 2.2",
-        "Aula Institucional / PROLE"
+        "Aula 2.2"
       ],
       "rows": [
         {
           "time": "08:30-09:00",
           "type": "span",
-          "label": "Registro",
-          "className": "sprog-slot--registro",
-          "links": [
-            {
-              "label": "Vestíbulo sede",
-              "url": "#"
-            }
-          ]
+          "label": "Registro · Vestíbulo sede",
+          "className": "sprog-slot--registro"
         },
         {
           "time": "09:00-10:30",
           "cells": [
             {
               "room": "Aula 1.2",
-              "tracks": [
-                "QUANTUM"
-              ],
+              "tracks": ["QUANTUM"],
               "group": "JISBD"
             },
             {
               "room": "Aula 1.1",
-              "tracks": [
-                "AI4SE"
-              ],
+              "tracks": ["AI4SE"],
               "group": "JISBD"
             },
             {
               "room": "Aula Rafael Altamira",
-              "tracks": [
-                "ISGD"
-              ],
+              "tracks": ["ISGD"],
               "group": "JISBD"
             },
             {
               "room": "Aula 2.2",
-              "tracks": [
-                "METODOS"
-              ],
+              "tracks": ["METODOS"],
               "group": "JISBD"
-            },
-            {
-              "room": "Aula Institucional / PROLE",
-              "group": "JISBD",
-              "label": "Transformación Digital",
-              "className": "sprog-slot--prole"
             }
           ]
         },
@@ -401,37 +335,23 @@
           "cells": [
             {
               "room": "Aula 1.2",
-              "tracks": [
-                "QUANTUM"
-              ],
+              "tracks": ["QUANTUM"],
               "group": "JISBD"
             },
             {
               "room": "Aula 1.1",
-              "tracks": [
-                "AI4SE"
-              ],
+              "tracks": ["AI4SE"],
               "group": "JISBD"
             },
             {
               "room": "Aula Rafael Altamira",
-              "tracks": [
-                "ISGD"
-              ],
+              "tracks": ["ISGD"],
               "group": "JISBD"
             },
             {
               "room": "Aula 2.2",
-              "tracks": [
-                "METODOS"
-              ],
+              "tracks": ["METODOS"],
               "group": "JISBD"
-            },
-            {
-              "room": "Aula Institucional / PROLE",
-              "group": "JISBD",
-              "label": "PROLE",
-              "className": "sprog-slot--prole"
             }
           ]
         },
@@ -452,37 +372,23 @@
           "cells": [
             {
               "room": "Aula 1.2",
-              "tracks": [
-                "QUANTUM"
-              ],
+              "tracks": ["QUANTUM"],
               "group": "JISBD"
             },
             {
               "room": "Aula 1.1",
-              "tracks": [
-                "AI4SE"
-              ],
+              "tracks": ["AI4SE"],
               "group": "JISBD"
             },
             {
               "room": "Aula Rafael Altamira",
-              "tracks": [
-                "ICD"
-              ],
+              "tracks": ["ICD"],
               "group": "JISBD"
             },
             {
               "room": "Aula 2.2",
-              "tracks": [
-                "METODOS"
-              ],
+              "tracks": ["METODOS"],
               "group": "JISBD"
-            },
-            {
-              "room": "Aula Institucional / PROLE",
-              "group": "JISBD",
-              "label": "PROLE",
-              "className": "sprog-slot--prole"
             }
           ]
         }
@@ -495,58 +401,37 @@
         "Aula 1.2",
         "Aula 1.1",
         "Aula Rafael Altamira",
-        "Aula 2.2",
-        "Aula Institucional / PROLE"
+        "Aula 2.2"
       ],
       "rows": [
         {
           "time": "08:30-09:00",
           "type": "span",
-          "label": "Registro",
-          "className": "sprog-slot--registro",
-          "links": [
-            {
-              "label": "Vestíbulo sede",
-              "url": "#"
-            }
-          ]
+          "label": "Registro · Vestíbulo sede",
+          "className": "sprog-slot--registro"
         },
         {
           "time": "09:00-10:30",
           "cells": [
             {
               "room": "Aula 1.2",
-              "tracks": [
-                "QUANTUM"
-              ],
+              "tracks": ["QUANTUM"],
               "group": "JISBD"
             },
             {
               "room": "Aula 1.1",
-              "tracks": [
-                "MCPS"
-              ],
+              "tracks": ["MCPS"],
               "group": "JISBD"
             },
             {
               "room": "Aula Rafael Altamira",
-              "tracks": [
-                "ICD"
-              ],
+              "tracks": ["ICD"],
               "group": "JISBD"
             },
             {
               "room": "Aula 2.2",
-              "tracks": [
-                "ASV"
-              ],
+              "tracks": ["ASV"],
               "group": "JISBD"
-            },
-            {
-              "room": "Aula Institucional / PROLE",
-              "group": "JISBD",
-              "label": "PROLE",
-              "className": "sprog-slot--prole"
             }
           ]
         },
@@ -579,37 +464,23 @@
           "cells": [
             {
               "room": "Aula 1.2",
-              "tracks": [
-                "QUANTUM"
-              ],
+              "tracks": ["QUANTUM"],
               "group": "JISBD"
             },
             {
               "room": "Aula 1.1",
-              "tracks": [
-                "MCPS"
-              ],
+              "tracks": ["MCPS"],
               "group": "JISBD"
             },
             {
               "room": "Aula Rafael Altamira",
-              "tracks": [
-                "ICD"
-              ],
+              "tracks": ["ICD"],
               "group": "JISBD"
             },
             {
               "room": "Aula 2.2",
-              "tracks": [
-                "ASV"
-              ],
+              "tracks": ["ASV"],
               "group": "JISBD"
-            },
-            {
-              "room": "Aula Institucional / PROLE",
-              "group": "JISBD",
-              "label": "PROLE",
-              "className": "sprog-slot--prole"
             }
           ]
         },
@@ -646,37 +517,23 @@
           "cells": [
             {
               "room": "Aula 1.2",
-              "tracks": [
-                "QUANTUM"
-              ],
+              "tracks": ["QUANTUM"],
               "group": "JISBD"
             },
             {
               "room": "Aula 1.1",
-              "tracks": [
-                "MCPS"
-              ],
+              "tracks": ["MCPS"],
               "group": "JISBD"
             },
             {
               "room": "Aula Rafael Altamira",
-              "tracks": [
-                "ICD"
-              ],
+              "tracks": ["ICD"],
               "group": "JISBD"
             },
             {
               "room": "Aula 2.2",
-              "tracks": [
-                "ASV"
-              ],
+              "tracks": ["ASV"],
               "group": "JISBD"
-            },
-            {
-              "room": "Aula Institucional / PROLE",
-              "group": "JISBD",
-              "label": "PROLE",
-              "className": "sprog-slot--prole"
             }
           ]
         },
