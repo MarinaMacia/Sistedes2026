@@ -223,6 +223,9 @@
 
 .sprog-table td.sprog-session-detail {
   text-align: left;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  hyphens: auto;
 }
 
 .sprog-session-block + .sprog-session-block {
@@ -235,6 +238,7 @@
   font-weight: 800;
   margin-bottom: 0.25rem;
   color: #006b7a;
+  overflow-wrap: anywhere;
 }
 
 .sprog-paper-list {
@@ -250,7 +254,9 @@
 }
 
 .sprog-paper-title {
+  display: block;
   font-weight: 700;
+  overflow-wrap: anywhere;
 }
 
 .sprog-authors {
@@ -258,6 +264,7 @@
   margin-top: 0.15rem;
   color: #4b5563;
   font-weight: 400;
+  overflow-wrap: anywhere;
 }
 
 .sprog-alert {
