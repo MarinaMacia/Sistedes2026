@@ -277,6 +277,16 @@
 }
 
 @media print {
+  @page {
+    size: A4 landscape;
+    margin: 8mm;
+  }
+
+  html,
+  body {
+    width: 100%;
+  }
+
   .sprog {
     margin: 0;
     overflow: visible;
@@ -289,5 +299,30 @@
 
   .sprog-table-wrap {
     overflow: visible;
+  }
+
+  .sprog-table {
+    min-width: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  .sprog-table th,
+  .sprog-table td {
+    padding: 0.45rem;
+    font-size: 0.82rem;
+    line-height: 1.2;
+  }
+
+  .sprog-time,
+  .sprog-time-col {
+    width: 105px;
+    min-width: 105px;
+    font-size: 0.9rem;
+  }
+
+  .sprog-day {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
   }
 }
