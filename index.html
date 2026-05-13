@@ -10,8 +10,7 @@
   <main id="sprog-root" class="sprog">
     <h1 id="sprog-title" class="sprog-widget-title">Programa <span>SISTEDES</span></h1>
     <div class="sprog-actions" aria-label="Acciones del programa">
-      <a class="sprog-button" href="#" data-sprog-home>Ver tabla general</a>
-      <button class="sprog-button" type="button" onclick="window.print()">Imprimir</button>
+      <a class="sprog-button" href="https://sistedes.lucentia.es/programa-cientifico-general/programa-jisbd/" target="_top" rel="noopener noreferrer">Volver al horario general de JISBD</a>
     </div>
     <div class="sprog-note">Pulsa en un track de la tabla para abrir su programa detallado.</div>
     <section id="sprog-app" aria-live="polite"><div class="sprog-alert">Cargando programa...</div></section>
@@ -215,11 +214,6 @@
         else renderGeneral();
       }
 
-      document.querySelector('[data-sprog-home]').addEventListener('click', event => {
-        event.preventDefault();
-        history.pushState('', document.title, window.location.pathname + window.location.search);
-        renderGeneral();
-      });
       window.addEventListener('hashchange', renderFromHash);
       init();
     })();

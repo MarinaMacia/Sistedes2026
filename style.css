@@ -21,7 +21,34 @@
   font-weight: 700;
 }
 
-.sprog-actions,
+.sprog-actions {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 0 1.25rem;
+}
+
+.sprog-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5rem;
+  padding: 0.65rem 1rem;
+  border-radius: 0.35rem;
+  background-color: #0092a0;
+  color: #ffffff;
+  font-size: 0.98rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+}
+
+.sprog-button:hover,
+.sprog-button:focus {
+  background-color: #006b7a;
+  color: #ffffff;
+}
+
 .sprog-note {
   display: none;
 }
