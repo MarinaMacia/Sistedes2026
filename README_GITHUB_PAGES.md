@@ -21,7 +21,6 @@ Sube el contenido de esta carpeta a la raíz de un repositorio de GitHub Pages:
 ```text
 index.html
 style.css
-.nojekyll
 README_GITHUB_PAGES.md
 data/programa-config.json
 data/tracks/*.json
