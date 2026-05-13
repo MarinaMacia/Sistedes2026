@@ -19,6 +19,7 @@
   <script>
     (() => {
       const app = document.getElementById('sprog-app');
+      const actions = document.querySelector('.sprog-actions');
       let config = null;
       let trackData = {};
       let trackById = {};
@@ -115,6 +116,7 @@
       }
 
       function renderGeneral() {
+        actions.hidden = true;
         document.getElementById('sprog-title').innerHTML = `${escapeHtml(config.title || 'Programa SISTEDES')}`;
         app.innerHTML = (config.days || []).map(day => {
           const rooms = day.rooms && day.rooms.length ? day.rooms : config.rooms || [];
@@ -151,18 +153,19 @@
         const days = Object.entries(data)
           .filter(([, sessions]) => hasTrackContent(sessions))
           .sort((a, b) => daySortKey(a[0]) - daySortKey(b[0]));
+        actions.hidden = false;
         document.getElementById('sprog-title').innerHTML = `${escapeHtml(track.short || track.id)} <span>${escapeHtml(track.name || '')}</span>`;
         app.innerHTML = `
           <section class="sprog-track-detail">
-            <div class="sprog-detail-head"><p>${track.room ? `Sala: ${roomLabel(track.room)}` : ''}</p></div>
-            ${days.length ? days.map(([day, sessions]) => renderTrackDay(day, sessions)).join('') : '<div class="sprog-alert">No hay contenido específico para este track.</div>'}
+            ${days.length ? days.map(([day, sessions]) => renderTrackDay(day, sessions, track)).join('') : '<div class="sprog-alert">No hay contenido específico para este track.</div>'}
           </section>`;
       }
 
-      function renderTrackDay(day, sessions) {
+      function renderTrackDay(day, sessions, track) {
         return `
           <section class="sprog-day sprog-track-day" data-day="${escapeHtml(day)}">
             <h2 class="sprog-day-title">${escapeHtml(stripLinks(day))}</h2>
+            ${track.room ? `<div class="sprog-detail-head"><p>Sala: ${roomLabel(track.room)}</p></div>` : ''}
             <div class="sprog-table-wrap">
               <table class="sprog-table sprog-track-table">
                 <thead><tr><th class="sprog-time-col">Hora</th><th>Sesión / Comunicaciones</th></tr></thead>

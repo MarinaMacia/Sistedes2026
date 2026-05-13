@@ -23,8 +23,12 @@
 
 .sprog-actions {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   margin: 0 0 1.25rem;
+}
+
+.sprog-actions[hidden] {
+  display: none;
 }
 
 .sprog-button {
@@ -198,8 +202,8 @@
 }
 
 .sprog-detail-head {
-  margin: 0 0 1.5rem;
-  text-align: center;
+  margin: -1rem 0 1.5rem;
+  text-align: left;
 }
 
 .sprog-detail-head p {
@@ -212,7 +216,7 @@
   text-decoration: underline;
 }
 
-.sprog-session-detail {
+.sprog-table td.sprog-session-detail {
   text-align: left;
 }
 
