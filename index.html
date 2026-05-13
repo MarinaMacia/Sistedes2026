@@ -8,6 +8,7 @@
 </head>
 <body>
   <main id="sprog-root" class="sprog">
+    <h1 id="sprog-title" class="sprog-widget-title">Programa <span>SISTEDES</span></h1>
     <div class="sprog-actions" aria-label="Acciones del programa">
       <a class="sprog-button" href="https://sistedes.lucentia.es/programa-cientifico-general/programa-jisbd/" target="_top" rel="noopener noreferrer" data-sprog-back>Volver al horario general de JISBD</a>
       <button class="sprog-button" type="button" data-sprog-print>Descargar PDF</button>
@@ -121,7 +122,8 @@
       function renderGeneral() {
         activeTrack = null;
         backButton.hidden = true;
-        document.getElementById('sprog-title').innerHTML = `${escapeHtml(config.title || 'Programa SISTEDES')}`;
+        const title = document.getElementById('sprog-title');
+        if (title) title.innerHTML = `${escapeHtml(config.title || 'Programa SISTEDES')}`;
         app.innerHTML = (config.days || []).map(day => {
           const rooms = day.rooms && day.rooms.length ? day.rooms : config.rooms || [];
           return `
@@ -159,7 +161,8 @@
           .sort((a, b) => daySortKey(a[0]) - daySortKey(b[0]));
         activeTrack = track;
         backButton.hidden = false;
-        document.getElementById('sprog-title').innerHTML = `${escapeHtml(track.short || track.id)} <span>${escapeHtml(track.name || '')}</span>`;
+        const title = document.getElementById('sprog-title');
+        if (title) title.innerHTML = `${escapeHtml(track.short || track.id)} <span>${escapeHtml(track.name || '')}</span>`;
         app.innerHTML = `
           <section class="sprog-track-detail">
             ${days.length ? days.map(([day, sessions]) => renderTrackDay(day, sessions, track)).join('') : '<div class="sprog-alert">No hay contenido específico para este track.</div>'}
