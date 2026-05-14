@@ -27,6 +27,18 @@
       let config = null;
       let trackData = {};
       let trackById = {};
+      const embedMessageType = 'sistedes-program-height';
+
+      function notifyEmbedHeight() {
+        const height = Math.ceil(Math.max(
+          document.body.scrollHeight,
+          document.documentElement.scrollHeight,
+          app ? app.scrollHeight : 0
+        ));
+        if (window.parent && window.parent !== window) {
+          window.parent.postMessage({ type: embedMessageType, height }, '*');
+        }
+      }
 
       function escapeHtml(value) {
         return String(value ?? '')
@@ -142,6 +154,7 @@
               </div>
             </section>`;
         }).join('') || '<div class="sprog-alert">No hay programa disponible.</div>';
+        notifyEmbedHeight();
       }
 
       function currentTrackId() {
@@ -167,6 +180,7 @@
           <section class="sprog-track-detail">
             ${days.length ? days.map(([day, sessions]) => renderTrackDay(day, sessions, track)).join('') : '<div class="sprog-alert">No hay contenido específico para este track.</div>'}
           </section>`;
+        notifyEmbedHeight();
       }
 
       function renderTrackDay(day, sessions, track) {
@@ -233,6 +247,10 @@
       window.addEventListener('afterprint', () => {
         document.title = defaultTitle;
       });
+      window.addEventListener('load', notifyEmbedHeight);
+      if ('ResizeObserver' in window) {
+        new ResizeObserver(notifyEmbedHeight).observe(document.body);
+      }
       window.addEventListener('hashchange', renderFromHash);
       init();
     })();

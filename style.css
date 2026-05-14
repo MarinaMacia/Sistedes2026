@@ -2,7 +2,7 @@
   width: 100%;
   max-width: none;
   margin: 0 0 2.5rem;
-  overflow: hidden;
+  overflow: visible;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -333,7 +333,21 @@
   }
 
   .sprog-day {
-    break-inside: avoid;
+    break-inside: auto;
+    page-break-inside: auto;
     margin-bottom: 1.5rem;
+  }
+
+  .sprog-day-title,
+  .sprog-table thead {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .sprog-table tr,
+  .sprog-session-block,
+  .sprog-paper-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
   }
 }

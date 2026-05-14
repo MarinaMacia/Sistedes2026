@@ -46,7 +46,23 @@ https://TU-USUARIO.github.io/NOMBRE-REPO/
 ## Embeber en WordPress
 
 ```html
-<iframe src="https://TU-USUARIO.github.io/NOMBRE-REPO/" style="width:100%;height:950px;border:0;" loading="lazy"></iframe>
+<div style="width: 100%; margin: 10vh 0;">
+  <iframe
+    id="sistedes-programa"
+    src="https://TU-USUARIO.github.io/NOMBRE-REPO/"
+    style="border: none; display: block; width: 100%; min-height: 2600px;"
+    scrolling="no"
+    loading="lazy"
+  ></iframe>
+</div>
+<script>
+  window.addEventListener('message', function (event) {
+    if (!event.data || event.data.type !== 'sistedes-program-height') return;
+    var iframe = document.getElementById('sistedes-programa');
+    if (!iframe) return;
+    iframe.style.height = Math.max(2600, event.data.height + 40) + 'px';
+  });
+</script>
 ```
 
 ## Comprobación rápida
