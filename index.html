@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Programa SISTEDES multitrack</title>
+  <title>Programa JISBD multitrack</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <main id="sprog-root" class="sprog">
-    <h1 id="sprog-title" class="sprog-widget-title">Programa <span>SISTEDES</span></h1>
+    <h1 id="sprog-title" class="sprog-widget-title">Programa JISBD</h1>
     <div class="sprog-actions" aria-label="Acciones del programa">
       <a class="sprog-button" href="https://sistedes.lucentia.es/programa-cientifico-general/programa-jisbd/" target="_top" rel="noopener noreferrer" data-sprog-back>Volver al horario general de JISBD</a>
       <button class="sprog-button" type="button" data-sprog-print>Descargar PDF</button>
@@ -135,7 +135,7 @@
         activeTrack = null;
         backButton.hidden = true;
         const title = document.getElementById('sprog-title');
-        if (title) title.innerHTML = `${escapeHtml(config.title || 'Programa SISTEDES')}`;
+        if (title) title.innerHTML = `${escapeHtml(config.title || 'Programa JISBD')}`;
         app.innerHTML = (config.days || []).map(day => {
           const rooms = day.rooms && day.rooms.length ? day.rooms : config.rooms || [];
           return `
@@ -240,7 +240,7 @@
       }
 
       printButton.addEventListener('click', () => {
-        const trackName = activeTrack ? `${activeTrack.short || activeTrack.id} ${activeTrack.name || ''}`.trim() : 'Programa SISTEDES';
+        const trackName = activeTrack ? `${activeTrack.short || activeTrack.id} ${activeTrack.name || ''}`.trim() : 'Programa JISBD';
         document.title = `Horario ${trackName}`;
         window.print();
       });
