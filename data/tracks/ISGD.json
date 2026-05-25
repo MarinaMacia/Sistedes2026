@@ -40,10 +40,12 @@
           ]
         },
         {
-          "titulo": "SCSN-DAC: Arquitectura de Simulación Ininterrumpida para Gemelos Digitales en Escenarios de Colapso",
+          "titulo": "GEDICA-DAV: Arquitectura de Gemelo Digital para la Detección de Anomalías y Validación de Datos en EDAR",
           "autores": [
-            "Sergio Vázquez-Pozo",
-            "Alejandro Gragera-Serradilla"
+            "Javier Mateos-Bravo",
+            "Juan Pedro Cortés-Pérez",
+            "Javier Berrocal",
+            "Juan Luis Herrera"
           ]
         }
       ]
@@ -155,13 +157,10 @@
       "hora": "9:00 - 10:30",
       "Sesión 4 - SALA C": [
         {
-          "titulo": "GEDICA-DAV: Arquitectura de Gemelo Digital para la Detección de Anomalías y Validación de Datos en EDAR",
+          "titulo": "SCSN-DAC: Arquitectura de Simulación Ininterrumpida para Gemelos Digitales en Escenarios de Colapso",
           "autores": [
-            "Javier Mateos-Bravo",
-            "Juan Pedro Cortés-Pérez",
-            "Javier Berrocal",
-            "Juan Luis Herrera"
-            
+            "Sergio Vázquez-Pozo",
+            "Alejandro Gragera-Serradilla"
           ]
         },
         {
