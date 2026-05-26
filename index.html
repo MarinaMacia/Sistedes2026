@@ -61,6 +61,22 @@
         return url ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${label}</a>` : label;
       }
 
+      function trackRoomsForDay(track, day) {
+        const dayKey = daySortKey(day);
+        const rooms = new Set();
+        (config.days || []).forEach(configDay => {
+          if (daySortKey(configDay.day) !== dayKey) return;
+          (configDay.rows || []).forEach(row => {
+            (row.cells || []).forEach(cell => {
+              if (Array.isArray(cell.tracks) && cell.tracks.includes(track.id) && cell.room) {
+                rooms.add(cell.room);
+              }
+            });
+          });
+        });
+        return rooms.size ? Array.from(rooms) : (track.room ? [track.room] : []);
+      }
+
       function daySortKey(dayName) {
         const text = String(dayName || '').toLowerCase();
         if (text.includes('martes') || text.includes('16')) return 16;
@@ -184,10 +200,11 @@
       }
 
       function renderTrackDay(day, sessions, track) {
+        const rooms = trackRoomsForDay(track, day);
         return `
           <section class="sprog-day sprog-track-day" data-day="${escapeHtml(day)}">
             <h2 class="sprog-day-title">${escapeHtml(stripLinks(day))}</h2>
-            ${track.room ? `<div class="sprog-detail-head"><p>Sala: ${roomLabel(track.room)}</p></div>` : ''}
+            ${rooms.length ? `<div class="sprog-detail-head"><p>Sala: ${rooms.map(roomLabel).join(' · ')}</p></div>` : ''}
             <div class="sprog-table-wrap">
               <table class="sprog-table sprog-track-table">
                 <thead><tr><th class="sprog-time-col">Hora</th><th>Sesión / Comunicaciones</th></tr></thead>
