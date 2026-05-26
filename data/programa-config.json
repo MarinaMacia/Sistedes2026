@@ -4,19 +4,19 @@
   "year": 2026,
   "month": 6,
   "rooms": [
-    "Aula 1.2",
+    "Aula 2.1",
     "Aula 1.1",
     "Aula Rafael Altamira",
     "Aula 2.2"
   ],
   "roomLinks": {
-    "Aula 1.2": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101P2007",
+    "Aula 2.1": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101P2007",
     "Aula 1.1": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101P1003",
     "Aula Rafael Altamira": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101PB005",
     "Aula 2.2": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101P2001"
   },
   "roomAliases": {
-    "AULA 1.2": "Aula 1.2",
+    "AULA 2.1": "Aula 2.1",
     "AULA 1.1": "Aula 1.1",
     "AULA RAFAEL ALTAMIRA": "Aula Rafael Altamira",
     "AULA 2.2": "Aula 2.2"
@@ -26,7 +26,7 @@
       "id": "ISGD",
       "short": "ISGD",
       "name": "Ingeniería del Software y Gobierno del Dato",
-      "room": "Aula 1.2",
+      "room": "Aula 2.1",
       "className": "sprog-slot--isgd",
       "file": "data/tracks/ISGD.json"
     },
@@ -66,7 +66,7 @@
       "id": "QUANTUM",
       "short": "QuantumX",
       "name": "QuantumX",
-      "room": "Aula 1.2",
+      "room": "Aula 2.1",
       "className": "sprog-slot--quantumx",
       "file": "data/tracks/QUANTUM.json"
     },
@@ -92,7 +92,7 @@
       "day": "Martes 16 de Junio",
       "location": "Alicante",
       "rooms": [
-        "Aula 1.2",
+        "Aula 2.1",
         "Aula 1.1",
         "Aula Rafael Altamira",
         "Aula 2.2"
@@ -108,7 +108,7 @@
           "time": "09:00-10:30",
           "cells": [
             {
-              "room": "Aula 1.2",
+              "room": "Aula 2.1",
               "tracks": ["ISGD"],
               "group": "JISBD"
             },
@@ -173,7 +173,7 @@
           "time": "15:00-16:30",
           "cells": [
             {
-              "room": "Aula 1.2",
+              "room": "Aula 2.1",
               "tracks": ["ISGD"],
               "group": "JISBD"
             },
@@ -210,7 +210,7 @@
           "time": "17:00-18:00",
           "cells": [
             {
-              "room": "Aula 1.2",
+              "room": "Aula 2.1",
               "tracks": ["ISGD"],
               "group": "JISBD"
             },
@@ -232,7 +232,7 @@
       "day": "Miércoles 17 de Junio",
       "location": "Alicante",
       "rooms": [
-        "Aula 1.2",
+        "Aula 2.1",
         "Aula 1.1",
         "Aula Rafael Altamira",
         "Aula 2.2"
@@ -248,7 +248,7 @@
           "time": "09:00-10:30",
           "cells": [
             {
-              "room": "Aula 1.2",
+              "room": "Aula 2.1",
               "tracks": ["QUANTUM"],
               "group": "JISBD"
             },
@@ -325,7 +325,7 @@
           "time": "15:00-16:30",
           "cells": [
             {
-              "room": "Aula 1.2",
+              "room": "Aula 2.1",
               "tracks": ["QUANTUM"],
               "group": "JISBD"
             },
@@ -362,7 +362,7 @@
           "time": "17:00-18:30",
           "cells": [
             {
-              "room": "Aula 1.2",
+              "room": "Aula 2.1",
               "tracks": ["QUANTUM"],
               "group": "JISBD"
             },
@@ -384,7 +384,7 @@
       "day": "Jueves 18 de Junio",
       "location": "Alicante",
       "rooms": [
-        "Aula 1.2",
+        "Aula 2.1",
         "Aula 1.1",
         "Aula Rafael Altamira",
         "Aula 2.2"
@@ -400,7 +400,7 @@
           "time": "09:00-10:30",
           "cells": [
             {
-              "room": "Aula 1.2",
+              "room": "Aula 2.1",
               "tracks": ["QUANTUM"],
               "group": "JISBD"
             },
@@ -449,7 +449,7 @@
           "time": "12:30-14:00",
           "cells": [
             {
-              "room": "Aula 1.2",
+              "room": "Aula 2.1",
               "tracks": ["QUANTUM"],
               "group": "JISBD"
             },
@@ -502,7 +502,7 @@
           "time": "16:00-17:30",
           "cells": [
             {
-              "room": "Aula 1.2",
+              "room": "Aula 2.1",
               "tracks": ["QUANTUM"],
               "group": "JISBD"
             },
