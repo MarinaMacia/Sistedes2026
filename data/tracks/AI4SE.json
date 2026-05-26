@@ -2,7 +2,7 @@
   "Martes 16 de Junio": [
     {
       "hora": "9:00 - 10:30",
-      "Sesión 1: Mejora y Reparación Automática - SALA B": [
+      "Sesión 1: Mejora y Reparación Automática": [
         {
           "titulo": "UMDA aplicado a la Mejora Automática del Software",
           "autores": []
@@ -27,7 +27,7 @@
     },
     {
       "hora": "15:00 - 16:30",
-      "Sesión 2: Aplicaciones en CPS, IoT y Testing - SALA B": [
+      "Sesión 2: Aplicaciones en CPS, IoT y Testing": [
         {
           "titulo": "Tratto: A Neuro-Symbolic Approach to Deriving Axiomatic Test Oracles",
           "autores": []
@@ -56,7 +56,7 @@
     },
     {
       "hora": "17:00 - 18:00",
-      "Sesión 3: Infraestructura, Educación y Web - SALA B": [
+      "Sesión 3: Infraestructura, Educación y Web": [
         {
           "titulo": "Un sistema multiagente para el descubrimiento federado en la WoT",
           "autores": []
@@ -79,7 +79,7 @@
   "Miércoles 17 de Junio": [
     {
       "hora": "9:00 - 10:30",
-      "Sesión 4: Requisitos y Análisis de Sistemas - SALA B": [
+      "Sesión 4: Requisitos y Análisis de Sistemas": [
         {
           "titulo": "Inteligencia Artificial Generativa para la Captura de Requisitos: Una Revisión Sistemática",
           "autores": []
@@ -104,7 +104,7 @@
     },
     {
       "hora": "15:00 - 16:30",
-      "Sesión 5: IA Agéntica y Ciclo de Vida - SALA B": [
+      "Sesión 5: IA Agéntica y Ciclo de Vida": [
         {
           "titulo": "Del Caos a Gherkin: El Papel del Vídeo en la Generación Agéntica de Especificaciones BDD",
           "autores": []

@@ -2,7 +2,7 @@
   "16 de Junio de 2026": [
     {
       "hora": "9:00 - 10:30",
-      "Sesión 1 - SALA A": [
+      "Sesión 1": [
         {
           "titulo": "Procesamiento de Eventos Complejos para Gemelos Digitales entrelazados",
           "autores": [
@@ -52,7 +52,7 @@
     },
     {
       "hora": "15:00 - 16:30",
-      "Sesión 2 - SALA A": [
+      "Sesión 2": [
         {
           "titulo": "A model-driven approach to streamline the development of prescriptive services for digital twins",
           "autores": [
@@ -102,7 +102,7 @@
     },
     {
       "hora": "17:00 - 18:00",
-      "Sesión 3 - SALA A": [
+      "Sesión 3": [
         {
           "titulo": "Gemelo Digital para la Conservación del Castillo de Portezuelo",
           "autores": [
@@ -155,7 +155,7 @@
   "17 de Junio de 2026": [
     {
       "hora": "9:00 - 10:30",
-      "Sesión 4 - SALA C": [
+      "Sesión 4": [
         {
           "titulo": "SCSN-DAC: Arquitectura de Simulación Ininterrumpida para Gemelos Digitales en Escenarios de Colapso",
           "autores": [

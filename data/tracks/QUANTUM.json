@@ -2,7 +2,7 @@
   "Martes 16 de Junio de 2026": [
     {
       "hora": "9:00 - 10:30",
-      "Sesión 1 - SALA A": [
+      "Sesión 1": [
         {
           "titulo": "Quality Requirements for Quantum Software Engineering: A Systematic Mapping Study",
           "autores": [
@@ -39,7 +39,7 @@
     },
     {
       "hora": "12:30 - 13:30",
-      "Sesión 2 - SALA A": [
+      "Sesión 2": [
         {
           "titulo": "A Qiskit Library for Quantum Search and Boolean Satisfiability Oracles",
           "autores": [
@@ -68,7 +68,7 @@
     },
     {
       "hora": "15:00 - 16:30",
-      "Sesión 3 - SALA A": [
+      "Sesión 3": [
         {
           "titulo": "QCRAFT AutoScheduler: A library for maximizing qubit utilization on QPUs through quantum circuit multiprogramming (Summary)",
           "autores": [
@@ -126,7 +126,7 @@
   "Miércoles 17 de Junio de 2026": [
     {
       "hora": "9:00 - 10:30",
-      "Sesión 4 - SALA A": [
+      "Sesión 4": [
         {
           "titulo": "Algoritmos cuánticos variacionales modulares, componibles y reutilizables: propuesta para la estructuración de circuitos cuánticos",
           "autores": [
@@ -170,7 +170,7 @@
     },
     {
       "hora": "12:30 - 14:00",
-      "Sesión 5 - SALA A": [
+      "Sesión 5": [
         {
           "titulo": "AQUILA. Asistente para la generación inteligente de arquitecturas de software clásico-cuántico",
           "autores": [
@@ -225,7 +225,7 @@
     },
     {
       "hora": "15:00 - 16:30",
-      "Sesión 6 - SALA A": [
+      "Sesión 6": [
         {
           "titulo": "Orquestación consciente del tiempo de respuesta en workflows híbridos cuántico-clásicos dentro del Cloud Continuum",
           "autores": [

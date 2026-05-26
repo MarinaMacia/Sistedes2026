@@ -2,7 +2,7 @@
   "16 de Junio de 2026": [
     {
       "hora": "17:00 - 18:00",
-      "Sesión 1 - SALA D": [
+      "Sesión 1": [
         {
           "titulo": "Bienvenida",
           "autores": []
@@ -42,7 +42,7 @@
   "17 de Junio de 2026": [
     {
       "hora": "9:00 - 10:30",
-      "Sesión 2 - SALA D": [
+      "Sesión 2": [
         {
           "titulo": "A Multiple Case Study on Reuse in Game Software Engineering",
           "autores": [
@@ -101,7 +101,7 @@
     },
     {
       "hora": "15:00 - 16:30",
-      "Sesión 3 - SALA D": [
+      "Sesión 3": [
         {
           "titulo": "Revisiones sistemáticas aumentadas por IA: del rigor metodológico a la automatización responsable",
           "autores": [
@@ -113,7 +113,7 @@
     },
     {
       "hora": "17:00 - 18:30",
-      "Tutoriales - SALA D": [
+      "Tutoriales": [
         {
           "titulo": "Cierre",
           "autores": []

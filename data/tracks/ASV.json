@@ -2,7 +2,7 @@
   "Jueves 18 de Junio 2026": [
     {
       "hora": "9:00 - 10:30",
-      "Sesión 1 - SALA D": [
+      "Sesión 1": [
         {
           "titulo": "Análisis de Modelos de Variabilidad con Grafos de Dependencias y Conflictos Transitivos Fuertes",
           "autores": [
@@ -56,11 +56,11 @@
     },
     {
       "hora": "11:00 - 12:30",
-      "Reunión TASOVA - SALA D": []
+      "Reunión TASOVA": []
     },
     {
       "hora": "12:30 - 13:30",
-      "Sesión 2 - SALA D": [
+      "Sesión 2": [
         {
           "titulo": "Cuantificando el conocimiento factual sobre el lenguaje UVL en los Modelos de Lenguaje",
           "autores": [
@@ -96,7 +96,7 @@
     },
     {
       "hora": "15:30 - 16:30",
-      "Sesión 3 - SALA D": [
+      "Sesión 3": [
         {
           "titulo": "Unificación y Verificación Formal de Políticas de Seguridad en Kubernetes con Modelos de Características",
           "autores": [
