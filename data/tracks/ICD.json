@@ -334,7 +334,7 @@
       ]
     },
     {
-      "hora": "12:30 - 13:45",
+      "hora": "12:30 - 14:00",
       "Sesión 6: Sistemas, Seguridad y Análisis de Datos Complejos": [
         {
           "titulo": "Incremental Checking of SQL Assertions in an RDBMS",
@@ -396,7 +396,7 @@
       ]
     },
     {
-      "hora": "15:45 - 17:15",
+      "hora": "16:00 - 17:30",
       "Sesión 7: Semántica, Grafos y Procesos de Negocio": [
         {
           "titulo": "¿Por qué sigue siendo difícil descubrir ontologías?",

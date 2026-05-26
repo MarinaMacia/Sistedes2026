@@ -1,7 +1,7 @@
 {
   "Jueves 18 de Junio": [
     {
-      "hora": "9:00 - 10:25",
+      "hora": "9:00 - 10:30",
       "Sesión 1: Calidad, testing y verificación de software": [
         {
           "titulo": "Bienvenida",
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "hora": "12:30 - 13:35",
+      "hora": "12:30 - 14:00",
       "Sesión 2: Ingeniería de software inteligente y evolución de sistemas": [
         {
           "titulo": "SofIA Demonstration: An Ecosystem of Tools for Traceable and Industry-Oriented Software Development",
@@ -128,7 +128,7 @@
       ]
     },
     {
-      "hora": "15:45 - 16:55",
+      "hora": "16:00 - 17:30",
       "Sesión 3: Gamificación, sistemas inteligentes y seguridad": [
         {
           "titulo": "Towards Green Game Software Engineering: A Comparative Analysis of Energy Consumption Between the Widespread Unity and Unreal Video Game Engines",
