@@ -220,11 +220,6 @@
               "group": "JISBD"
             },
             {
-              "room": "Aula Rafael Altamira",
-              "tracks": ["ICD"],
-              "group": "JISBD"
-            },
-            {
               "room": "Aula 2.2",
               "tracks": ["METODOS"],
               "group": "JISBD"
