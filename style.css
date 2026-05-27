@@ -209,6 +209,14 @@
   color: inherit;
 }
 
+.sprog-cell-note {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.86rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
 .sprog-cell-links {
   display: flex;
   gap: 0.35rem;

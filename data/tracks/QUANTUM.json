@@ -38,35 +38,6 @@
       ]
     },
     {
-      "hora": "12:30 - 13:30",
-      "Sesión 2": [
-        {
-          "titulo": "A Qiskit Library for Quantum Search and Boolean Satisfiability Oracles",
-          "autores": [
-            "Diego Alonso",
-            "Matías Hernández",
-            "Pedro Sánchez",
-            "Bárbara Álvarez"
-          ]
-        },
-        {
-          "titulo": "Uso de Programación Genética Basada en Gramáticas para la construcción de oráculos cuánticos optimizados",
-          "autores": [
-            "Javier Zayas-Gallardo",
-            "Francisco Chicano",
-            "Juan Manuel Murillo"
-          ]
-        },
-        {
-          "titulo": "Planificador de consultas cuántico para SQLite basado en QUBO",
-          "autores": [
-            "Eduardo Gutiérrez",
-            "Sebastián Villarroya"
-          ]
-        }
-      ]
-    },
-    {
       "hora": "15:00 - 16:30",
       "Sesión 3": [
         {
@@ -121,6 +92,35 @@
           ]
         }
       ]
+    },
+    {
+      "hora": "17:00 - 18:30",
+      "Sesión 2": [
+        {
+          "titulo": "A Qiskit Library for Quantum Search and Boolean Satisfiability Oracles",
+          "autores": [
+            "Diego Alonso",
+            "Matías Hernández",
+            "Pedro Sánchez",
+            "Bárbara Álvarez"
+          ]
+        },
+        {
+          "titulo": "Uso de Programación Genética Basada en Gramáticas para la construcción de oráculos cuánticos optimizados",
+          "autores": [
+            "Javier Zayas-Gallardo",
+            "Francisco Chicano",
+            "Juan Manuel Murillo"
+          ]
+        },
+        {
+          "titulo": "Planificador de consultas cuántico para SQLite basado en QUBO",
+          "autores": [
+            "Eduardo Gutiérrez",
+            "Sebastián Villarroya"
+          ]
+        }
+      ]
     }
   ],
   "Jueves 18 de Junio de 2026": [
@@ -169,7 +169,7 @@
       ]
     },
     {
-      "hora": "12:30 - 14:00",
+      "hora": "12:30 - 13:45",
       "Sesión 5": [
         {
           "titulo": "AQUILA. Asistente para la generación inteligente de arquitecturas de software clásico-cuántico",
@@ -224,7 +224,7 @@
       ]
     },
     {
-      "hora": "15:00 - 16:30",
+      "hora": "15:45 - 17:15",
       "Sesión 6": [
         {
           "titulo": "Orquestación consciente del tiempo de respuesta en workflows híbridos cuántico-clásicos dentro del Cloud Continuum",
