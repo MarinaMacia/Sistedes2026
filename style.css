@@ -190,10 +190,23 @@
   font-weight: 700;
 }
 
-.sprog-track a,
+.sprog-track button,
 .sprog-cell-links a {
   color: inherit;
   text-decoration: underline;
+}
+
+.sprog-track button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+}
+
+.sprog-track button:hover,
+.sprog-track button:focus {
+  color: inherit;
 }
 
 .sprog-cell-links {

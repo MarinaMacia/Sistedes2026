@@ -130,7 +130,7 @@
         if (Array.isArray(cell.tracks)) {
           parts.push(`<span class="sprog-track">${cell.tracks.map(id => {
             const track = trackById[id] || { short: id };
-            return `<a href="#track-${escapeHtml(id)}">${escapeHtml(track.short || id)}</a>`;
+            return `<button type="button" data-sprog-track-id="${escapeHtml(id)}">${escapeHtml(track.short || id)}</button>`;
           }).join(' · ')}</span>`);
         }
         if (Array.isArray(cell.links)) parts.push(renderLinks(cell.links));
@@ -255,6 +255,22 @@
         if (trackId && trackById[trackId]) renderTrack(trackId);
         else renderGeneral();
       }
+
+      function openTrack(trackId) {
+        if (!trackById[trackId]) return;
+        const nextHash = `track-${trackId}`;
+        if (currentTrackId() !== trackId) {
+          history.pushState(null, '', `#${encodeURIComponent(nextHash)}`);
+        }
+        renderTrack(trackId);
+      }
+
+      app.addEventListener('click', event => {
+        const button = event.target.closest('[data-sprog-track-id]');
+        if (!button) return;
+        event.preventDefault();
+        openTrack(button.dataset.sprogTrackId);
+      });
 
       printButton.addEventListener('click', () => {
         const trackName = activeTrack ? `${activeTrack.short || activeTrack.id} ${activeTrack.name || ''}`.trim() : 'Programa JISBD';
