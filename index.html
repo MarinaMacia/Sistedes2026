@@ -133,7 +133,7 @@
             return `<button type="button" data-sprog-track-id="${escapeHtml(id)}">${escapeHtml(track.short || id)}</button>`;
           }).join(' · ')}</span>`);
         }
-        if (cell.note) parts.push(`<span class="sprog-cell-note">${escapeHtml(stripLinks(cell.note))}</span>`);
+        if (cell.note) parts.push(`<span class="sprog-cell-note">[${escapeHtml(stripLinks(cell.note))}]</span>`);
         if (Array.isArray(cell.links)) parts.push(renderLinks(cell.links));
         return `<td class="${escapeHtml(className)}">${parts.join('')}</td>`;
       }
