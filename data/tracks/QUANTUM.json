@@ -22,25 +22,6 @@
           ]
         },
         {
-          "titulo": "Programando la abstracción cuántica con registros como unidad de información",
-          "autores": [
-            "David Chamizo",
-            "Juan M. Murillo"
-          ]
-        },
-        {
-          "titulo": "Pipeline para la validación de protocolos de comunicación post-cuántica basados en TF-QKD",
-          "autores": [
-            "Sergio Vázquez-Pozo",
-            "Juan Manuel Murillo"
-          ]
-        }
-      ]
-    },
-    {
-      "hora": "15:00 - 16:30",
-      "Sesión 3": [
-        {
           "titulo": "QCRAFT AutoScheduler: A library for maximizing qubit utilization on QPUs through quantum circuit multiprogramming (Summary)",
           "autores": [
             "Jaime Alvarado-Valiente",
@@ -61,6 +42,25 @@
             "Enrique Moguel",
             "Jose Garcia-Alonso",
             "Juan M. Murillo"
+          ]
+        }
+      ]
+    },
+    {
+      "hora": "15:00 - 16:30",
+      "Sesión 3": [
+        {
+          "titulo": "Programando la abstracción cuántica con registros como unidad de información",
+          "autores": [
+            "David Chamizo",
+            "Juan M. Murillo"
+          ]
+        },
+        {
+          "titulo": "Pipeline para la validación de protocolos de comunicación post-cuántica basados en TF-QKD",
+          "autores": [
+            "Sergio Vázquez-Pozo",
+            "Juan Manuel Murillo"
           ]
         },
         {
