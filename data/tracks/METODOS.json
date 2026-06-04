@@ -101,7 +101,7 @@
     },
     {
       "hora": "15:00 - 16:30",
-      "Sesión 3": [
+      "Tutorial": [
         {
           "titulo": "Revisiones sistemáticas aumentadas por IA: del rigor metodológico a la automatización responsable",
           "autores": [
@@ -113,10 +113,13 @@
     },
     {
       "hora": "17:00 - 18:30",
-      "Tutoriales": [
+      "Tutorial": [
         {
-          "titulo": "Cierre",
-          "autores": []
+          "titulo": "Revisiones sistemáticas aumentadas por IA: del rigor metodológico a la automatización responsable",
+          "autores": [
+            "José Raúl Romero Salguero (Universidad de Córdoba)",
+            "José Antonio de la Torre López (Universidad de Córdoba)"
+          ]
         }
       ]
     }
