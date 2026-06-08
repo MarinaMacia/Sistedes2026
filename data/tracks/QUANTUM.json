@@ -48,7 +48,7 @@
     },
     {
       "hora": "15:00 - 16:30",
-      "Sesión 3": [
+      "Sesión 2": [
         {
           "titulo": "Programando la abstracción cuántica con registros como unidad de información",
           "autores": [
@@ -119,6 +119,26 @@
             "Eduardo Gutiérrez",
             "Sebastián Villarroya"
           ]
+        },
+        {
+          "titulo": "HASH - Herramienta de Análisis para Sistemas Híbridos (Clásico-Cuánticos)",
+          "autores": [
+            "Álvaro Manuel Aparicio Morales",
+            "Jose Garcia-Alonso",
+            "Javier Cámara",
+            "Juan Manuel Murillo"
+          ]
+        },
+        {
+          "titulo": "Orquestación consciente del tiempo de respuesta en workflows híbridos cuántico-clásicos dentro del Cloud Continuum",
+          "autores": [
+            "Adrian Navas",
+            "Enrique Moguel",
+            "Juan Luis Herrera",
+            "Javier Berrocal",
+            "Jose Garcia-Alonso",
+            "Juan Manuel Murillo"
+          ]
         }
       ]
     }
@@ -169,7 +189,7 @@
       ]
     },
     {
-      "hora": "12:30 - 13:45",
+      "hora": "12:30 - 14:00",
       "Sesión 5": [
         {
           "titulo": "AQUILA. Asistente para la generación inteligente de arquitecturas de software clásico-cuántico",
@@ -187,15 +207,6 @@
             "Macario Polo",
             "Manuel A. Serrano",
             "Ignacio García Rodríguez de Guzmán"
-          ]
-        },
-        {
-          "titulo": "HASH - Herramienta de Análisis para Sistemas Híbridos (Clásico-Cuánticos)",
-          "autores": [
-            "Álvaro Manuel Aparicio Morales",
-            "Jose Garcia-Alonso",
-            "Javier Cámara",
-            "Juan Manuel Murillo"
           ]
         },
         {
@@ -224,19 +235,8 @@
       ]
     },
     {
-      "hora": "15:45 - 17:15",
+      "hora": "16:00 - 17:30",
       "Sesión 6": [
-        {
-          "titulo": "Orquestación consciente del tiempo de respuesta en workflows híbridos cuántico-clásicos dentro del Cloud Continuum",
-          "autores": [
-            "Adrian Navas",
-            "Enrique Moguel",
-            "Juan Luis Herrera",
-            "Javier Berrocal",
-            "Jose Garcia-Alonso",
-            "Juan Manuel Murillo"
-          ]
-        },
         {
           "titulo": "QuBind: A Multi-Metric Approach for Optimal Quantum Service Selection",
           "autores": [
