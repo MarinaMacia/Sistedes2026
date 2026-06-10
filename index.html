@@ -9,9 +9,6 @@
 <body>
   <main id="sprog-root" class="sprog">
     <h1 id="sprog-title" class="sprog-widget-title">Programa JISBD</h1>
-    <div class="sprog-actions" aria-label="Acciones del programa">
-      <a class="sprog-button" href="https://sistedes.lucentia.es/programa-cientifico-general/programa-jisbd/" target="_top" rel="noopener noreferrer" data-sprog-back>Volver al horario general de JISBD</a>
-    </div>
     <div class="sprog-note">Pulsa en un track de la tabla para abrir su programa detallado.</div>
     <section id="sprog-app" aria-live="polite"><div class="sprog-alert">Cargando programa...</div></section>
   </main>
@@ -19,7 +16,6 @@
   <script>
     (() => {
       const app = document.getElementById('sprog-app');
-      const backButton = document.querySelector('[data-sprog-back]');
       let activeTrack = null;
       let config = null;
       let trackData = {};
@@ -147,7 +143,6 @@
 
       function renderGeneral() {
         activeTrack = null;
-        backButton.hidden = true;
         const title = document.getElementById('sprog-title');
         if (title) title.innerHTML = `${escapeHtml(config.title || 'Programa JISBD')}`;
         app.innerHTML = (config.days || []).map(day => {
@@ -187,7 +182,6 @@
           .filter(([, sessions]) => hasTrackContent(sessions))
           .sort((a, b) => daySortKey(a[0]) - daySortKey(b[0]));
         activeTrack = track;
-        backButton.hidden = false;
         const title = document.getElementById('sprog-title');
         if (title) title.innerHTML = `${escapeHtml(track.short || track.id)} <span>${escapeHtml(track.name || '')}</span>`;
         app.innerHTML = `
