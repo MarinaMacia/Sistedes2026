@@ -206,10 +206,18 @@
           </section>`;
       }
 
+      function renderPaperItem(paper) {
+        const infoUrl = paper.infoUrl ? String(paper.infoUrl) : '';
+        const infoButton = infoUrl
+          ? `<a class="sprog-info-button" href="${escapeHtml(infoUrl)}" target="_blank" rel="noopener noreferrer">ver más info</a>`
+          : '';
+        return `<li class="sprog-paper-item"><span class="sprog-paper-title">${escapeHtml(stripLinks(paper.titulo || ''))}</span>${infoButton}${Array.isArray(paper.autores) && paper.autores.length ? `<span class="sprog-authors">${escapeHtml(paper.autores.map(stripLinks).join(', '))}</span>` : ''}</li>`;
+      }
+
       function renderTrackSession(session) {
         const blocks = Object.entries(session || {}).filter(([key]) => key !== 'hora').map(([title, papers]) => {
           const items = Array.isArray(papers) && papers.length
-            ? `<ol class="sprog-paper-list">${papers.map(paper => `<li class="sprog-paper-item"><span class="sprog-paper-title">${escapeHtml(stripLinks(paper.titulo || ''))}</span>${Array.isArray(paper.autores) && paper.autores.length ? `<span class="sprog-authors">${escapeHtml(paper.autores.map(stripLinks).join(', '))}</span>` : ''}</li>`).join('')}</ol>`
+            ? `<ol class="sprog-paper-list">${papers.map(renderPaperItem).join('')}</ol>`
             : '';
           return `<div class="sprog-session-block"><span class="sprog-track--large">${escapeHtml(stripLinks(title))}</span>${items}</div>`;
         }).join('');
