@@ -25,7 +25,7 @@
     {
       "id": "ISGD",
       "short": "ISGD",
-      "name": "Ingeniería del Software y Gobierno del Dato",
+      "name": "Ingeniería del Software para Gemelos Digitales",
       "room": "Aula 2.1",
       "className": "sprog-slot--isgd",
       "file": "data/tracks/ISGD.json"
