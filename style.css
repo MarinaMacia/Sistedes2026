@@ -255,12 +255,20 @@
 }
 
 .sprog-track--large {
-  display: block;
+  display: inline;
   font-size: 1.18rem;
   font-weight: 800;
   margin-bottom: 0.25rem;
   color: #006b7a;
   overflow-wrap: anywhere;
+}
+
+.sprog-session-heading {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.25rem;
 }
 
 .sprog-paper-list {
@@ -276,7 +284,7 @@
 }
 
 .sprog-paper-title {
-  display: inline;
+  display: block;
   font-weight: 700;
   overflow-wrap: anywhere;
 }
@@ -285,7 +293,6 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-left: 0.55rem;
   padding: 0.28rem 0.75rem;
   border-radius: 999px;
   background-color: #0092a0;
