@@ -213,7 +213,10 @@
       }
 
       function renderPaperItem(paper) {
-        return `<li class="sprog-paper-item"><span class="sprog-paper-title">${escapeHtml(stripLinks(paper.titulo || ''))}</span>${Array.isArray(paper.autores) && paper.autores.length ? `<span class="sprog-authors">${escapeHtml(paper.autores.map(stripLinks).join(', '))}</span>` : ''}</li>`;
+        const type = paper.tipo
+          ? `<span class="sprog-paper-type">${escapeHtml(stripLinks(paper.tipo))}</span><span class="sprog-paper-separator"> - </span>`
+          : '';
+        return `<li class="sprog-paper-item"><span class="sprog-paper-title">${type}${escapeHtml(stripLinks(paper.titulo || ''))}</span>${Array.isArray(paper.autores) && paper.autores.length ? `<span class="sprog-authors">${escapeHtml(paper.autores.map(stripLinks).join(', '))}</span>` : ''}</li>`;
       }
 
       function renderTrackSession(session) {

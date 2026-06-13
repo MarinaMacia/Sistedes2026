@@ -4,22 +4,27 @@
       "hora": "9:00 - 10:30",
       "Sesión 1: Mejora y Reparación Automática": [
         {
+          "tipo": "Completo",
           "titulo": "UMDA aplicado a la Mejora Automática del Software",
           "autores": []
         },
         {
+          "tipo": "Corto",
           "titulo": "Ajuste de Modelos de Lenguaje Pequeños para la Refactorización Automática de Código",
           "autores": []
         },
         {
+          "tipo": "Corto",
           "titulo": "Extendiendo un marco de remediación automática de accesibilidad basado en LLMs",
           "autores": []
         },
         {
+          "tipo": "Corto",
           "titulo": "Revisión sistemática sobre la detección de mutantes equivalentes mediante aprendizaje automático",
           "autores": []
         },
         {
+          "tipo": "Corto",
           "titulo": "Quality Assessment of Agentic AI Processes in Software Development Life Cycle",
           "autores": []
         }
@@ -29,26 +34,32 @@
       "hora": "15:00 - 16:30",
       "Sesión 2: Aplicaciones en CPS, IoT y Testing": [
         {
+          "tipo": "Relevante",
           "titulo": "Tratto: A Neuro-Symbolic Approach to Deriving Axiomatic Test Oracles",
           "autores": []
         },
         {
+          "tipo": "Relevante",
           "titulo": "SATORI: Static Test Oracle Generation for REST APIs",
           "autores": []
         },
         {
+          "tipo": "Relevante",
           "titulo": "Introducing Phylogenetics in Search-based Software Engineering",
           "autores": []
         },
         {
+          "tipo": "Relevante",
           "titulo": "Why Personalizing Deep Learning-Based Code Completion Tools Matters",
           "autores": []
         },
         {
+          "tipo": "Corto",
           "titulo": "Un Enfoque Adaptativo para la Interpretación de Eventos de Seguridad en Sistemas Ciberfísicos",
           "autores": []
         },
         {
+          "tipo": "Corto",
           "titulo": "Orquestación agentizada de inferencia contextual basada en RAG para ecosistemas digitales multidependientes",
           "autores": []
         }
@@ -58,18 +69,22 @@
       "hora": "17:00 - 18:00",
       "Sesión 3: Infraestructura, Educación y Web": [
         {
+          "tipo": "Corto",
           "titulo": "Un sistema multiagente para el descubrimiento federado en la WoT",
           "autores": []
         },
         {
+          "tipo": "Corto",
           "titulo": "Towards Test-Driven Synthesis of Behavioral Programs",
           "autores": []
         },
         {
+          "tipo": "Corto",
           "titulo": "Hacia una web optimizada para la IA: estudio preliminar y pasos a seguir",
           "autores": []
         },
         {
+          "tipo": "Herramienta",
           "titulo": "Learning Enabling Intelligent Assistants for Software Engineering Training",
           "autores": []
         }
@@ -81,22 +96,27 @@
       "hora": "9:00 - 10:30",
       "Sesión 4: Requisitos y Análisis de Sistemas": [
         {
+          "tipo": "Completo",
           "titulo": "Inteligencia Artificial Generativa para la Captura de Requisitos: Una Revisión Sistemática",
           "autores": []
         },
         {
+          "tipo": "Completo",
           "titulo": "Estudio Comparativo de Modelos de Lenguaje para la Elicitación de Requisitos de Software",
           "autores": []
         },
         {
+          "tipo": "Completo",
           "titulo": "Enfoque Multiobjetivo de Programación Lineal Entera para la Reducción Automática de la Complejidad Cognitiva",
           "autores": []
         },
         {
+          "tipo": "Corto",
           "titulo": "Towards Understanding AI-Agent Traces in Open-Source Projects",
           "autores": []
         },
         {
+          "tipo": "Corto",
           "titulo": "Hacia una evaluación de catálogos de requisitos de privacidad generados mediante IA",
           "autores": []
         }
@@ -106,22 +126,27 @@
       "hora": "15:00 - 16:30",
       "Sesión 5: IA Agéntica y Ciclo de Vida": [
         {
+          "tipo": "Completo",
           "titulo": "Del Caos a Gherkin: El Papel del Vídeo en la Generación Agéntica de Especificaciones BDD",
           "autores": []
         },
         {
+          "tipo": "Corto",
           "titulo": "Memento Mori: Sustainability of the Software Development Ecosystem in the Age of Agentic AI",
           "autores": []
         },
         {
+          "tipo": "Corto",
           "titulo": "Más Allá del Código Funcional: Especificaciones de Calidad para Agentes basados en LLMs",
           "autores": []
         },
         {
+          "tipo": "Relevante",
           "titulo": "Can Explainable Artificial Intelligence Support Software Modelers in Model Comprehension?",
           "autores": []
         },
         {
+          "tipo": "Relevante",
           "titulo": "FlowRepair: Search-Based Automated Program Repair of CPS Controllers",
           "autores": []
         }
