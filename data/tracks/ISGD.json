@@ -4,7 +4,7 @@
       "hora": "9:00 - 10:30",
       "Sesión 1": [
         {
-          "titulo": "Procesamiento de Eventos Complejos para Gemelos Digitales entrelazados",
+          "titulo": "(Herramienta) Procesamiento de Eventos Complejos para Gemelos Digitales entrelazados",
           "autores": [
             "Manuel Cano-Crespo",
             "Guadalupe Ortiz",
@@ -12,7 +12,7 @@
           ]
         },
         {
-          "titulo": "MAS4DT: A novel proposal for developing Digital Twins following a Multi-Agent system approach",
+          "titulo": "(Relevante) MAS4DT: A novel proposal for developing Digital Twins following a Multi-Agent system approach",
           "autores": [
             "Elena Pretel",
             "Luis Zhinin-Vera",
@@ -22,7 +22,7 @@
           ]
         },
         {
-          "titulo": "Synchronization and consistency issues in distributed digital twins",
+          "titulo": "(Corto) Synchronization and consistency issues in distributed digital twins",
           "autores": [
             "Sergio Infante",
             "Julia Robles",
@@ -32,7 +32,7 @@
           ]
         },
         {
-          "titulo": "A model-driven approach to streamline the development of prescriptive services for digital twins",
+          "titulo": "(Relevante) A model-driven approach to streamline the development of prescriptive services for digital twins",
           "autores": [
             "Arturo Barriga",
             "José A. Barriga",
@@ -42,7 +42,7 @@
           ]
         },
         {
-          "titulo": "GEDICA-DAV: Arquitectura de Gemelo Digital para la Detección de Anomalías y Validación de Datos en EDAR",
+          "titulo": "(Corto) GEDICA-DAV: Arquitectura de Gemelo Digital para la Detección de Anomalías y Validación de Datos en EDAR",
           "autores": [
             "Javier Mateos-Bravo",
             "Juan Pedro Cortés-Pérez",
@@ -56,7 +56,7 @@
       "hora": "15:00 - 16:30",
       "Sesión 2": [
         {
-          "titulo": "Ingeniería de la Capa Inteligente en Gemelos Digitales Energéticos: Integración de IA y Optimización",
+          "titulo": "(Herramienta) Ingeniería de la Capa Inteligente en Gemelos Digitales Energéticos: Integración de IA y Optimización",
           "autores": [
             "Rebeca Gutierrez",
             "Maria Dolores de Acuña",
@@ -64,7 +64,7 @@
           ]
         },
         {
-          "titulo": "IFMIF-DONES Maintenance Digital Twins Architecture using OpenTwins",
+          "titulo": "(Corto) IFMIF-DONES Maintenance Digital Twins Architecture using OpenTwins",
           "autores": [
             "Julia Robles",
             "Pablo Salado",
@@ -73,7 +73,7 @@
           ]
         },
         {
-          "titulo": "PULSE: A Modular Framework for Predictive Energy Efficiency in Heterogeneous Data Centers",
+          "titulo": "(Relevante) PULSE: A Modular Framework for Predictive Energy Efficiency in Heterogeneous Data Centers",
           "autores": [
             "Daniel Flores-Martin",
             "Felipe Lemus-Prieto",
@@ -81,7 +81,7 @@
           ]
         },
         {
-          "titulo": "IoT and Machine Learning for the Forecasting of Physiological Parameters of Crop Leaves",
+          "titulo": "(Relevante) IoT and Machine Learning for the Forecasting of Physiological Parameters of Crop Leaves",
           "autores": [
             "Arturo Barriga",
             "Jose A. Barriga",
@@ -91,7 +91,7 @@
           ]
         },
         {
-          "titulo": "Hacia un Gemelo Digital Social para la interacción adaptativa con QTrobot en niños con Trastorno del Espectro Autista",
+          "titulo": "(Corto) Hacia un Gemelo Digital Social para la interacción adaptativa con QTrobot en niños con Trastorno del Espectro Autista",
           "autores": [
             "Mónica Garrigós",
             "Santiago Meliá",
@@ -104,7 +104,7 @@
       "hora": "17:00 - 18:00",
       "Sesión 3": [
         {
-          "titulo": "Gemelo Digital para la Conservación del Castillo de Portezuelo",
+          "titulo": "(Corto) Gemelo Digital para la Conservación del Castillo de Portezuelo",
           "autores": [
             "Ángel Macías",
             "Javier Mateos-Bravo",
@@ -114,7 +114,7 @@
           ]
         },
         {
-          "titulo": "A Tutorial on O-RAN Deployment Solutions for 5G: From Simulation to Emulated and Real Testbeds",
+          "titulo": "(Relevante) A Tutorial on O-RAN Deployment Solutions for 5G: From Simulation to Emulated and Real Testbeds",
           "autores": [
             "Juan Luis Herrera",
             "Sofia Montebugnoli",
@@ -124,7 +124,7 @@
           ]
         },
         {
-          "titulo": "MoON: framework para la emulación de la Computación Continua en el espacio exterior",
+          "titulo": "(Corto) MoON: framework para la emulación de la Computación Continua en el espacio exterior",
           "autores": [
             "Iván Sánchez-Cordero",
             "Ángel Macías",
@@ -140,7 +140,7 @@
           ]
         },
         {
-          "titulo": "A-PIGNN: Test-Time Training for Physics-Informed State Estimation in Non-Stationary Water Networks",
+          "titulo": "(Corto) A-PIGNN: Test-Time Training for Physics-Informed State Estimation in Non-Stationary Water Networks",
           "autores": [
             "Mohammadhossein Homaei",
             "Óscar Mogollón Gutiérrez",
@@ -157,14 +157,14 @@
       "hora": "9:00 - 10:30",
       "Sesión 4": [
         {
-          "titulo": "SCSN-DAC: Arquitectura de Simulación Ininterrumpida para Gemelos Digitales en Escenarios de Colapso",
+          "titulo": "(Corto) SCSN-DAC: Arquitectura de Simulación Ininterrumpida para Gemelos Digitales en Escenarios de Colapso",
           "autores": [
             "Sergio Vázquez-Pozo",
             "Alejandro Gragera-Serradilla"
           ]
         },
         {
-          "titulo": "Digital Twins and Artificial Collective Intelligence: Synergies for the Future",
+          "titulo": "(Relevante) Digital Twins and Artificial Collective Intelligence: Synergies for the Future",
           "autores": [
             "Elena Pretel",
             "Elena Navarro",
@@ -173,7 +173,7 @@
           ]
         },
         {
-          "titulo": "Planificación con garantías cuantitativas en Gemelos Digitales de sCPS",
+          "titulo": "(Corto) Planificación con garantías cuantitativas en Gemelos Digitales de sCPS",
           "autores": [
             "Raquel Sánchez Salas",
             "Javier Troya",
@@ -181,7 +181,7 @@
           ]
         },
         {
-          "titulo": "Twins Among Shadows: Binding Human Digital Twins on Mobile",
+          "titulo": "(Corto) Twins Among Shadows: Binding Human Digital Twins on Mobile",
           "autores": [
             "Carlos E. Cuesta",
             "Paloma Cáceres",
@@ -193,7 +193,7 @@
           ]
         },
         {
-          "titulo": "Desarrollo de un Digital Twin para la Monitorización en Bucle Cerrado en Reproducción Asistida",
+          "titulo": "(Corto) Desarrollo de un Digital Twin para la Monitorización en Bucle Cerrado en Reproducción Asistida",
           "autores": [
             "Anastasiia Gorelova",
             "Santiago Meliá"
