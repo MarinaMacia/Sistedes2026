@@ -244,6 +244,7 @@
 }
 
 .sprog-table td.sprog-session-detail {
+  background-color: #faffdc;
   text-align: left;
   overflow-wrap: anywhere;
   word-break: normal;

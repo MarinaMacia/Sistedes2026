@@ -8,6 +8,7 @@
           "autores": []
         },
         {
+          "tipo": "Proyecto",
           "titulo": "Plataforma de Inteligencia Artificial para la Detección Temprana de la Enfermedad de Alzheimer a través de la Voz (IAEAV)",
           "autores": [
             "Cristian Javier Vera Arenas",
@@ -20,6 +21,7 @@
           ]
         },
         {
+          "tipo": "Proyecto",
           "titulo": "BALIDA-AA: Diagnóstico diferencial de TDAH y TEA mediante Inteligencia Artificial y Realidad Extendida",
           "autores": [
             "Matías Díaz-Tornero",
@@ -31,6 +33,7 @@
           ]
         },
         {
+          "tipo": "Relevante",
           "titulo": "A Decision Support System Based on Multi-head Convolutional and Recurrent Neural Networks for Assisting Physicians in Diagnosing ADHD",
           "autores": [
             "Javier Sanchis",
@@ -39,6 +42,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Detección de estrés, ansiedad y depresión en voz: revisión y limitaciones",
           "autores": [
             "Ana I. Diaz-Perez",
@@ -47,6 +51,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Integration of a Large Language Model into the Electronic Health Record",
           "autores": [
             "Irene Sanchez-Montejo",
@@ -55,6 +60,7 @@
           ]
         },
         {
+          "tipo": "Relevante",
           "titulo": "Metadata-Based Privacy Assessment for Mobile mHealth",
           "autores": [
             "Alejandro Pérez-Fuente",
@@ -69,6 +75,7 @@
       "hora": "15:00 - 16:30",
       "Sesión 2: Datos Espaciales, Movilidad y Territorios Inteligentes": [
         {
+          "tipo": "Corto",
           "titulo": "Indexing and querying big spatio-textual data",
           "autores": [
             "Victor Suárez Garcia",
@@ -77,6 +84,7 @@
           ]
         },
         {
+          "tipo": "Relevante",
           "titulo": "Efficient indexing and querying spatial-keyword data in main memory",
           "autores": [
             "Raúl García-Muñoz",
@@ -86,6 +94,7 @@
           ]
         },
         {
+          "tipo": "Completo",
           "titulo": "Agregación de coberturas ráster sobre entidades vectoriales en arquitecturas federadas",
           "autores": [
             "Manuel A. Regueiro",
@@ -96,6 +105,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Analysis and clustering of massive public transport data",
           "autores": [
             "Pablo Gutiérrez-Asorey",
@@ -103,6 +113,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Urban Mobility Data Analysis for Predictive Modeling: Exploiting Existing IoT Infrastructure",
           "autores": [
             "Samuel Monasterio",
@@ -114,6 +125,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Multivariate Data Fusion for Traffic Prediction in Smart Villages",
           "autores": [
             "Alberto Durán-López",
@@ -122,6 +134,7 @@
           ]
         },
         {
+          "tipo": "Proyecto",
           "titulo": "Proyecto Gestservice: servicios inteligentes de movilidad basados en datos para empresas internacionales de alquiler de coches",
           "autores": [
             "Francisco Javier Alcaide",
@@ -141,6 +154,7 @@
       "hora": "15:00 - 16:30",
       "Sesión 3: Gobernanza, Calidad y Espacios de Datos": [
         {
+          "tipo": "Corto",
           "titulo": "Gobernanza y \"FAIRificación\" de Datos I+D en Infraestructuras Científico-Tecnológicas Singulares",
           "autores": [
             "Beatriz Lorenzo González",
@@ -149,6 +163,7 @@
           ]
         },
         {
+          "tipo": "Completo",
           "titulo": "Evaluación operativa de la estabilidad estructural en espacios de datos federado",
           "autores": [
             "Carlos Mario Braga Ortuño",
@@ -157,6 +172,7 @@
           ]
         },
         {
+          "tipo": "Completo",
           "titulo": "Bridging Islands of Data: Decentralized Trust and Interoperability Between ESAUTO-X y Catena-X",
           "autores": [
             "Iñaki Paz",
@@ -167,6 +183,7 @@
           ]
         },
         {
+          "tipo": "Completo",
           "titulo": "MEGIM-UNE. Metodología de gestión integral de metadatos alineada con UNE 0078: propuesta metodológica y ejemplo de aplicación industrial",
           "autores": [
             "Izaskun Cayon-Camarero",
@@ -176,6 +193,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Propuesta de benchmark DQBench para la evaluación de rendimiento de IA Generativa en Calidad de Datos según UNE 0081:2023",
           "autores": [
             "César García Sáez",
@@ -184,6 +202,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "From Raw to Reliable Event Logs in Healthcare: Data Governance, Quality, and Standardization for Predictive Process Mining",
           "autores": [
             "Noelia Palomares",
@@ -197,6 +216,7 @@
       "hora": "17:00 - 18:30",
       "Sesión 4: IA Aplicada: Industria y Medio Ambiente": [
         {
+          "tipo": "Corto",
           "titulo": "Estimación de la incertidumbre en modelos predictivos para la industria",
           "autores": [
             "Alejandro Budiño",
@@ -206,6 +226,7 @@
           ]
         },
         {
+          "tipo": "Relevante",
           "titulo": "Using time series foundation models for few-shot remaining useful life prediction of aircraft engines",
           "autores": [
             "Ricardo Dintén",
@@ -213,6 +234,7 @@
           ]
         },
         {
+          "tipo": "Relevante",
           "titulo": "Implementation of long-term forecasting models in sugarcane for agricultural planning and yield goals setting",
           "autores": [
             "Joel Morales",
@@ -222,6 +244,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Resolución del Problema Inverso en Tomografía de Impedancia Eléctrica 3D mediante Técnicas de Deep Learning y su Adaptación para Aplicaciones Forestales",
           "autores": [
             "Rubén Gijón Cañete",
@@ -231,6 +254,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "MyFlamma LiDAR Plugin for Wildfire Risk Assessment",
           "autores": [
             "Pablo Natera",
@@ -242,6 +266,7 @@
           ]
         },
         {
+          "tipo": "Relevante",
           "titulo": "Addressing significant challenges for animal detection in camera trap images: a novel deep learning-based approach",
           "autores": [
             "Margarita Mulero-Pázmány",
@@ -255,6 +280,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Feasibility Study of an Electronic Nose as a Support Tool for Canine Agents",
           "autores": [
             "Raúl Martín-Romo",
@@ -273,6 +299,7 @@
       "hora": "09:00 - 10:30",
       "Sesión 5: Procesamiento de Lenguaje Natural, LLMs y XAI": [
         {
+          "tipo": "Corto",
           "titulo": "LLM on-device en el sector agrícola: hacia el estudio de viabilidad y retos de ingeniería",
           "autores": [
             "F. Javier González-Ontañón",
@@ -283,6 +310,7 @@
           ]
         },
         {
+          "tipo": "Relevante",
           "titulo": "Leveraging Large Language Models for the Automatic Implementation of Problems in Optimization Frameworks",
           "autores": [
             "José Francisco Aldana Martín",
@@ -292,6 +320,7 @@
           ]
         },
         {
+          "tipo": "Completo",
           "titulo": "Una técnica de perturbación para la explicabilidad de la IA en PLN",
           "autores": [
             "Álvaro Navarro",
@@ -303,6 +332,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Learning Interpretable Sequence Classifiers through Evolved Regular Expression Patterns",
           "autores": [
             "Roberto Canduela",
@@ -311,6 +341,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "SHAP-Based Explainable AI for Sustainable Resource Management in SmartPoliTech",
           "autores": [
             "José Pedro Martín",
@@ -321,6 +352,7 @@
           ]
         },
         {
+          "tipo": "Relevante",
           "titulo": "An integrated requirements framework for analytical and AI projects",
           "autores": [
             "Juan Trujillo",
@@ -337,6 +369,7 @@
       "hora": "12:30 - 14:00",
       "Sesión 6: Sistemas, Seguridad y Análisis de Datos Complejos": [
         {
+          "tipo": "Relevante",
           "titulo": "Incremental Checking of SQL Assertions in an RDBMS",
           "autores": [
             "Xavier Oriol",
@@ -344,6 +377,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "A Study of FASTQ/A Compression Techniques",
           "autores": [
             "Rodrigo Blanco-Amoedo",
@@ -353,6 +387,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Una aproximación pangenómica para la recuperación y análisis de información musical",
           "autores": [
             "Cecilia Hernández",
@@ -363,6 +398,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Distinguishing Cyber-Attacks from Physical Faults in Water Systems Using Counterfactual Reasoning",
           "autores": [
             "Mohammadhossein Homaei",
@@ -373,6 +409,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Generación de Tráfico Sintético con GANs para Detección de Intrusiones",
           "autores": [
             "Óscar Mogollón-Gutiérrez",
@@ -383,6 +420,7 @@
           ]
         },
         {
+          "tipo": "Relevante",
           "titulo": "Refining satellite trajectories with celestial body features using neural networks",
           "autores": [
             "José Calderón",
@@ -399,6 +437,7 @@
       "hora": "16:00 - 17:30",
       "Sesión 7: Semántica, Grafos y Procesos de Negocio": [
         {
+          "tipo": "Corto",
           "titulo": "¿Por qué sigue siendo difícil descubrir ontologías?",
           "autores": [
             "Jorge Rodriguez-Revello",
@@ -408,6 +447,7 @@
           ]
         },
         {
+          "tipo": "Completo",
           "titulo": "Hacia un modelo semántico FIWARE para conducción autónoma",
           "autores": [
             "Mario Martín-Pérez",
@@ -416,6 +456,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Rethinking VCF Analysis: Biclique Graphs as a Bridge from Data to Knowledge",
           "autores": [
             "Elsa Martín-De Arribas",
@@ -425,6 +466,7 @@
           ]
         },
         {
+          "tipo": "Relevante",
           "titulo": "Enabling the Application of Graph Neural Networks on Graphs With Unknown Connectivity",
           "autores": [
             "Jorge García-Carrasco",
@@ -433,6 +475,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Acercando el cumplimiento normativo a la verificación de la conformidad en procesos de negocio",
           "autores": [
             "José Luis Cobo Ariza",
@@ -442,6 +485,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Extracción de parámetros de simulación para procesos de negocio colaborativos",
           "autores": [
             "Joaquin Arregui Diaz",

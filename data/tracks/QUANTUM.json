@@ -4,6 +4,7 @@
       "hora": "9:00 - 10:30",
       "Sesión 1": [
         {
+          "tipo": "Completo",
           "titulo": "Quality Requirements for Quantum Software Engineering: A Systematic Mapping Study",
           "autores": [
             "Nil Macià",
@@ -11,6 +12,7 @@
           ]
         },
         {
+          "tipo": "Completo",
           "titulo": "Swift Quantum: Library and Application for Quantum Computing Research and Education",
           "autores": [
             "Carlos Rodríguez-Domínguez",
@@ -22,6 +24,7 @@
           ]
         },
         {
+          "tipo": "Relevante",
           "titulo": "QCRAFT AutoScheduler: A library for maximizing qubit utilization on QPUs through quantum circuit multiprogramming (Summary)",
           "autores": [
             "Jaime Alvarado-Valiente",
@@ -33,6 +36,7 @@
           ]
         },
         {
+          "tipo": "Completo",
           "titulo": "Optimización del uso espacial de qubits en Plataformas QCaaS mediante Islas Cuánticas",
           "autores": [
             "Antonio Jesus Sanchez-Gil",
@@ -50,6 +54,7 @@
       "hora": "15:00 - 16:30",
       "Sesión 2": [
         {
+          "tipo": "Completo",
           "titulo": "Programando la abstracción cuántica con registros como unidad de información",
           "autores": [
             "David Chamizo",
@@ -57,6 +62,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Pipeline para la validación de protocolos de comunicación post-cuántica basados en TF-QKD",
           "autores": [
             "Sergio Vázquez-Pozo",
@@ -64,6 +70,7 @@
           ]
         },
         {
+          "tipo": "Completo",
           "titulo": "Benchmarking de Simuladores Cuánticos de Vector de Estado en HPC",
           "autores": [
             "Jesús Cerrudo Herrera",
@@ -73,6 +80,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Benchmarking Quantum Simulators for Grover’s Algorithm in SCAYLE: A Comparative Study with Classical Systems",
           "autores": [
             "Santiago Merino Bajo",
@@ -83,6 +91,7 @@
           ]
         },
         {
+          "tipo": "Completo",
           "titulo": "Profundidad efectiva en algoritmos de Quantum Machine Learning: atenuación del gradiente en VQAs bajo ruido NISQ",
           "autores": [
             "Carlos Mario Braga Ortuño",
@@ -97,6 +106,7 @@
       "hora": "17:00 - 18:30",
       "Sesión 3": [
         {
+          "tipo": "Completo",
           "titulo": "A Qiskit Library for Quantum Search and Boolean Satisfiability Oracles",
           "autores": [
             "Diego Alonso",
@@ -106,6 +116,7 @@
           ]
         },
         {
+          "tipo": "Completo",
           "titulo": "Uso de Programación Genética Basada en Gramáticas para la construcción de oráculos cuánticos optimizados",
           "autores": [
             "Javier Zayas-Gallardo",
@@ -114,6 +125,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Planificador de consultas cuántico para SQLite basado en QUBO",
           "autores": [
             "Eduardo Gutiérrez",
@@ -121,6 +133,7 @@
           ]
         },
         {
+          "tipo": "Herramienta",
           "titulo": "HASH - Herramienta de Análisis para Sistemas Híbridos (Clásico-Cuánticos)",
           "autores": [
             "Álvaro Manuel Aparicio Morales",
@@ -130,6 +143,7 @@
           ]
         },
         {
+          "tipo": "Completo",
           "titulo": "Orquestación consciente del tiempo de respuesta en workflows híbridos cuántico-clásicos dentro del Cloud Continuum",
           "autores": [
             "Adrian Navas",
@@ -148,6 +162,7 @@
       "hora": "9:00 - 10:30",
       "Sesión 4": [
         {
+          "tipo": "Completo",
           "titulo": "Algoritmos cuánticos variacionales modulares, componibles y reutilizables: propuesta para la estructuración de circuitos cuánticos",
           "autores": [
             "Sergio Astorga",
@@ -156,6 +171,7 @@
           ]
         },
         {
+          "tipo": "Relevante",
           "titulo": "Combinatorial Optimization with Quantum Computers",
           "autores": [
             "Francisco Chicano",
@@ -165,6 +181,7 @@
           ]
         },
         {
+          "tipo": "Completo",
           "titulo": "Operationalizing Quantum Optimization for Multi-Depot Logistics: A Hybrid service-oriented Approach",
           "autores": [
             "José Antonio Parejo",
@@ -172,6 +189,7 @@
           ]
         },
         {
+          "tipo": "Completo",
           "titulo": "Topologías de Inspiración Cuántica para la Detección de Anomalías en Minería de Procesos",
           "autores": [
             "Joaquin Oltra",
@@ -179,6 +197,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Computación Cuántica Aplicada a la Clasificación del Peso en Corderos",
           "autores": [
             "Elena Ondicol",
@@ -192,6 +211,7 @@
       "hora": "12:30 - 14:00",
       "Sesión 5": [
         {
+          "tipo": "Completo",
           "titulo": "AQUILA. Asistente para la generación inteligente de arquitecturas de software clásico-cuántico",
           "autores": [
             "Francisco Javier Espada",
@@ -199,6 +219,7 @@
           ]
         },
         {
+          "tipo": "Completo",
           "titulo": "QSauron - Entorno QSE automático para generar, desarrollar y probar circuitos cuánticos",
           "autores": [
             "Samuel Rodero-Ballesteros",
@@ -210,6 +231,7 @@
           ]
         },
         {
+          "tipo": "Relevante",
           "titulo": "Exploring design patterns in quantum software: a case study",
           "autores": [
             "Miriam Fernández-Osuna",
@@ -220,6 +242,7 @@
           ]
         },
         {
+          "tipo": "Herramienta",
           "titulo": "Herramienta visual para la depuración de circuitos cuánticos",
           "autores": [
             "Javier Romero-Alvarez",
@@ -238,6 +261,7 @@
       "hora": "16:00 - 17:30",
       "Sesión 6": [
         {
+          "tipo": "Completo",
           "titulo": "QuBind: A Multi-Metric Approach for Optimal Quantum Service Selection",
           "autores": [
             "Adrián Romero-Flores",
@@ -246,6 +270,7 @@
           ]
         },
         {
+          "tipo": "Completo",
           "titulo": "Validación y evaluación de calidad en una arquitectura híbrida cuántico-clásica: estudio aplicado a clasificación de señales EEG",
           "autores": [
             "Jesús Alejandro Montes Medina",
@@ -257,6 +282,7 @@
           ]
         },
         {
+          "tipo": "Relevante",
           "titulo": "Entorno para la evaluación de la analizabilidad de sistemas híbridos (clásico-cuánticos)",
           "autores": [
             "Ana Díaz-Muñoz",
@@ -268,6 +294,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Explorando redes neuronales recurrentes cuánticas en medicina del sueño",
           "autores": [
             "José Daniel Viqueira Cao",

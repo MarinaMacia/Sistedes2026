@@ -8,6 +8,7 @@
           "autores": []
         },
         {
+          "tipo": "Relevante",
           "titulo": "Comparing Desktop, Virtual and Augmented Reality Gaming Environments for ADHD Attention Measurement",
           "autores": [
             "Alejandro Panagiotidis-Arrizabalaga",
@@ -19,6 +20,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Protocolo de validación empírica del proceso de modelado ML para el pronóstico de QoS",
           "autores": [
             "Ximena Guerron",
@@ -28,6 +30,7 @@
           ]
         },
         {
+          "tipo": "Completo",
           "titulo": "Software Composition Analysis and Supply Chain Security in Apache Projects: an Empirical Study",
           "autores": [
             "Sabato Nocera",
@@ -44,6 +47,7 @@
       "hora": "9:00 - 10:30",
       "Sesión 2": [
         {
+          "tipo": "Relevante",
           "titulo": "A Multiple Case Study on Reuse in Game Software Engineering",
           "autores": [
             "Jose Ignacio Trasobares",
@@ -54,6 +58,7 @@
           ]
         },
         {
+          "tipo": "RR",
           "titulo": "Impulsando el pensamiento crítico en los jefes de proyecto IT: autoevaluación de la competencia",
           "autores": [
             "Miguel Ballesteros",
@@ -61,6 +66,7 @@
           ]
         },
         {
+          "tipo": "Relevante",
           "titulo": "Aggregating Empirical Evidence from Data Strategies Studies: A Case on Model Quantization",
           "autores": [
             "Santiago del Rey",
@@ -71,6 +77,7 @@
           ]
         },
         {
+          "tipo": "RR",
           "titulo": "Evaluating the Impact of AI-Simulated Clients on Novice Performance in Elicitation Interviews",
           "autores": [
             "José Antonio Parejo",
@@ -79,6 +86,7 @@
           ]
         },
         {
+          "tipo": "Completo",
           "titulo": "Uso de la IA en Revisiones Sistemáticas de la Literatura: ¿confiable o viable? Un estudio preliminar y replicable",
           "autores": [
             "Francisco Javier Pérez-Blanco",
@@ -89,6 +97,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Towards a Quality of Experience Model and Evaluation Framework for Immersive Metaverse Environments: A Systematic Literature Review",
           "autores": [
             "Lara Ihlbrock",

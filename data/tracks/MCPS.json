@@ -8,6 +8,7 @@
           "autores": []
         },
         {
+          "tipo": "Relevante",
           "titulo": "Early V&V in Knowledge-Centric Systems Engineering: Advances and Benefits in Practice",
           "autores": [
             "Jose Luis de la Vara",
@@ -22,6 +23,7 @@
           ]
         },
         {
+          "tipo": "Relevante",
           "titulo": "State Field Coverage: A Metric for Oracle Quality",
           "autores": [
             "Facundo Molina",
@@ -30,6 +32,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Hacia una generación de pruebas más robusta: superando limitaciones de KLEE",
           "autores": [
             "Martín Nieto-Pinteño",
@@ -38,6 +41,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "RAG para asistir al tester en la prueba de consultas a bases de datos",
           "autores": [
             "Raquel Blanco",
@@ -47,6 +51,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Desafíos y limitaciones en la gestión de calidad en sistemas de aprendizaje automático en producción",
           "autores": [
             "Antoni Bennasar Garau",
@@ -57,6 +62,7 @@
           ]
         },
         {
+          "tipo": "Completo",
           "titulo": "Hacia un Marco Multidimensional para la Evaluación de la Calidad en PyMEs de Servicios: Un Caso de Estudio",
           "autores": [
             "Jaime Dionisio",
@@ -72,6 +78,7 @@
       "hora": "12:30 - 14:00",
       "Sesión 2: Ingeniería de software inteligente y evolución de sistemas": [
         {
+          "tipo": "Herramienta",
           "titulo": "SofIA Demonstration: An Ecosystem of Tools for Traceable and Industry-Oriented Software Development",
           "autores": [
             "Julián Alberto García García",
@@ -82,6 +89,7 @@
           ]
         },
         {
+          "tipo": "Herramienta",
           "titulo": "Tool Demonstration of SofIA-AI: Generating Use Cases and Classes from Interviews with LLMs",
           "autores": [
             "Leticia Trujillo",
@@ -92,6 +100,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Una propuesta preliminar para modelar requisitos software en escenarios virtuales aplicando el paradigma MDE",
           "autores": [
             "Elena Enamorado-Díaz",
@@ -101,6 +110,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Prueba de mutaciones predictiva entre lenguajes de programación: preguntas de investigación",
           "autores": [
             "Pedro Delgado-Pérez",
@@ -110,6 +120,7 @@
           ]
         },
         {
+          "tipo": "Relevante",
           "titulo": "Data migration for column family database evolution",
           "autores": [
             "Pablo Suárez-Otero",
@@ -119,6 +130,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Towards Continuous Improvement of DevSecOps in the Energy Management Domain",
           "autores": [
             "Ana Lourdes Sanz Alonso",
@@ -131,6 +143,7 @@
       "hora": "16:00 - 17:30",
       "Sesión 3: Gamificación, sistemas inteligentes y seguridad": [
         {
+          "tipo": "Relevante",
           "titulo": "Towards Green Game Software Engineering: A Comparative Analysis of Energy Consumption Between the Widespread Unity and Unreal Video Game Engines",
           "autores": [
             "Carlos Pérez Caseiras",
@@ -142,6 +155,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Identificación de Patrones de Interacción en Entornos Gamificados Mediante Minería de Procesos",
           "autores": [
             "José-Antonio Leal-Moreno",
@@ -151,6 +165,7 @@
           ]
         },
         {
+          "tipo": "Corto",
           "titulo": "Sistema de recomendación basado en Machine Learning para Gamificación Adaptativa",
           "autores": [
             "Felix Emilio Garcia Borges",
@@ -160,6 +175,7 @@
           ]
         },
         {
+          "tipo": "Completo",
           "titulo": "Hacia el fortalecimiento de la ciberseguridad en la cadena de suministro de software",
           "autores": [
             "Carlos Villarrubia",
@@ -169,6 +185,7 @@
           ]
         },
         {
+          "tipo": "Herramienta",
           "titulo": "SARA: Herramienta para la Predicción de Riesgos y Recomendación de Personal en Proyectos Software Remotos",
           "autores": [
             "Javier Rodríguez-Castellano",

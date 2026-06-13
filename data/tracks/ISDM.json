@@ -8,6 +8,7 @@
           "autores": []
         },
         {
+          "tipo": "Relevante",
           "titulo": "Automation in Model-Driven Engineering: A look back, and ahead (TOSEM)",
           "autores": [
             "Burgueño",
@@ -17,6 +18,7 @@
           ]
         },
         {
+          "tipo": "Relevante",
           "titulo": "ModelXGlue: a benchmarking framework for ML tools in MDE (SoSyM)",
           "autores": [
             "Hernández López",
@@ -26,6 +28,7 @@
           ]
         },
         {
+          "tipo": "Completo",
           "titulo": "RAG-Driven Agent Pipeline for SysML v2 Synthesis vs. Specialized LLMs",
           "autores": [
             "Olivert-Iserte",
@@ -34,6 +37,7 @@
           ]
         },
         {
+          "tipo": "Relevante",
           "titulo": "Modeling the obsolescence of models (SoSyM)",
           "autores": [
             "Alfonso",
@@ -43,6 +47,7 @@
           ]
         },
         {
+          "tipo": "Demo",
           "titulo": "Low-code y no-code con BESSER para diseñar y desplegar aplicaciones web inteligentes",
           "autores": [
             "Alfonso",
@@ -61,6 +66,7 @@
       "hora": "15:00 - 16:30",
       "Sesión 2: DSDM aplicado: dominios y soluciones": [
         {
+          "tipo": "Completo",
           "titulo": "Automatizando el paso de Solidity a e³value: un puente tecnológico para facilitar la comprensión de contratos inteligentes",
           "autores": [
             "Gómez-Macías",
@@ -71,6 +77,7 @@
           ]
         },
         {
+          "tipo": "Relevante",
           "titulo": "SimulateIoT-Services: A Simulation Framework for Assessing and Optimizing IoT Service and Resource Allocation (Elsevier IoT)",
           "autores": [
             "Díaz Cantero",
@@ -80,6 +87,7 @@
           ]
         },
         {
+          "tipo": "Relevante",
           "titulo": "Desarrollo dirigido por modelos de aumentadores web para facilitar el consumo de datos abiertos medioambientales (IEEE Access)",
           "autores": [
             "González-Martínez",
@@ -90,6 +98,7 @@
           ]
         },
         {
+          "tipo": "Relevante",
           "titulo": "The Software Diversity Card: A Framework for Reporting Diversity in Software Projects (IST)",
           "autores": [
             "Giner Miguélez",
@@ -101,6 +110,7 @@
           ]
         },
         {
+          "tipo": "Demo",
           "titulo": "Towards a Model-based Framework for the Generation of Document Management Systems (DocuMenTor)",
           "autores": [
             "Abouelwafa",
