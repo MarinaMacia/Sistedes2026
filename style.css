@@ -191,6 +191,7 @@
 }
 
 .sprog-track button,
+.sprog-track a,
 .sprog-cell-links a {
   color: inherit;
   text-decoration: underline;

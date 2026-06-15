@@ -114,6 +114,13 @@
         return `<div class="sprog-cell-links">${links.map(link => `<a href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(stripLinks(link.label))}</a>`).join('')}</div>`;
       }
 
+      function renderLinkedText(label, url) {
+        const text = escapeHtml(stripLinks(label || ''));
+        return url
+          ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${text}</a>`
+          : text;
+      }
+
       function renderCell(cell) {
         if (!cell) return '<td class="sprog-slot sprog-slot--empty"></td>';
         const inferredClass = Array.isArray(cell.tracks) && cell.tracks.length ? trackById[cell.tracks[0]]?.className : '';
@@ -135,7 +142,7 @@
         if (row.type === 'span') {
           const className = ['sprog-slot', row.className || ''].filter(Boolean).join(' ');
           const links = renderLinks(row.links || []);
-          return `<tr class="sprog-general-row"><th class="sprog-time">${escapeHtml(row.time || '')}</th><td class="${escapeHtml(className)}" colspan="${rooms.length}"><span class="sprog-track">${escapeHtml(stripLinks(row.label || ''))}</span>${links}</td></tr>`;
+          return `<tr class="sprog-general-row"><th class="sprog-time">${escapeHtml(row.time || '')}</th><td class="${escapeHtml(className)}" colspan="${rooms.length}"><span class="sprog-track">${renderLinkedText(row.label, row.url)}</span>${links}</td></tr>`;
         }
         const cellsByRoom = new Map((row.cells || []).map(cell => [cell.room, cell]));
         return `<tr><th class="sprog-time">${escapeHtml(row.time || '')}</th>${rooms.map(room => renderCell(cellsByRoom.get(room))).join('')}</tr>`;
