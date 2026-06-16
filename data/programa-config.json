@@ -5,19 +5,19 @@
   "month": 6,
   "rooms": [
     "Aula 2.1",
-    "Aula 1.1",
+    "Aula 5",
     "Aula Rafael Altamira",
     "Aula 2.2"
   ],
   "roomLinks": {
     "Aula 2.1": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101P2007",
-    "Aula 1.1": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101P1003",
+    "Aula 5": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101P3001",
     "Aula Rafael Altamira": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101PB005",
     "Aula 2.2": "https://cvnet.cpd.ua.es/FichaAula/es/Aula/Ver/0101P2001"
   },
   "roomAliases": {
     "AULA 2.1": "Aula 2.1",
-    "AULA 1.1": "Aula 1.1",
+    "AULA 5": "Aula 5",
     "AULA RAFAEL ALTAMIRA": "Aula Rafael Altamira",
     "AULA 2.2": "Aula 2.2"
   },
@@ -34,7 +34,7 @@
       "id": "AI4SE",
       "short": "AI4SE",
       "name": "Artificial Intelligence for Software Engineering",
-      "room": "Aula 1.1",
+      "room": "Aula 5",
       "className": "sprog-slot--ai4se",
       "file": "data/tracks/AI4SE.json"
     },
@@ -74,7 +74,7 @@
       "id": "MCPS",
       "short": "MCPS",
       "name": "Métodos, Calidad y Pruebas del Software",
-      "room": "Aula 1.1",
+      "room": "Aula 5",
       "className": "sprog-slot--mcps",
       "file": "data/tracks/MCPS.json"
     },
@@ -93,7 +93,7 @@
       "location": "Alicante",
       "rooms": [
         "Aula 2.1",
-        "Aula 1.1",
+        "Aula 5",
         "Aula Rafael Altamira",
         "Aula 2.2"
       ],
@@ -113,7 +113,7 @@
               "group": "JISBD"
             },
             {
-              "room": "Aula 1.1",
+              "room": "Aula 5",
               "tracks": ["AI4SE"],
               "group": "JISBD"
             },
@@ -178,7 +178,7 @@
               "group": "JISBD"
             },
             {
-              "room": "Aula 1.1",
+              "room": "Aula 5",
               "tracks": ["AI4SE"],
               "group": "JISBD"
             },
@@ -215,7 +215,7 @@
               "group": "JISBD"
             },
             {
-              "room": "Aula 1.1",
+              "room": "Aula 5",
               "tracks": ["AI4SE"],
               "group": "JISBD"
             },
@@ -233,7 +233,7 @@
       "location": "Alicante",
       "rooms": [
         "Aula 2.1",
-        "Aula 1.1",
+        "Aula 5",
         "Aula Rafael Altamira",
         "Aula 2.2"
       ],
@@ -253,7 +253,7 @@
               "group": "JISBD"
             },
             {
-              "room": "Aula 1.1",
+              "room": "Aula 5",
               "tracks": ["AI4SE"],
               "group": "JISBD"
             },
@@ -331,7 +331,7 @@
               "group": "JISBD"
             },
             {
-              "room": "Aula 1.1",
+              "room": "Aula 5",
               "tracks": ["AI4SE"],
               "group": "JISBD"
             },
@@ -386,7 +386,7 @@
       "location": "Alicante",
       "rooms": [
         "Aula 2.1",
-        "Aula 1.1",
+        "Aula 5",
         "Aula Rafael Altamira",
         "Aula 2.2"
       ],
@@ -406,7 +406,7 @@
               "group": "JISBD"
             },
             {
-              "room": "Aula 1.1",
+              "room": "Aula 5",
               "tracks": ["MCPS"],
               "group": "JISBD"
             },
@@ -455,7 +455,7 @@
               "group": "JISBD"
             },
             {
-              "room": "Aula 1.1",
+              "room": "Aula 5",
               "tracks": ["MCPS"],
               "group": "JISBD"
             },
@@ -508,7 +508,7 @@
               "group": "JISBD"
             },
             {
-              "room": "Aula 1.1",
+              "room": "Aula 5",
               "tracks": ["MCPS"],
               "group": "JISBD"
             },
