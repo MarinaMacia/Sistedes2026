@@ -536,6 +536,10 @@
     color: #4f7272;
   }
 
+  .sprog-general-row td[data-sprog-room="Actividad"]::before {
+    color: #ffffff;
+  }
+
   .sprog-slot--empty {
     display: none;
   }
