@@ -622,6 +622,7 @@
   }
 
   .sprog-table td.sprog-session-detail {
+    border-radius: 6px;
     padding: 1rem 1rem 1.1rem;
   }
 
