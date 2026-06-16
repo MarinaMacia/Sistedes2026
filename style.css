@@ -537,7 +537,7 @@
   }
 
   .sprog-general-row td[data-sprog-room="Actividad"]::before {
-    color: #ffffff;
+    content: none;
   }
 
   .sprog-slot--empty {
