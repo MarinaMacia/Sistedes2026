@@ -1,9 +1,16 @@
 .sprog {
+  box-sizing: border-box;
   width: 100%;
   max-width: none;
   margin: 0 0 2.5rem;
-  overflow: visible;
+  overflow-x: clip;
   font-family: 'Open Sans', sans-serif;
+}
+
+.sprog *,
+.sprog *::before,
+.sprog *::after {
+  box-sizing: inherit;
 }
 
 .sprog-widget-title {
@@ -84,6 +91,7 @@
   width: 100%;
   max-width: none;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .sprog-table {
@@ -345,9 +353,125 @@
   .sprog-actions {
     margin-top: 2rem;
   }
+}
+
+@media (max-width: 1050px) {
+  .sprog {
+    overflow-x: hidden;
+  }
+
+  .sprog-widget-title {
+    font-size: 1.35rem;
+  }
+
+  .sprog-widget-title span {
+    display: block;
+    margin-top: 0.15rem;
+    font-size: 0.95rem;
+    line-height: 1.25;
+  }
+
+  .sprog-day,
+  .sprog-day + .sprog-day {
+    margin-top: 0;
+    margin-bottom: 2.75rem;
+  }
+
+  .sprog-day-title {
+    margin-bottom: 0.9rem;
+    font-size: 1.45rem;
+  }
+
+  .sprog-detail-head {
+    margin: -0.35rem 0 0.9rem;
+  }
+
+  .sprog-table-wrap {
+    overflow-x: visible;
+  }
 
   .sprog-table {
-    min-width: 980px;
+    display: block;
+    width: 100%;
+    min-width: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  .sprog-table thead {
+    display: none;
+  }
+
+  .sprog-table tbody,
+  .sprog-table tr,
+  .sprog-table th,
+  .sprog-table td {
+    display: block;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .sprog-table tr {
+    margin-bottom: 0.9rem;
+    border: 1px solid #d6e5e7;
+    background: #ffffff;
+  }
+
+  .sprog-table th,
+  .sprog-table td {
+    border-width: 0 0 1px;
+    padding: 0.65rem 0.75rem;
+    text-align: left;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .sprog-table tr > :last-child {
+    border-bottom-width: 0;
+  }
+
+  .sprog-time,
+  .sprog-time-col {
+    width: 100%;
+    min-width: 0;
+    font-size: 1rem;
+    white-space: normal;
+  }
+
+  .sprog-table td::before {
+    content: attr(data-sprog-room);
+    display: block;
+    margin-bottom: 0.25rem;
+    color: inherit;
+    font-size: 0.78rem;
+    font-weight: 800;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .sprog-general-row td::before,
+  .sprog-track-table td::before {
+    color: #4f7272;
+  }
+
+  .sprog-slot--empty {
+    display: none;
+  }
+
+  .sprog-cell-group,
+  .sprog-track,
+  .sprog-cell-links {
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  .sprog-session-heading {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .sprog-info-button {
+    white-space: normal;
   }
 }
 

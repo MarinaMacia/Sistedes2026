@@ -121,8 +121,9 @@
           : text;
       }
 
-      function renderCell(cell) {
-        if (!cell) return '<td class="sprog-slot sprog-slot--empty"></td>';
+      function renderCell(cell, room) {
+        const roomAttr = ` data-sprog-room="${escapeHtml(stripLinks(room || ''))}"`;
+        if (!cell) return `<td class="sprog-slot sprog-slot--empty"${roomAttr}></td>`;
         const inferredClass = Array.isArray(cell.tracks) && cell.tracks.length ? trackById[cell.tracks[0]]?.className : '';
         const className = ['sprog-slot', cell.className || inferredClass || ''].filter(Boolean).join(' ');
         const parts = [];
@@ -135,17 +136,17 @@
         }
         if (cell.note) parts.push(`<span class="sprog-cell-note">[${escapeHtml(stripLinks(cell.note))}]</span>`);
         if (Array.isArray(cell.links)) parts.push(renderLinks(cell.links));
-        return `<td class="${escapeHtml(className)}">${parts.join('')}</td>`;
+        return `<td class="${escapeHtml(className)}"${roomAttr}>${parts.join('')}</td>`;
       }
 
       function renderGeneralRow(row, rooms) {
         if (row.type === 'span') {
           const className = ['sprog-slot', row.className || ''].filter(Boolean).join(' ');
           const links = renderLinks(row.links || []);
-          return `<tr class="sprog-general-row"><th class="sprog-time">${escapeHtml(row.time || '')}</th><td class="${escapeHtml(className)}" colspan="${rooms.length}"><span class="sprog-track">${renderLinkedText(row.label, row.url)}</span>${links}</td></tr>`;
+          return `<tr class="sprog-general-row"><th class="sprog-time">${escapeHtml(row.time || '')}</th><td class="${escapeHtml(className)}" colspan="${rooms.length}" data-sprog-room="Actividad"><span class="sprog-track">${renderLinkedText(row.label, row.url)}</span>${links}</td></tr>`;
         }
         const cellsByRoom = new Map((row.cells || []).map(cell => [cell.room, cell]));
-        return `<tr><th class="sprog-time">${escapeHtml(row.time || '')}</th>${rooms.map(room => renderCell(cellsByRoom.get(room))).join('')}</tr>`;
+        return `<tr><th class="sprog-time">${escapeHtml(row.time || '')}</th>${rooms.map(room => renderCell(cellsByRoom.get(room), room)).join('')}</tr>`;
       }
 
       function renderGeneral() {
@@ -237,7 +238,7 @@
             : '';
           return `<div class="sprog-session-block">${heading}${items}</div>`;
         }).join('');
-        return `<tr><th class="sprog-time">${escapeHtml(session.hora || '')}</th><td class="sprog-session-detail">${blocks}</td></tr>`;
+        return `<tr><th class="sprog-time">${escapeHtml(session.hora || '')}</th><td class="sprog-session-detail" data-sprog-room="Sesión / Comunicaciones">${blocks}</td></tr>`;
       }
 
       async function loadJson(url) {
