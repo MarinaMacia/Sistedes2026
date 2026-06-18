@@ -484,7 +484,7 @@
           ]
         },
         {
-          "time": "14:30-15:45",
+          "time": "14:30-16:00",
           "type": "span",
           "label": "Almuerzo",
           "className": "sprog-slot--lunch",
@@ -500,7 +500,7 @@
           ]
         },
         {
-          "time": "15:45-17:15",
+          "time": "16:00-17:30",
           "cells": [
             {
               "room": "Aula 2.1",
@@ -525,7 +525,7 @@
           ]
         },
         {
-          "time": "17:15-17:45",
+          "time": "17:30-18:00",
           "type": "span",
           "label": "Premios SISTEDES",
           "className": "sprog-slot--awards",
@@ -537,7 +537,7 @@
           ]
         },
         {
-          "time": "17:45-18:45",
+          "time": "18:00-19:00",
           "type": "span",
           "label": "Asamblea SISTEDES + Clausura",
           "className": "sprog-slot--general",
